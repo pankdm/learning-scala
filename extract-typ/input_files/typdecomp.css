@@ -1,0 +1,385 @@
+.cz {color: #808080}
+
+h1 {
+	width: 100%;
+	background-color: #404040;
+	color: white;
+	padding: 5px 5px 5px 5px;
+}
+h3 {
+	font-size: 12pt;
+}
+
+.indented {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+div#langswitch, div#langswitch2 {
+	text-align: right;
+	font-size: 10pt;
+}
+.hiddenlang {
+	display:none
+}
+
+pre.doc {
+	margin-left: 3em;
+}
+
+.error {
+	color: red;
+}
+
+.color-decompiler { color: #a0c0e0 }
+.color-editor { color: #80e0c0 }
+a.no-decor, a.no-decor:visited {text-decoration: none}
+a.svetla, a.svetla:visited {color: #d0d0ff}
+.nowrap {white-space: nowrap}
+textarea.bitmap-editor {
+	font-family: "Courier New", "Courier", monospace;
+	font-size: 7pt;
+	line-height: 85%;
+	letter-spacing: 0.1em; 
+	/* font-stretch: ultra-expanded; */
+}
+.vmiddle {vertical-align: middle}
+/* rozsireni globalni definice: */
+.novinka {
+	color: #ff8000;
+}
+
+table.typ-draworder {
+	/* width: 100%; */
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+table.typ-draworder td, table.typ-draworder th {
+	border: 1px solid #c0c0c0;
+	padding: 2px;
+	vertical-align: middle;
+}
+table.typ-draworder td.level {
+	background-color: #808080;
+	color: #ffffff;
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+}
+table.typ-draworder th {
+	background-color: #c0c0c0;
+	font-weight: normal;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+table.typ-elem {
+	width: 100%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+}
+table.typ-elem td, table.typ-elem th {
+	border: 1px solid #c0c0c0;
+	padding: 1px;
+}
+table.typ-elem td {
+	padding-right: 1em
+}
+table.typ-elem th {
+	background-color: #c0c0c0;
+	font-weight: normal;
+	text-align: left;
+}
+div.polyplaceholder table.typ-elem th {
+	/* odlisit placeholder */
+	/* pruhlednost ne, vypada to jako disabled :(
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	*/
+	background-color: #c0d0f0;
+};
+
+/* diskusni skupina: */
+table.table-board {
+	background-color: #e0e0e0
+}
+
+table.table-board th {
+	background-color: #404040;
+	color: #ffffff;
+	text-align: left;
+	font-size: 10pt;
+}
+
+table.table-board input {
+	font-size: 8pt;
+}
+
+table.board-navigace td {
+	border: 2px outset;
+	padding: 2px
+}
+
+
+table.element-info {
+	border: 0px;
+	width: 100%;
+}
+table.element-info td {
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+button.element-edit-button, input.element-edit-button {
+	x-border: 1px solid black;
+	font-size: 8pt;
+	padding: 0px 2px;
+}
+button.element-commit-button, input.element-commit-button {
+	/* background-color: #40ff40; */
+	x-border: 1px solid black;
+	font-size: 8pt;
+	padding: 0px 2px;
+}
+button.element-rollback-button, input.element-rollback-button {
+	x-background-color: #ff4040;
+	x-border: 1px solid black;
+	font-size: 8pt;
+	padding: 0px 2px;
+}
+button.element-edit-button img, button.element-commit-button img, button.element-rollback-button img {
+	vertical-align: bottom;	/* nebo text-bottom? */
+}
+
+button.generic {
+	padding: 2px 2px;
+}
+button.generic img {
+	vertical-align: bottom;	/* nebo text-bottom? */
+	margin-right: 2px
+}
+
+button.smallinput {	/* rozsireni */
+	font-size: 8pt;
+	vertical-align: bottom
+}
+
+
+form.nomargin {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* zmeneny prvek:
+ * styly se maji tykat jen PRVNI tabulky, ne tech vnorenych: 
+ * */
+div.changed table.typ-elem th {
+	background-color: #80e0c0;
+}
+/* nelze, bohuzel, ma vliv i na podrizene tabulky, ve kterych ma byt ruzne pozadi jako preview obrazku: */
+/*
+div.changed table.typ-elem td {
+	background-color: #d0e0c0;
+}
+*/
+
+table.noborder, table.noborder td, table.noborder th {
+	border-width: 0px
+}
+
+table.bitmap-editor {
+	border: 2px solid black;
+	border-collapse: collapse;	/* at se spolecne kraje bunek sliji */
+	table-layout: fixed;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+}
+table.bitmap-editor tr, table.bitmap-editor td {
+	height: 8px;
+	/* reset, kvuli zruseni dedicnosti od typ-elem: */ 
+	border-width: 0px
+}
+table.bitmap-editor td {
+	border-left: 1px dotted #c0c0c0;
+	border-top: 1px dotted #c0c0c0;
+	width: 7px;	/* nevim proc o 1 pixel mene, ale vypada to lip */
+	cursor: crosshair;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background-color: #ffffff;
+}
+table.bitmap-editor td.x-mod8 { border-left: 1px solid #808080; }
+table.bitmap-editor td.y-mod8 { border-top: 1px solid #808080; }
+table.bitmap-editor td.x-mod16 { border-left: 1px solid #404040; }
+table.bitmap-editor td.y-mod16 { border-top: 1px solid #404040; }
+
+/* v editoru umyslne nebudou barvy, jen cerna a bila */
+table.bitmap-editor td.pixel-set {
+	background-color: #000000;
+}
+.bitmap-editor-set-fg, .bitmap-editor-set-bg {
+	width: 12em; text-align: center;
+	font-size: 8pt;
+	margin-bottom: 0.25em;
+}
+.bitmap-editor-set-fg {
+	color: #ffffff;
+	background-color: #000000;
+	border: 1px solid black;
+}
+.bitmap-editor-set-bg {
+	color: #000000;
+	background-color: #ffffff;
+	border: 1px solid black;
+}
+
+/* pokusy o ikonku v SELECTu: 
+optgroup.option-optimize-pattern {
+	color: red;
+	background: url(/gps/icons/A_o1_t1.png) no-repeat 50% 100%;
+	background-position: top right;
+}
+optgroup.option-optimize-line {
+	color: green;
+	background: url(/gps/icons/E_o5_t3.png) no-repeat 50% 100%;
+}
+*/
+
+table.typ-diff {
+	border-collapse: collapse;
+}
+table.typ-diff th.typ-diff {
+	/* sakra, zase ma vliv na vsechno ostatni */
+	background-color: #80e0c0;
+	padding: 0.3em;
+	font-size: 120%;
+}
+table.typ-diff td.typ-diff {
+	border: 1px solid gray;
+	padding: 3px;
+	margin: 0px;
+	vertical-align: top;
+}
+
+/* zalozky: */
+#rozcestnik {
+	float:left;
+	width:100%;
+	/* border-bottom: 2px solid #808080; */
+	font-size:8pt;
+	line-height:normal;
+	}
+#rozcestnik ul {
+	margin:0;
+	padding:5px 5px 0;	/* odsazeni celeho radku s menu */
+	list-style:none;
+	}
+#rozcestnik li {
+	float:left;
+	margin:0;
+	padding:0 3px 0 3px;	/* odsazeni kazdeho prvku menu */
+	}
+#rozcestnik a {
+	float:left;
+	display:block;
+	background-color: #e0e0e0;
+	color: #776655;
+	border-style: solid;
+	border-color: #808080;
+	border-width: 2px 2px 0px 2px;
+	padding:5px 8px 4px 8px;
+	text-decoration:none;
+	font-weight:bold;
+	}
+#rozcestnik li.current {
+	}
+#rozcestnik li.current a {
+	background-color: #ffffff;
+	color: black;
+	/* border-color: black; */
+	}
+/* Commented Backslash Hack
+	hides rule from IE5-Mac \*/
+#rozcestnik a {float:none;}
+/* End IE5-Mac hack */
+#rozcestnik a:hover {
+	color: black;
+	/* misch: */
+	text-decoration: underline;
+	}
+
+div#pod-rozcestnikem {	/* bude s nim jakoby spojeny */
+	width: 100%;
+	border-color: #808080;
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	padding: 1em;
+}
+div#pod-rozcestnikem .menitelne {
+	display: none
+}
+/* konec zalozek */
+
+/* rozcestnik na uvodni strane: */
+table.x-rozcestnik {
+	border-width: 0px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	width: 100%;
+}
+table.x-rozcestnik td {
+	border-width: 0px;
+	padding: 1em 1em 1em 1em;
+	vertical-align: top
+}
+table.x-rozcestnik td img {
+	border: 1px solid #000040;
+}
+table.x-rozcestnik td.x-druhy {
+	width: 100%;
+	padding-left: 0px;
+}
+table.x-rozcestnik td h3 {
+	margin-top: 0px;
+}
+.x-1 {background-color: #80e0c0}
+.x-2 {background-color: #a0e0c0}
+.x-3 {background-color: #c0e0c0}
+.x-4 {background-color: #d0e0c0}
+.x-5 {background-color: #e0e0c0}
+/* konec rozcestniku na uvodni strane: */
+
+table.gallery-gpsscreenshots {
+	border-width: 0px;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+table.gallery-gpsscreenshots th {
+	background-color: #c0e0c0;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+table.gallery-gpsscreenshots td {
+	text-align: center;
+	padding: 0.5em;
+}
+table.gallery-gpsscreenshots td.col0, table.gallery-gpsscreenshots th.col0 {
+	background-color: #d0d0d0;
+}
+table.gallery-gpsscreenshots td.col1, table.gallery-gpsscreenshots th.col1 {
+	background-color: #e0e0e0;
+}
+
+img.mapsourcescreenshot {
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: #e0e0e0;
+}

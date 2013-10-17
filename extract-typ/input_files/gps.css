@@ -1,0 +1,29 @@
+body {
+	background-color: #f0f0f0;
+}
+
+input, select {
+	/* top = budou zarovnane s HORNI stranou textu, tzn. budou DOLE */
+	/* vertical-align: middle; */
+	/* middle vypada desne. Spravne je 'baseline', pak nebudou poskakovat nahoru a dolu,
+	 * ale budou zarovnane se spodni hranou textu: */
+	vertical-align: baseline
+}
+input.checkbox {
+	vertical-align: middle	/* checkbox vypada s baseline hrozne */
+}
+
+.mapa {
+	/* seznam vyzaduje minimalne 400 px: */
+	width: 700px; 
+	height: 470px; 
+	height: 600px; 
+	border: 1px solid black
+}
+
+@media print {
+	.mapa {
+		width: 980px;
+		height: 740px;
+	}
+} 

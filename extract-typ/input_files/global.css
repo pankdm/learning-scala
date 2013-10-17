@@ -1,0 +1,103 @@
+body {
+	background-color: #c0e0ff; 	/* stejne jako ati.land.cz */
+}
+body, td, th {
+	font-family: "Verdana", "Arial", sans-serif; font-size: 8pt;
+}
+li, .separated li {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.condensed li {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+input.smallinput, select.smallinput {
+	font-size: 8pt;
+}
+
+.cite {
+	border: 1px black dotted;
+	font-family: "Courier New", "Courier", monospace;
+	font-size: 10pt;
+	background-color: #F0F0F0;
+	width: 640px;
+	margin-left: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.chytak {
+	/* color: red; */
+}
+
+.fuck {
+	color: red;
+}
+.novinka {
+	color: red;
+	font-weight: bold;
+}
+
+table.vytvoreno-modulem-tables {
+	background-color: #404040;	/* soucasne i ramecek bunek */
+}
+table.vytvoreno-modulem-tables th, table.vytvoreno-modulem-tables td {
+}
+table.vytvoreno-modulem-tables th {
+	background-color: #008000;
+	color: white;
+	font-weight: bold;
+}
+ul.ul1 {
+	/* margin-left: 0em */
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+ul.ul1 li {
+	margin-left: -2em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+.left {text-align: left}
+.right {text-align: right}
+.center {text-align: center}
+
+/* tablesorter */
+	table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+		/* background-color: #008000;
+		color: white;
+		border: 1px solid #FFF;
+		font-size: 8pt;*/
+		padding: 2px;
+		padding-right: 18px;	/* at je tam misto na radici ikonky */
+	}
+	table.tablesorter thead tr th a:link {
+		color: black;
+	}
+	table.tablesorter thead tr .header {
+		background-image: url(tablesorter_bg.gif);
+		background-repeat: no-repeat;
+		background-position: center right;
+		cursor: pointer;
+	}
+	table.tablesorter thead tr .headerSortUp {
+		background-image: url(tablesorter_asc.gif);
+	}
+	table.tablesorter thead tr .headerSortDown {
+		background-image: url(tablesorter_desc.gif);
+	}
+	table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+		background-color: #006000;
+	}
+	span.ts-helper {display:none}
+
+@media print {
+	body {
+		background: white;
+	}
+	.screen-only {
+		display: none;
+	}
+} 

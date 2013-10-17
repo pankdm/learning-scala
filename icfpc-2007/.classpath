@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/scala-2.10/classes" path="src/main/scala"/>
+	<classpathentry kind="src" output="target/scala-2.10/classes" path="src/main/java"/>
+	<classpathentry kind="src" output="target/scala-2.10/test-classes" path="src/test/scala"/>
+	<classpathentry kind="src" output="target/scala-2.10/test-classes" path="src/test/java"/>
+	<classpathentry kind="lib" path="custom_lib/ropes.jar" sourcepath="/home/pankdm/programming/java-lib/ropes-1.2.5"/>
+	<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/pankdm/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/pankdm/.ivy2/cache/org.scalatest/scalatest_2.10/jars/scalatest_2.10-1.9.1.jar"/>
+	<classpathentry kind="lib" path="/home/pankdm/.ivy2/cache/org.scala-lang/scala-actors/jars/scala-actors-2.10.0.jar"/>
+	<classpathentry kind="lib" path="/home/pankdm/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar"/>
+	<classpathentry kind="lib" path="/home/pankdm/.ivy2/cache/junit/junit/jars/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="/home/pankdm/.ivy2/cache/org.hamcrest/hamcrest-core/jars/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
