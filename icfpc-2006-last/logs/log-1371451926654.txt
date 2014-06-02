@@ -1,0 +1,379 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% adventure*
+README
+% README for Adventure
+
+Adventure is a program I wrote for my amusement, but I thought others
+might enjoy it as well.
+
+The adventure takes place in the year 19200 in a city called
+"Chicago."  I admit it's a bit far-fetched at times -- computers small
+enough to be mounted on mobile vehicles, a city so large its residents
+have resorted to numbering their streets -- but hopefully my
+fantastical story won't obscure the puzzle at the heart of it; I think
+it has a nice logic to it.
+
+Have fun!  My high score is 810.
+
+-- Howard Curry
+
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: You can go, take, drop, incinerate, combine, use, examine, show
+inventory, and quit. Try 'help <command>' for further details
+and synonyms.
+
+>: You are now carrying the pamphlet. 
+
+>: You are now carrying the manifesto. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You can't take the keypad because there is another item on top
+of it (take the other item first). 
+
+>: You are now carrying the bolt. 
+
+>: You are now carrying the spring. 
+
+>: You are now carrying the button. 
+
+>: You are now carrying the processor. 
+
+>: You can't take the pill because you can't carry any more items. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+
+
+>: You are carrying:
+a (broken) processor,
+a button,
+a spring,
+a bolt,
+a manifesto and
+a pamphlet.
+
+>: You can't drop the button because you can't bring yourself to
+part with it. 
+
+>: What do you want to combine? 
+
+>: Huh? Try 'help'.
+
+>: You can go, take, drop, incinerate, combine, use, examine, show
+inventory, and quit. Try 'help <command>' for further details
+and synonyms.
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You can't drop the processor because you can't bring yourself to
+part with it. 
+
+>: You can't combine the button and the processor because they
+don't fit together. 
+
+>: You can't combine the pamphlet and the manifesto because they
+don't fit together. 
+
+>: You can go, take, drop, incinerate, combine, use, examine, show
+inventory, and quit. Try 'help <command>' for further details
+and synonyms.
+
+>: drop: Release an item from your inventory.
+
+>: incinerate: Destroy an item. You are equipped with a
+state-of-the-art DVNUL-9000 incinerator. Synonyms include inc.
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a red pill here. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are carrying:
+a (broken) processor,
+a button,
+a spring,
+a bolt,
+a manifesto and
+a pamphlet.
+
+>: The bolt has been destroyed. 
+
+>: The button has been destroyed. 
+
+>: ADVTR.INC=5@999999|f95731ab88952dfa4cb326fb99c085f
+The spring has been destroyed. 
+
+>: The manifesto has been destroyed. 
+
+>: The pamphlet has been destroyed. 
+
+>: You are carrying:
+a (broken) processor.
+
+>: You aren't carrying a proccessor.
+
+>: You aren't carrying a (broken) processor.
+
+>: You are carrying:
+a (broken) processor.
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a red pill here. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the pill. 
+
+>: You are now carrying the radio. 
+
+>: You are now carrying the cache. 
+
+>: You are now carrying the transistor. 
+
+>: You are now carrying the antenna. 
+
+>: You can't take the screw because you can't carry any more items.
+
+
+>: You can't combine the transistor and the antenna because they
+don't fit together. 
+
+>: You are carrying:
+an antenna,
+a blue transistor,
+a cache,
+a (broken) radio,
+a red pill and
+a (broken) processor.
+
+>: The antenna has been destroyed. 
+
+>: The cache has been destroyed. 
+
+>: The radio has been destroyed. 
+
+>: You can't drop the pill because you can't bring yourself to part
+with it. 
+
+>: You are carrying:
+a blue transistor,
+a red pill and
+a (broken) processor.
+
+>: The transistor has been destroyed. 
+
+>: You are carrying:
+a red pill and
+a (broken) processor.
+
+>: The pill has been destroyed. 
+
+>: You are carrying:
+a (broken) processor.
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a screw here. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are carrying:
+a (broken) processor.
+
+>: You are now carrying the screw. 
+
+>: You are now carrying the motherboard. 
+
+>: There is no a- here. 
+
+>: You are now carrying the A-1920-IXB. 
+
+>: You are now carrying the transistor. 
+
+>: You are now carrying the keypad. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+
+
+>: Your efforts are to no avail: the keypad is broken. 
+
+>: You are carrying:
+a (broken) keypad,
+a red transistor,
+a (broken) A-1920-IXB,
+a (broken) motherboard,
+a screw and
+a (broken) processor.
+
+>: You can't combine the screw and the keypad because they don't
+fit together. 
+
+>: You can go, take, drop, incinerate, combine, use, examine, show
+inventory, and quit. Try 'help <command>' for further details
+and synonyms.
+
+>: The keypad has been destroyed. 
+
+>: The transistor has been destroyed. 
+
+>: The A-1920-IXB has been destroyed. 
+
+>: The motherboard has been destroyed. 
+
+>: The screw has been destroyed. 
+
+>: The processor has been destroyed. 
+
+>: You are carrying nothing. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is some trash here. 
+
+>: You are now carrying the trash. 
+
+>: The trash has been destroyed. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+
+
+>: 

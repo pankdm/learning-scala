@@ -1,0 +1,631 @@
+% :> ./1.exe ohmega
+attempting hack with LIII passwords 
+found match!! for user ohmega
+password: bidirectional
+
+
+% :> cat README
+From: ohmega@cbv.net
+Newsgroups: cult.cbv.discuss
+Message-ID: <2C9F8CC7.3ED3@cbv.net>
+Date: 22 Jun 19106 06:44:29
+X-Organization: Cult of the Bound Variable
+Subject: Programming in Two Dimensions
+
+
+Dear cult.cbv.discuss:
+
+I'm pleased to announce a new programming language called 2D. This
+language frees the programmer from the shackles of linear programming
+by allowing programs to occupy two dimensions. However, unlike 3- and
+4- dimensional languages such as CUBOL and Hypercard, it does not
+distract the programmer's attention with needless dimensional abandon.
+
+I first present an overview of the language and then delve into a more
+careful description of its syntax and semantics.
+
+== 2D Overview ==
+
+2D programs are built from boxes connected together by wires. A box takes
+the following form:
+
+    *=======*
+    !command!
+    *=======*
+
+Wires can connect boxes:
+
+
+    *========*       *========*
+    !command1!------>!command2!
+    *========*       *========*
+
+Each box has two input interfaces: its North and West sides. It also
+has two output interfaces, its South and East sides. The following box
+sends the input that it receives on its North interface to its East
+interface:
+
+       |
+       v
+    *============*
+    !send [(N,E)]!----->
+    *============*
+
+Wires carry values from one box to another. Each wire starts out with
+no value. When a value is sent along a wire, the wire keeps that same
+value forever. A box will only activate when all of its inputs (zero,
+one, or two) have values.
+
+The values flowing along wires take on the following forms:
+
+val ::= () | (val, val) | Inl val | Inr val
+
+The () value is the single base value. Two values can be paired
+together. They can also be stamped with the disjoint constructors Inl
+and Inr. Commands manipulate the structure of values and the control
+flow of the program by selectively sending along their outputs. For
+example, the 'case' command distinguishes between values stamped with
+Inl and Inr:
+
+     |
+     v
+ *=============*
+ !case N of E,S!----
+ *=============*
+     |
+     +--------------
+
+If this box is sent Inl () to its North interface, then () is sent
+along the wire connecting to the east interface. If it is sent
+Inr ((), ()) then ((), ()) is sent along the south interface instead.
+
+
+2D programs can be organized into modules. A module encapsulates a
+collection of boxes and wires and gives them a name. The following
+module, called stamp, encapsulates the operation of applying the Inl
+and Inr constructors to the first and second components of a pair:
+
+,........|.......................................,
+:stamp   |                                       :
+:        v                                       :
+:     *=======*                                  :
+:     !split N!-----+                            :
+:     *=======*     v                            :
+:        |       *=========================*     :
+:        +------>!send [((Inl W, Inr N),E)]!------
+:                *=========================*     :
+:                                                :
+,................................................,
+
+(The split command splits a pair, sending the first component
+ south and the second component east.)
+
+A module can be used as a box itself. The following circuit sends
+(Inl (), Inr Inl ()) along the wire to the east:
+
+        *========================*
+        !send [(((), Inl ()), E)]!---+
+        *========================*   |
+    +--------------------------------+
+    v
+  *=========*
+  !use stamp!-----------------------------------
+  *=========*
+
+Each time a "use" box is executed, a new copy of the referenced module
+is made (with wires carrying no values). Recursion is just a
+particular use of modules: modules may also "use" themselves. Mutual
+recursion between modules is also permitted.
+
+A module is limited to at most one input along each of its north and
+west faces. It may have multiple outputs, all along its east face.
+When a module is executed, exactly one of its output wires must be
+sent a value; this is the value that the "use" box sends along its
+interface.
+
+== 2D Syntax ==
+
+=== Box syntax ===
+
+A box's north and south edges are written with the = symbol. Its west
+and east edges, which must be exactly one character long, are written
+with the ! symbol. The box's corners are written *. No whitespace is
+allowed between the command and the box that surrounds it.
+
+The concrete syntax for commands is as follows:
+
+inface ::= N | W
+
+outface ::= S | E
+
+exp ::= () | (exp, exp) | Inl exp | Inr exp | inface
+
+command ::= send []
+          | send [(exp, outface)]
+          | send [(exp, outface), (exp, outface)]
+          | case exp of outface, outface
+          | split exp
+          | use "name"
+
+Note that extra parentheses are neither required nor permitted.
+A space character may be omitted when the character to its left or to
+its right is one of ,()[] and two consecutive space characters are
+never allowed.
+
+A name consists of one or more characters from the following set:
+
+0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+If a wire is connected to the north side of a box, the v character
+must be used as follows:
+
+    |
+    v
+  *=======*
+  !command!
+  *=======*
+
+The wire can connect above any = character. If a wire is connected to
+the west side of a box, the > character must be used as follows:
+
+    *=======*
+ -->!command!
+    *=======*
+
+At most one wire can be connected to each of a box's four faces.
+
+=== Wire syntax ===
+
+Wires are made from the following characters:
+
+|-+#
+
+Every wire must use at least one of these characters.  That is, 
+> and v alone are not valid wires.
+
+Each character is "open" on some of its sides. The | character is
+open on its north and south sides. The - character is open on its
+west and east sides. The + and # characters are both open on all
+four sides.
+
+The = character on the south face of a box is open to its south,
+and the ! character on the east side of a box is open to its east.
+The v character is open to its north, and the > character is open
+to its west.
+
+All wire characters within a module must obey the following rules of
+connectedness:
+
+  For each - character, its west and east neighbors must both
+  be open on their east and west sides, respectively.
+
+  For each | character, its north and south neighbors must
+  both be open on their south and north sides, respectively.
+
+  For each # character, its north, south, west, and east neighbors
+  must each be open on their south, north, east, and west sides,
+  respectively.
+
+  For each + character, exactly two of the following conditions must
+  be met:
+    a. its north neighbor is open on its south side
+    b. its south neighbor is open on its north side
+    c. its west neighbor is open on its east side
+    d. its east neighbor is open on its west side
+
+Only the | and - wire characters are allowed along module boundaries, and
+they only require a single open neighbor on the inside of the module.
+(They do not syntactically connect to anything on the outside.)
+
+=== Module syntax ===
+
+The input consists of an arrangement of non-overlapping modules. Each
+module is bordered by the . character on its north and south face, the
+: character on its west and east face, and the , character in each
+corner. Additionally, the north face may optionally have one
+occurrence of the | character; this is the north input to the module.
+Similarly, the west input (if any) is represented by a - character.
+The east side of the module may have any number of occurrences of the
+- character; these are its outputs. A module's name must appear in the
+upper left corner of the module and be followed by a space.
+
+== 2D Semantics ==
+
+Evaluation of 2D programs revolves around a function for computing the
+value of a module instance. A module instance is a collection of
+wires, some of which have values, and the boxes that these wires
+connect.
+
+A module instance evaluates in a series of evaluation steps. In each
+step, the "ready" boxes are identified as those boxes for which all of
+their inputs wires have values, and which have not yet executed in
+this instance. All ready boxes are evaluated (see below) in an
+arbitrary order. If no boxes are ready, then the module instance is
+finished. Its output is the value of the single output wire that has a
+value. If more than one wire has a value, or if no wire has a value,
+then evaluation fails.
+
+=== Box evaluation ===
+
+Boxes only execute when all of their input wires have values. This is
+true even if the command does not reference all of the wires.
+
+Commands are executed as follows. First, all expressions in the
+command are evaluated. The expressions N and W are replaced with the
+values on the North and West wires, respectively. If a value is needed
+but no wire is connected, then evaluation fails. Then, commands are
+executed as follows:
+
+
+send []
+  nothing happens.
+
+send [(val, outface)]
+  val is sent along the specified outface.
+
+send [(val1, outface1), (val2, outface2)]
+  val1 is sent to outface1, and val2 is sent to outface2.
+  The two outfaces may not be equal.
+
+split (val1, val2)
+  val1 is sent south, and val2 is sent east.
+
+case Inl val of outface1, outface2
+  val is sent to outface1.
+
+case Inr val of outface1, outface2
+  val is sent to outface2.
+
+use mod
+  a new instance of the module mod is evaluated. The inputs to 
+  the module must match the inputs to this box, and are instantiated
+  with the values along those wires. The output along the east
+  face is the output of the module instance.
+
+
+In any other situation (for example, split ()), the machine fails. 
+If a value is sent along an outface, then there must be a wire
+connected, or the machine fails.
+
+
+
+I've developed a prototype interpreter for 2D, which runs on Umix.
+Please try it out!
+
+ - Bill
+
+
+---------------------------------------------
+ Bill Ohmega      "Hell is other programming
+ohmega@cbv.net     languages." -- Sartran
+---------------------------------------------
+
+% :> cat mult.spec
+From: ohmega@cbv.net
+Newsgroups: cult.cbv.discuss
+Message-ID: <82F68FA4.A4DE@cbv.net>
+Date: 19 Jul 19106 13:51:51
+X-Organization: Cult of the Bound Variable
+Subject: Is this thing on??
+
+Hey,
+
+ I sent out an announcement for 2D almost a month ago. Is anybody in
+newsland using it? I've been using it in my undergraduate class
+"Introduction to Programming Languages" this semester with great
+success. The students love it!
+
+ Let me make a challenge: I've attached an implementation of addition
+for unary numbers (0 is represented as Inr (), 1 as Inl(Inr ()),
+2 as Inl(Inl(Inr ())) and so on) in 2D. See if you can write a module
+called "mult" (you can even use my "plus" module) whose output is
+the product of its north and west inputs. The first one to send me
+a correct solution gets a package of gobstoppers!
+
+- Bill
+
+---------------------------------------------
+ Bill Ohmega     "Hell is other programming
+ohmega@cbv.net    languages." -- Sartran
+---------------------------------------------
+
+
+** Attachment 'plus.2d' converted of type text/2d **
+
+
+% :> cat reverse.spec
+From: <Sam Tertbokim> sam@ccc.edu
+Newsgroups: comp.lang.functional
+Message-ID: <16BC2AD0.55A0@edu.ccc>
+Date: 12 Jul 19106 14:11:21
+X-Organization: Undergraduate Department, Cult Community College
+Subject: Reversing a List, please help!
+
+
+Please help!
+
+I need to write a program that reverses a list. 
+
+Can someone please send me the code that reverses a list.
+
+I need the program to do this:
+
+---------------------------------------------------------------------
+Problem 1 [45pts]. 
+Create a module called "rev" that reverses the list of elements
+received along its North input. The list of elements E1, E2, E3, ...
+En is represented as follows:
+
+Inl(E1, Inl(E2, Inl(E3, ... Inl(En, Inr ()) ...)))
+
+The module should send along its east output:
+
+Inl(En, ... Inl(E3, Inl(E2, Inl(E1, Inr ()))) ...)
+---------------------------------------------------------------------
+
+
+
+Please help I do not know how to do this and I need to do it by tomorrow.
+
+HELP THANK YOU!!!!!
+
+Sam
+
+
+PS what is a monad
+
+% :> cat raytrace.spec
+From: ohmega@cbv.net
+Newsgroups: cult.cbv.discuss
+Message-ID: <67BC2AC4.F4C0@cbv.net>
+Date: 19 Jul 19106 17:21:07
+X-Organization: Cult of the Bound Variable
+Subject: Ray Tracing
+
+
+Dearest friends,
+
+I have discovered the most amazing application of the Computing
+Device! It is a simulator that replicates the human viewing
+interaction of geometry. I call it a "Ray Tracer" because it operates
+along a ray.
+
+== Ray Tracing ==
+
+Suppose the eye is looking along a one-dimensional ray, and can see a
+series of n zero-dimensional surfaces. Each surface has four qualities:
+
+ * D, the direction it faces (either Towards or Away from the eye)
+ * R, its reflectance
+ * T, its translucence
+ * E, its emission
+
+We call these surfaces S1, S2, ... Sn, where S1 is closest to the eye.
+Adjacent to each surface are two ray segments; the ones pointing
+towards the eye are called Li and the ones facing away are called Ri.
+The rays adjacent to Sj that are closer to the eye are called L(j-1)
+and R(j-1); the two farther away are called Lj and Rj.
+
+       L0        L1        L2              Ln
+  eye <=====> * <=====> * <=====> * ... * <=====> (empty space)
+          R0  S1    R1  S2    R2  S3    Sn    Rn 
+
+Each ray segment has an intensity value determined by a set of
+equations. Ray Tracing consists of determining the value of the ray
+L0, which is the intensity that the eye sees.
+
+Intensity can take on three values: All, Medium, and None. These are
+also the values that the R, T, and E components of surfaces can take
+on. The following tables define the operations + and * on these
+values.
+
+   +   | None   Medium   All
+------------------------------
+None   | None   Medium   All
+Medium | Medium All      All
+All    | All    All      All
+
+   *   | None   Medium   All
+------------------------------
+None   | None   None     None
+Medium | None   Medium   Medium
+All    | None   Medium   All
+
+
+The rays satisfy the following equations:
+
+Ln = None
+R0 = None
+
+For i such that 0 <= i < n:
+Li = if S(i + 1).D = Towards
+     then (S(i + 1).R * Ri) +
+          (S(i + 1).T * L(i + 1)) +
+          S(i + 1).E
+     else L(i + 1)
+
+For i such that 0 < i <= n:
+Ri = if Si.D = Away
+     then (Si.R * Li) +
+          (Si.T * R(i - 1)) +
+          Si.E
+     else R(i - 1)
+
+== Representation ==
+
+The ray-tracer consists of a module "main" with a single input along
+the direction N, which is the sequence of surfaces. Its output is
+a single intensity value, the darkest correct value of L0.
+
+Intensity values are represented as follows:
+None    =   Inl ()
+Medium  =   Inr Inl ()
+All     =   Inr Inr Inl ()
+
+Surface orientations are represented as follows:
+Towards =   Inl ()
+Away    =   Inr ()
+
+A single surface with components D, R, T and E is represented 
+as follows:
+
+(D, (R, (T, E)))
+
+The list of surfaces S1..Sn is represented as follows:
+
+Inl(S1, Inl(S2, Inl(S3, ... Inl(Sn, Inr()) ... )))
+
+---------------------------------------------
+ Bill Ohmega      "Hell is other programming
+ohmega@cbv.net     languages." -- Sartran
+---------------------------------------------
+
+% :> cat aspects.spec
+From: ohmega@cbv.net
+Newsgroups: cult.cbv.discuss
+Message-ID: <82F28FD4.A4DE@cbv.net>
+Date: 23 Jul 19106 13:11:57
+X-Organization: Cult of the Bound Variable
+Subject: 2D the Ultimate Programming Language?
+
+
+Hey 2D users,
+
+ You may have noticed my colleague Harmonious Monk's recent release of
+his O'Cult language.  I've tried to convince him that O'Cult is based
+on misguided anti-modular design principles, but with all the grant
+tablets available for Advice research, he won't give it up.
+
+ Clearly, the 2D module system is more powerful than O'Cult.  I'd like
+to demonstrate this by implementing O'Cult using 2D modules.
+Unfortunately, with the Principles Of Sand Languages deadline
+approaching, I don't have time to hammer out an implementation.  Perhaps
+one of you would like to undertake this challenge?  
+
+ I've modified verify to accept "ocult" tests.  Your program should
+supply a module "step" which accepts a 2D-encoded O'Cult program
+(defined below) on its West input, and outputs the result of applying
+the supplied advice to the supplied O'Cult term exactly once.
+
+The function [[-]] represents an O'Cult program as data in 2D:
+
+   We think of the names used in variables and constants as numbers 
+   and represent them as follows:
+   [[zero]] = Inl ()
+   [[s(n)]] = Inr [[n]] 
+
+   Representation of terms:
+   [[App(e1,e2)]] = Inl ([[e1]], [[e2]])
+   [[Const s]]    = Inr [[s]]
+
+   Representation of patterns:
+   [[App(p1,p2)]] = Inl ([[p1]], [[p2]])
+   [[Const s]]    = Inr Inl [[s]]
+   [[Var s]]      = Inr Inr [[s]]
+
+   Representation of rules:
+   [[p1 => p2]]    = ([[p1]], [[p2]])
+
+   A sentence of advise is represented as a list of patterns, 
+   where lists are represented as follows:
+   [[nil]]       = Inl ()
+   [[cons(h,t)]] = Inr ([[h]], [[t]])
+
+ For example, the O'Cult program 
+
+    Add Z y => y; 
+
+ which is a list with a single rule
+
+    App(App(Const 0, Const 1), Var 2) => Var 2
+
+ and so is represented by the 2D value
+
+    Inr ((Inl (Inl (Inr Inl Inl (),
+		    Inr Inl Inr Inl ()),
+	       Inr Inr Inr Inr Inl ()),
+	  Inr Inr Inr Inr Inl ()),
+	 Inl ())
+
+ Your step module will be suppled the representation of an (advice,term)
+pair, and should output the term that results from applying the advice
+once to term.
+
+ As incentive, I'll be happy to provide anyone who completes the
+O'Cult-in-2D interpreter with a copy of my forthcoming book, 
+"Type Sand Programming Languages".
+
+- Bill
+
+---------------------------------------------
+ Bill Ohmega     "Hell is other programming
+ohmega@cbv.net    languages." -- Sartran
+
+% :> cat plus.2d
+
+       ,..............................|....................................,
+       :plus                          |                                    :
+       :  *==================*        |                                    :
+       -->!send [(W,S),(W,E)]!--------#--------------------+               :
+       :  *==================*        |                    |               :
+       :         |                    |                    |               :
+       :         |                    v                    v               :
+       :         |                 *==============*    *============*      : 
+       :         |                 !case N of S, E!--->!send [(N,E)]!-------
+       :         |                 *==============*    *============*      : 
+       :         |                        |                                : 
+       :         |                        v                                : 
+       :         |                    *========*       *================*  : 
+       :         +------------------->!use plus!------>!send [(Inl W,E)]!---
+       :                              *========*       *================*  :
+       ,...................................................................,
+
+
+ ,..............................................................,
+ :main                                                          :
+ :                                                              :
+ :  *================================================*          :
+ :  !send [(Inl Inl Inl Inr (),E),(Inl Inl Inr (),S)]!--+       :
+ :  *================================================*  |       :
+ :                   |                                  v       :
+ :                   |                            *========*    :
+ :                   +--------------------------->!use plus!-----
+ :                                                *========*    :
+ ,..............................................................,
+
+
+% 2d*
+verify*
+README
+mult.spec
+reverse.spec
+raytrace.spec
+aspects.spec
+plus.2d
+
+% 2d: runs 2d programs
+usage: 2d prog.2d
+reads the program from the file specified,
+and invokes the module 'main' with no arguments.
+prints the result to the screen.
+
+% [2D] Parsing...
+[2D] Locating modules...
+[2D] Verifying wires in module 'plus'...
+[2D] Verifying wires in module 'main'...
+[2D] Connecting wires...
+[2D] Done Parsing!
+Result:
+Inl Inl Inl Inl Inl Inr ()
+
+% verify: verifies that a 2D program meets a specification.
+usage: verify testname prog.2d 
+verifies the provided program against the specified test.
+The program's score is determined by its area: 
+  Smaller is better.
+Built in tests are :
+  mult
+  rev
+  raytrace
+  ocult
+% 

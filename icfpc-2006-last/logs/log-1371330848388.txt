@@ -1,0 +1,1405 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: logged in as guest
+INTRO.LOG=200@999999|35e6f52e9bc951917c73af391e35e1d
+
+
+You have new mail. Type 'mail' to view.
+% First unread message:
+---------------------
+
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: Administrator <root@localhost>
+To: guest@cbv.net
+Subject: guest account misuse
+
+To whom it may concern:
+
+Guest access is provided as a courtesy to the community. We have
+recently observed an increase in abuse using the guest account. For
+example, the following sequence of commands obviously represents an
+attempt to gain unauthorized access to the account "howie":
+
+  cd code
+  /bin/umodem hack.bas STOP
+  /bin/qbasic hack.bas
+  ls /home
+  ./hack.exe howie
+  
+Moreover, the file that you uploaded with umodem appears to be 
+corrupted and did not compile.
+
+Please have respect for your fellow users,
+Admin
+
+% rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3517 characters
+INTRO.UMD=10@999999|7005f80d6cd9b7b837802f1e58b11b8
+% % I DIM c(X) AS STRING
+XI SET c(I) = "1"
+XII SET c(II) = "2"
+XIII SET c(III) = "3"
+XIV SET c(IV) = "4"
+XV SET c(V) = "5"
+XVI SET c(VI) = "6"
+XVII SET c(VII) = "7"
+XVIII SET c(VIII) = "8"
+XIX SET c(IX) = "9"
+XX SET c(X) = "0"
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDI DIM pass AS STRING
+CDV SET i = I
+CDX DIM j AS INTEGER
+CDXV SET j = I
+CDXX DIM k AS INTEGER
+CDXXV SET k = I
+CDXXX SET pass = ((words(i) + c(j)) + c(k))
+CDXXXI PRINT (pass + CHR(X))
+CDXXXV IF CHECKPASS(username, pass) THEN GOTO CDLXXX ELSE SKIP
+CDXL SET k = (k + I)
+CDL IF (k > X) THEN GOTO CDLX ELSE SKIP
+CDLV GOTO CDXXX
+CDLX SET j = (j + I)
+CDLXV IF (j > X) THEN GOTO CDLXX ELSE SKIP
+CDLXVI GOTO CDXX
+CDLXX SET i = (i + I)
+CDLXXV IF (i > pwdcount) THEN GOTO CDLXXXII ELSE SKIP
+CDLXXVI GOTO CDX
+CDLXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDLXXXI PRINT (("password: " + pass) + CHR(X))
+CDLXXXII END
+CDLXXXIII SKIP
+INTRO.QBC=10@999999|e6ee9c98b80b4dd04814a29a37bcba8
+Compiled.
+% attempting hack with LIII passwords 
+airplane11
+airplane12
+airplane13
+airplane14
+airplane15
+airplane16
+airplane17
+airplane18
+airplane19
+airplane10
+airplane21
+airplane22
+airplane23
+airplane24
+airplane25
+airplane26
+airplane27
+airplane28
+airplane29
+airplane20
+airplane31
+airplane32
+airplane33
+airplane34
+airplane35
+airplane36
+airplane37
+airplane38
+airplane39
+airplane30
+airplane41
+airplane42
+airplane43
+airplane44
+airplane45
+airplane46
+airplane47
+airplane48
+airplane49
+airplane40
+airplane51
+airplane52
+airplane53
+airplane54
+airplane55
+airplane56
+airplane57
+airplane58
+airplane59
+airplane50
+airplane61
+airplane62
+airplane63
+airplane64
+airplane65
+airplane66
+airplane67
+airplane68
+airplane69
+airplane60
+airplane71
+airplane72
+airplane73
+airplane74
+airplane75
+airplane76
+airplane77
+airplane78
+airplane79
+airplane70
+airplane81
+airplane82
+airplane83
+airplane84
+airplane85
+airplane86
+airplane87
+airplane88
+airplane89
+airplane80
+airplane91
+airplane92
+airplane93
+airplane94
+airplane95
+airplane96
+airplane97
+airplane98
+airplane99
+airplane90
+airplane01
+airplane02
+airplane03
+airplane04
+airplane05
+airplane06
+airplane07
+airplane08
+airplane09
+airplane00
+alphabet11
+alphabet12
+alphabet13
+alphabet14
+alphabet15
+alphabet16
+alphabet17
+alphabet18
+alphabet19
+alphabet10
+alphabet21
+alphabet22
+alphabet23
+alphabet24
+alphabet25
+alphabet26
+alphabet27
+alphabet28
+alphabet29
+alphabet20
+alphabet31
+alphabet32
+alphabet33
+alphabet34
+alphabet35
+alphabet36
+alphabet37
+alphabet38
+alphabet39
+alphabet30
+alphabet41
+alphabet42
+alphabet43
+alphabet44
+alphabet45
+alphabet46
+alphabet47
+alphabet48
+alphabet49
+alphabet40
+alphabet51
+alphabet52
+alphabet53
+alphabet54
+alphabet55
+alphabet56
+alphabet57
+alphabet58
+alphabet59
+alphabet50
+alphabet61
+alphabet62
+alphabet63
+alphabet64
+alphabet65
+alphabet66
+alphabet67
+alphabet68
+alphabet69
+alphabet60
+alphabet71
+alphabet72
+alphabet73
+alphabet74
+alphabet75
+alphabet76
+alphabet77
+alphabet78
+alphabet79
+alphabet70
+alphabet81
+alphabet82
+alphabet83
+alphabet84
+alphabet85
+alphabet86
+alphabet87
+alphabet88
+alphabet89
+alphabet80
+alphabet91
+alphabet92
+alphabet93
+alphabet94
+alphabet95
+alphabet96
+alphabet97
+alphabet98
+alphabet99
+alphabet90
+alphabet01
+alphabet02
+alphabet03
+alphabet04
+alphabet05
+alphabet06
+alphabet07
+alphabet08
+alphabet09
+alphabet00
+aviator11
+aviator12
+aviator13
+aviator14
+aviator15
+aviator16
+aviator17
+aviator18
+aviator19
+aviator10
+aviator21
+aviator22
+aviator23
+aviator24
+aviator25
+aviator26
+aviator27
+aviator28
+aviator29
+aviator20
+aviator31
+aviator32
+aviator33
+aviator34
+aviator35
+aviator36
+aviator37
+aviator38
+aviator39
+aviator30
+aviator41
+aviator42
+aviator43
+aviator44
+aviator45
+aviator46
+aviator47
+aviator48
+aviator49
+aviator40
+aviator51
+aviator52
+aviator53
+aviator54
+aviator55
+aviator56
+aviator57
+aviator58
+aviator59
+aviator50
+aviator61
+aviator62
+aviator63
+aviator64
+aviator65
+aviator66
+aviator67
+aviator68
+aviator69
+aviator60
+aviator71
+aviator72
+aviator73
+aviator74
+aviator75
+aviator76
+aviator77
+aviator78
+aviator79
+aviator70
+aviator81
+aviator82
+aviator83
+aviator84
+aviator85
+aviator86
+aviator87
+aviator88
+aviator89
+aviator80
+aviator91
+aviator92
+aviator93
+aviator94
+aviator95
+aviator96
+aviator97
+aviator98
+aviator99
+aviator90
+aviator01
+aviator02
+aviator03
+aviator04
+aviator05
+aviator06
+aviator07
+aviator08
+aviator09
+aviator00
+bidirectional11
+bidirectional12
+bidirectional13
+bidirectional14
+bidirectional15
+bidirectional16
+bidirectional17
+bidirectional18
+bidirectional19
+bidirectional10
+bidirectional21
+bidirectional22
+bidirectional23
+bidirectional24
+bidirectional25
+bidirectional26
+bidirectional27
+bidirectional28
+bidirectional29
+bidirectional20
+bidirectional31
+bidirectional32
+bidirectional33
+bidirectional34
+bidirectional35
+bidirectional36
+bidirectional37
+bidirectional38
+bidirectional39
+bidirectional30
+bidirectional41
+bidirectional42
+bidirectional43
+bidirectional44
+bidirectional45
+bidirectional46
+bidirectional47
+bidirectional48
+bidirectional49
+bidirectional40
+bidirectional51
+bidirectional52
+bidirectional53
+bidirectional54
+bidirectional55
+bidirectional56
+bidirectional57
+bidirectional58
+bidirectional59
+bidirectional50
+bidirectional61
+bidirectional62
+bidirectional63
+bidirectional64
+bidirectional65
+bidirectional66
+bidirectional67
+bidirectional68
+bidirectional69
+bidirectional60
+bidirectional71
+bidirectional72
+bidirectional73
+bidirectional74
+bidirectional75
+bidirectional76
+bidirectional77
+bidirectional78
+bidirectional79
+bidirectional70
+bidirectional81
+bidirectional82
+bidirectional83
+bidirectional84
+bidirectional85
+bidirectional86
+bidirectional87
+bidirectional88
+bidirectional89
+bidirectional80
+bidirectional91
+bidirectional92
+bidirectional93
+bidirectional94
+bidirectional95
+bidirectional96
+bidirectional97
+bidirectional98
+bidirectional99
+bidirectional90
+bidirectional01
+bidirectional02
+bidirectional03
+bidirectional04
+bidirectional05
+bidirectional06
+bidirectional07
+bidirectional08
+bidirectional09
+bidirectional00
+changeme11
+changeme12
+changeme13
+changeme14
+changeme15
+changeme16
+changeme17
+changeme18
+changeme19
+changeme10
+changeme21
+changeme22
+changeme23
+changeme24
+changeme25
+changeme26
+changeme27
+changeme28
+changeme29
+changeme20
+changeme31
+changeme32
+changeme33
+changeme34
+changeme35
+changeme36
+changeme37
+changeme38
+changeme39
+changeme30
+changeme41
+changeme42
+changeme43
+changeme44
+changeme45
+changeme46
+changeme47
+changeme48
+changeme49
+changeme40
+changeme51
+changeme52
+changeme53
+changeme54
+changeme55
+changeme56
+changeme57
+changeme58
+changeme59
+changeme50
+changeme61
+changeme62
+changeme63
+changeme64
+changeme65
+changeme66
+changeme67
+changeme68
+changeme69
+changeme60
+changeme71
+changeme72
+changeme73
+changeme74
+changeme75
+changeme76
+changeme77
+changeme78
+changeme79
+changeme70
+changeme81
+changeme82
+changeme83
+changeme84
+changeme85
+changeme86
+changeme87
+changeme88
+changeme89
+changeme80
+changeme91
+changeme92
+changeme93
+changeme94
+changeme95
+changeme96
+changeme97
+changeme98
+changeme99
+changeme90
+changeme01
+changeme02
+changeme03
+changeme04
+changeme05
+changeme06
+changeme07
+changeme08
+changeme09
+changeme00
+creosote11
+creosote12
+creosote13
+creosote14
+creosote15
+creosote16
+creosote17
+creosote18
+creosote19
+creosote10
+creosote21
+creosote22
+creosote23
+creosote24
+creosote25
+creosote26
+creosote27
+creosote28
+creosote29
+creosote20
+creosote31
+creosote32
+creosote33
+creosote34
+creosote35
+creosote36
+creosote37
+creosote38
+creosote39
+creosote30
+creosote41
+creosote42
+creosote43
+creosote44
+creosote45
+creosote46
+creosote47
+creosote48
+creosote49
+creosote40
+creosote51
+creosote52
+creosote53
+creosote54
+creosote55
+creosote56
+creosote57
+creosote58
+creosote59
+creosote50
+creosote61
+creosote62
+creosote63
+creosote64
+creosote65
+creosote66
+creosote67
+creosote68
+creosote69
+creosote60
+creosote71
+creosote72
+creosote73
+creosote74
+creosote75
+creosote76
+creosote77
+creosote78
+creosote79
+creosote70
+creosote81
+creosote82
+creosote83
+creosote84
+creosote85
+creosote86
+creosote87
+creosote88
+creosote89
+creosote80
+creosote91
+creosote92
+creosote93
+creosote94
+creosote95
+creosote96
+creosote97
+creosote98
+creosote99
+creosote90
+creosote01
+creosote02
+creosote03
+creosote04
+creosote05
+creosote06
+creosote07
+creosote08
+creosote09
+creosote00
+cyclone11
+cyclone12
+cyclone13
+cyclone14
+cyclone15
+cyclone16
+cyclone17
+cyclone18
+cyclone19
+cyclone10
+cyclone21
+cyclone22
+cyclone23
+cyclone24
+cyclone25
+cyclone26
+cyclone27
+cyclone28
+cyclone29
+cyclone20
+cyclone31
+cyclone32
+cyclone33
+cyclone34
+cyclone35
+cyclone36
+cyclone37
+cyclone38
+cyclone39
+cyclone30
+cyclone41
+cyclone42
+cyclone43
+cyclone44
+cyclone45
+cyclone46
+cyclone47
+cyclone48
+cyclone49
+cyclone40
+cyclone51
+cyclone52
+cyclone53
+cyclone54
+cyclone55
+cyclone56
+cyclone57
+cyclone58
+cyclone59
+cyclone50
+cyclone61
+cyclone62
+cyclone63
+cyclone64
+cyclone65
+cyclone66
+cyclone67
+cyclone68
+cyclone69
+cyclone60
+cyclone71
+cyclone72
+cyclone73
+cyclone74
+cyclone75
+cyclone76
+cyclone77
+cyclone78
+cyclone79
+cyclone70
+cyclone81
+cyclone82
+cyclone83
+cyclone84
+cyclone85
+cyclone86
+cyclone87
+cyclone88
+cyclone89
+cyclone80
+cyclone91
+cyclone92
+cyclone93
+cyclone94
+cyclone95
+cyclone96
+cyclone97
+cyclone98
+cyclone99
+cyclone90
+cyclone01
+cyclone02
+cyclone03
+cyclone04
+cyclone05
+cyclone06
+cyclone07
+cyclone08
+cyclone09
+cyclone00
+december11
+december12
+december13
+december14
+december15
+december16
+december17
+december18
+december19
+december10
+december21
+december22
+december23
+december24
+december25
+december26
+december27
+december28
+december29
+december20
+december31
+december32
+december33
+december34
+december35
+december36
+december37
+december38
+december39
+december30
+december41
+december42
+december43
+december44
+december45
+december46
+december47
+december48
+december49
+december40
+december51
+december52
+december53
+december54
+december55
+december56
+december57
+december58
+december59
+december50
+december61
+december62
+december63
+december64
+december65
+december66
+december67
+december68
+december69
+december60
+december71
+december72
+december73
+december74
+december75
+december76
+december77
+december78
+december79
+december70
+december81
+december82
+december83
+december84
+december85
+december86
+december87
+december88
+december89
+december80
+december91
+december92
+december93
+december94
+december95
+december96
+december97
+december98
+december99
+december90
+december01
+december02
+december03
+december04
+december05
+december06
+december07
+december08
+december09
+december00
+dolphin11
+dolphin12
+dolphin13
+dolphin14
+dolphin15
+dolphin16
+dolphin17
+dolphin18
+dolphin19
+dolphin10
+dolphin21
+dolphin22
+dolphin23
+dolphin24
+dolphin25
+dolphin26
+dolphin27
+dolphin28
+dolphin29
+dolphin20
+dolphin31
+dolphin32
+dolphin33
+dolphin34
+dolphin35
+dolphin36
+dolphin37
+dolphin38
+dolphin39
+dolphin30
+dolphin41
+dolphin42
+dolphin43
+dolphin44
+dolphin45
+dolphin46
+dolphin47
+dolphin48
+dolphin49
+dolphin40
+dolphin51
+dolphin52
+dolphin53
+dolphin54
+dolphin55
+dolphin56
+dolphin57
+dolphin58
+dolphin59
+dolphin50
+dolphin61
+dolphin62
+dolphin63
+dolphin64
+dolphin65
+dolphin66
+dolphin67
+dolphin68
+dolphin69
+dolphin60
+dolphin71
+dolphin72
+dolphin73
+dolphin74
+dolphin75
+dolphin76
+dolphin77
+dolphin78
+dolphin79
+dolphin70
+dolphin81
+dolphin82
+dolphin83
+dolphin84
+dolphin85
+dolphin86
+dolphin87
+dolphin88
+dolphin89
+dolphin80
+dolphin91
+dolphin92
+dolphin93
+dolphin94
+dolphin95
+dolphin96
+dolphin97
+dolphin98
+dolphin99
+dolphin90
+dolphin01
+dolphin02
+dolphin03
+dolphin04
+dolphin05
+dolphin06
+dolphin07
+dolphin08
+dolphin09
+dolphin00
+elephant11
+elephant12
+elephant13
+elephant14
+elephant15
+elephant16
+elephant17
+elephant18
+elephant19
+elephant10
+elephant21
+elephant22
+elephant23
+elephant24
+elephant25
+elephant26
+elephant27
+elephant28
+elephant29
+elephant20
+elephant31
+elephant32
+elephant33
+elephant34
+elephant35
+elephant36
+elephant37
+elephant38
+elephant39
+elephant30
+elephant41
+elephant42
+elephant43
+elephant44
+elephant45
+elephant46
+elephant47
+elephant48
+elephant49
+elephant40
+elephant51
+elephant52
+elephant53
+elephant54
+elephant55
+elephant56
+elephant57
+elephant58
+elephant59
+elephant50
+elephant61
+elephant62
+elephant63
+elephant64
+elephant65
+elephant66
+elephant67
+elephant68
+elephant69
+elephant60
+elephant71
+elephant72
+elephant73
+elephant74
+elephant75
+elephant76
+elephant77
+elephant78
+elephant79
+elephant70
+elephant81
+elephant82
+elephant83
+elephant84
+elephant85
+elephant86
+elephant87
+elephant88
+elephant89
+elephant80
+elephant91
+elephant92
+elephant93
+elephant94
+elephant95
+elephant96
+elephant97
+elephant98
+elephant99
+elephant90
+elephant01
+elephant02
+elephant03
+elephant04
+elephant05
+elephant06
+elephant07
+elephant08
+elephant09
+elephant00
+ersatz11
+ersatz12
+ersatz13
+ersatz14
+ersatz15
+ersatz16
+ersatz17
+ersatz18
+ersatz19
+ersatz10
+ersatz21
+ersatz22
+ersatz23
+ersatz24
+ersatz25
+ersatz26
+ersatz27
+ersatz28
+ersatz29
+ersatz20
+ersatz31
+ersatz32
+ersatz33
+ersatz34
+ersatz35
+ersatz36
+ersatz37
+ersatz38
+ersatz39
+ersatz30
+ersatz41
+ersatz42
+ersatz43
+ersatz44
+ersatz45
+ersatz46
+ersatz47
+ersatz48
+ersatz49
+ersatz40
+ersatz51
+ersatz52
+ersatz53
+ersatz54
+ersatz55
+ersatz56
+ersatz57
+ersatz58
+ersatz59
+ersatz50
+ersatz61
+ersatz62
+ersatz63
+ersatz64
+ersatz65
+ersatz66
+ersatz67
+ersatz68
+ersatz69
+ersatz60
+ersatz71
+ersatz72
+ersatz73
+ersatz74
+ersatz75
+ersatz76
+ersatz77
+ersatz78
+ersatz79
+ersatz70
+ersatz81
+ersatz82
+ersatz83
+ersatz84
+ersatz85
+ersatz86
+ersatz87
+ersatz88
+ersatz89
+ersatz80
+ersatz91
+ersatz92
+ersatz93
+ersatz94
+ersatz95
+ersatz96
+ersatz97
+ersatz98
+ersatz99
+ersatz90
+ersatz01
+ersatz02
+ersatz03
+ersatz04
+ersatz05
+ersatz06
+ersatz07
+ersatz08
+ersatz09
+ersatz00
+falderal11
+falderal12
+falderal13
+falderal14
+falderal15
+falderal16
+falderal17
+falderal18
+falderal19
+falderal10
+falderal21
+falderal22
+falderal23
+falderal24
+falderal25
+falderal26
+falderal27
+falderal28
+falderal29
+falderal20
+falderal31
+falderal32
+falderal33
+falderal34
+falderal35
+falderal36
+falderal37
+falderal38
+falderal39
+falderal30
+falderal41
+falderal42
+falderal43
+falderal44
+falderal45
+falderal46
+falderal47
+falderal48
+falderal49
+falderal40
+falderal51
+falderal52
+falderal53
+falderal54
+falderal55
+falderal56
+falderal57
+falderal58
+falderal59
+falderal50
+falderal61
+falderal62
+falderal63
+falderal64
+falderal65
+falderal66
+falderal67
+falderal68
+falderal69
+falderal60
+falderal71
+falderal72
+falderal73
+falderal74
+falderal75
+falderal76
+falderal77
+falderal78
+falderal79
+falderal70
+falderal81
+falderal82
+falderal83
+falderal84
+falderal85
+falderal86
+falderal87
+falderal88
+falderal89
+falderal80
+falderal91
+falderal92
+falderal93
+falderal94
+falderal95
+falderal96
+falderal97
+falderal98
+falderal99
+falderal90
+found match!! for user ftd
+password: falderal90
+% 

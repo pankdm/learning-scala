@@ -1,0 +1,177 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% adventure*
+README
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You can go, take, drop, incinerate, combine, use, examine, show
+inventory, and quit. Try 'help <command>' for further details
+and synonyms.
+
+>: use: Exploit the functionality of an item.
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: You are now carrying the pamphlet. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You are now carrying the manifesto. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You can't combine the manifesto and the pamphlet because they
+don't fit together. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the bolt. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You are now carrying the spring. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You are now carrying the button. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You are now carrying the processor. 
+
+>: Your efforts are to no avail: the processor is broken. 
+
+>: You can't take the pill because you can't carry any more items. 
+
+>: You aren't carrying a pamhplet.
+
+>: There is no pamhpley here. 
+
+>: The keypad is labeled "use me". 
+Also, it is broken: it is a keypad missing a motherboard and a
+button. 
+
+>: The pill is tempting looking. Interestingly, this one is red. 
+Also, it is in pristine condition. 
+
+>: You can't take the pill because you can't carry any more items. 
+
+>: ADVTR.INC=5@999999|f95731ab88952dfa4cb326fb99c085f
+The pamphlet has been destroyed. 
+
+>: You are now carrying the pill. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: The processor is from the elusive 19x86 line. 
+Also, it is broken: it is a processor missing a cache. 
+
+>: 

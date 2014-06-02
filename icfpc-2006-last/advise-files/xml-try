@@ -1,0 +1,32 @@
+      Seq (Seq A A) A               and   Seq A (Seq A A)
+      Tag Emph (Tag Emph A)         and   Tag Emph A
+      Seq (Tag Emph A) (Tag Emph A) and   Tag Emph (Seq A A)
+  
+
+      Seq (Seq d1 d2) d3          
+      Tag q (Tag q d)             
+      Seq (Tag q d1) (Tag q d2) 
+
+  (2) For all nested Tag expressions (Tag q1 (Tag q2 d)) in the document,
+      q1 is less than q2, where Bold is less than Emph is less than Maj.
+
+      
+
+  quality ::= Bold | Emph | Maj
+  doc ::= A | B | Seq doc doc | Tag quality doc
+
+  There are two base documents, A and B.  Documents can be sequenced
+  using Seq and tagged with a quality using Tag.  The possible qualities
+  are emphasized (Emph), bold (Bold), and majuscule (Maj).
+
+  The CW2C has specified that documents are to be displayed as follows:
+  (1) The document A is displayed as the character A; the document B  
+      is displayed as the character B.
+  (2) A sequence of documents, Seq d1 d2, is displayed by first
+      displaying the document d1 and then displaying the document d2.
+  (3) A tagged document, Tag q d, is displayed by displaying the
+      document d with the quality q.  q is added to any other qualities
+      with which d is rendered.  Note that you will need a UMv19101 or
+      later terminal to properly display characters in any subset of
+      {emphasized, bold, majuscule}.
+

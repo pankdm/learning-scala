@@ -1,0 +1,884 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as hmonk
+
+
+% rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 604 characters
+% % rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+writing 498 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 14 rules; size: 244.
+
+Running 6 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Bold) (SNF ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (SNF A)) (Next B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (Done A)) (Next B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (Done A)) (SNF B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (Done A)) (Done B))))
+                 -> ((Tag Bold) ((Tag Bold) (Done ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Seq A) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     11
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Seq A) B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (SNF A)) (Next B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (Next B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (SNF B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (Done B))))
+                 -> ((Tag Maj) ((Tag Bold) (Done ((Seq A) B))))
+                 -> ((Tag Maj) (Done ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Maj) (Done ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Tag Maj) ((Seq A) B))))
+                 -> (Done ((Tag Bold) ((Tag Maj) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Maj) ((Seq A) B)))
+Final Term:      ((Tag Bold) ((Tag Maj) ((Seq A) B)))
+Total Steps:     12
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Tag Maj (Tag Bold (Tag Maj (Tag Emph (Tag Bold A))))))
+Applying advice...
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (SNF ((Tag Maj) ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) (SNF ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) (SNF ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) (SNF A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) (Done A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) (Done ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) ((Tag Emph) (Done A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) (Done ((Tag Emph) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) (Done ((Tag Bold) ((Tag Emph) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) ((Tag Maj) (Done ((Tag Emph) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) ((Tag Emph) ((Tag Maj) (Done A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Maj) (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Maj) (Done ((Tag Emph) ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Emph) ((Tag Maj) (Done ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Emph) ((Tag Maj) (Done A)))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A)))))
+                 -> ((Tag Emph) ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A)))))
+                 -> ((Tag Emph) (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))))
+                 -> ((Tag Bold) ((Tag Emph) (Done ((Tag Emph) ((Tag Maj) A)))))
+                 -> ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A))))
+                 -> ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A))))
+                 -> (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A))))
+                 -> ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+Final Term:      ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+Total Steps:     29
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq A B) A)
+Applying advice...
+                 -> ((Seq (SNF ((Seq A) B))) (Next A))
+                 -> ((Seq ((Seq (SNF A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (SNF B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Done B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (SNF A))
+                 -> ((Seq (Done ((Seq A) B))) (Done A))
+                 -> (Done ((Seq A) ((Seq B) A)))
+                 -> ((Seq A) ((Seq B) A))
+Final Term:      ((Seq A) ((Seq B) A))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold A) (Tag Bold B))
+Applying advice...
+                 -> ((Seq (SNF ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (SNF A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (Done A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (SNF ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (SNF B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (Done B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Done ((Tag Bold) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Seq (Tag Bold (Tag Emph (Tag Bold (Tag Bold B)))) (Seq (Tag Bold (Seq (Seq A B) (Seq B A))) (Tag Bold (Tag Maj (Seq A B))))))
+Applying advice...
+                 -> ((Tag Maj) (SNF ((Seq ((Tag Bold) ((Tag Emph) ((Tag Bold) ((Tag Bold) B))))) ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (SNF ((Tag Bold) ((Tag Emph) ((Tag Bold) ((Tag Bold) B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) (SNF ((Tag Emph) ((Tag Bold) ((Tag Bold) B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) (SNF ((Tag Bold) ((Tag Bold) B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) ((Tag Bold) (SNF ((Tag Bold) B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) ((Tag Bold) ((Tag Bold) (SNF B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) ((Tag Bold) ((Tag Bold) (Done B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) ((Tag Bold) (Done ((Tag Bold) B)))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) ((Tag Bold) (Done B))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) (Done ((Tag Bold) B))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Bold) ((Tag Emph) (Done B))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) ((Tag Bold) (Done ((Tag Emph) B))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) (Done ((Tag Bold) ((Tag Emph) B))))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq ((Tag Bold) (Done ((Tag Emph) B)))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) (Next ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) (SNF ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (SNF ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) (SNF ((Seq ((Seq A) B)) ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (SNF ((Seq A) B))) (Next ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq ((Seq (SNF A)) (Next B))) (Next ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq ((Seq (Done A)) (Next B))) (Next ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq ((Seq (Done A)) (SNF B))) (Next ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq ((Seq (Done A)) (Done B))) (Next ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) (Next ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) (SNF ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) ((Seq (SNF B)) (Next A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) ((Seq (Done B)) (Next A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) ((Seq (Done B)) (SNF A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) ((Seq (Done B)) (Done A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq (Done ((Seq A) B))) (Done ((Seq B) A))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq ((Tag Bold) (Done ((Seq A) ((Seq B) ((Seq B) A)))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) (Next ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) (SNF ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) (SNF ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) ((Tag Maj) (SNF ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) ((Tag Maj) ((Seq (SNF A)) (Next B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) ((Tag Maj) ((Seq (Done A)) (Next B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) ((Tag Maj) ((Seq (Done A)) (SNF B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) ((Tag Maj) ((Seq (Done A)) (Done B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) ((Tag Maj) (Done ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) ((Tag Bold) (Done ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) ((Seq (Done ((Tag Bold) ((Seq A) ((Seq B) ((Seq B) A)))))) (Done ((Tag Bold) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) ((Seq (Done ((Tag Bold) ((Tag Emph) B)))) (Done ((Tag Bold) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Maj) (Done ((Tag Bold) ((Seq ((Tag Emph) B)) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Bold) ((Tag Maj) (Done ((Seq ((Tag Emph) B)) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Bold) (Done ((Tag Maj) ((Seq ((Tag Emph) B)) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B)))))))
+                 -> (Done ((Tag Bold) ((Tag Maj) ((Seq ((Tag Emph) B)) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B)))))))
+                 -> ((Tag Bold) ((Tag Maj) ((Seq ((Tag Emph) B)) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B))))))
+Final Term:      ((Tag Bold) ((Tag Maj) ((Seq ((Tag Emph) B)) ((Seq ((Seq A) ((Seq B) ((Seq B) A)))) ((Tag Maj) ((Seq A) B))))))
+Total Steps:     48
+
+INCORRECT!
+Expected:	A
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 604 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 572 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 14 rules; size: 244.
+
+Running 6 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Bold) (SNF ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (SNF A)) (Next B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (Done A)) (Next B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (Done A)) (SNF B))))
+                 -> ((Tag Bold) ((Tag Bold) ((Seq (Done A)) (Done B))))
+                 -> ((Tag Bold) ((Tag Bold) (Done ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Seq A) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     11
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq A B) (Tag Bold B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Seq ((Seq A) B)) ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq (SNF ((Seq A) B))) (Next ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq ((Seq (SNF A)) (Next B))) (Next ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (Next B))) (Next ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (SNF B))) (Next ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (Done B))) (Next ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq (Done ((Seq A) B))) (Next ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq (Done ((Seq A) B))) (SNF ((Tag Bold) B))))
+                 -> ((Tag Bold) ((Seq (Done ((Seq A) B))) ((Tag Bold) (SNF B))))
+                 -> ((Tag Bold) ((Seq (Done ((Seq A) B))) ((Tag Bold) (Done B))))
+                 -> ((Tag Bold) ((Seq (Done ((Seq A) B))) (Done ((Tag Bold) B))))
+                 -> ((Tag Bold) (Done ((Seq A) ((Seq B) ((Tag Bold) B)))))
+                 -> (Done ((Tag Bold) ((Seq A) ((Seq B) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq A) ((Seq B) ((Tag Bold) B))))
+Final Term:      ((Tag Bold) ((Seq A) ((Seq B) ((Tag Bold) B))))
+Total Steps:     14
+
+INCORRECT!
+Expected:	((Tag Bold) ((Seq A) B))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Seq A) B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (SNF A)) (Next B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (Next B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (SNF B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (Done B))))
+                 -> ((Tag Maj) ((Tag Bold) (Done ((Seq A) B))))
+                 -> ((Tag Maj) (Done ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Maj) (Done ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Tag Maj) ((Seq A) B))))
+                 -> (Done ((Tag Bold) ((Tag Maj) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Maj) ((Seq A) B)))
+Final Term:      ((Tag Bold) ((Tag Maj) ((Seq A) B)))
+Total Steps:     12
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Tag Maj (Tag Bold (Tag Maj (Tag Emph (Tag Bold A))))))
+Applying advice...
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (SNF ((Tag Maj) ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) (SNF ((Tag Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) (SNF ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) (SNF A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) (Done A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) (Done ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) ((Tag Emph) (Done A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) (Done ((Tag Emph) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) (Done ((Tag Bold) ((Tag Emph) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) ((Tag Maj) (Done ((Tag Emph) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) ((Tag Emph) ((Tag Maj) (Done A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Maj) (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Maj) (Done ((Tag Emph) ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Emph) ((Tag Maj) (Done ((Tag Maj) A))))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Emph) ((Tag Maj) (Done A)))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A)))))
+                 -> ((Tag Emph) ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A)))))
+                 -> ((Tag Emph) (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))))
+                 -> ((Tag Bold) ((Tag Emph) (Done ((Tag Emph) ((Tag Maj) A)))))
+                 -> ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A))))
+                 -> ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A))))
+                 -> (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A))))
+                 -> ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+Final Term:      ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+Total Steps:     29
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq A B) A)
+Applying advice...
+                 -> ((Seq (SNF ((Seq A) B))) (Next A))
+                 -> ((Seq ((Seq (SNF A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (SNF B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Done B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (SNF A))
+                 -> ((Seq (Done ((Seq A) B))) (Done A))
+                 -> (Done ((Seq A) ((Seq B) A)))
+                 -> ((Seq A) ((Seq B) A))
+Final Term:      ((Seq A) ((Seq B) A))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold A) (Tag Bold B))
+Applying advice...
+                 -> ((Seq (SNF ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (SNF A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (Done A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (SNF ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (SNF B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (Done B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Done ((Tag Bold) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 765 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 580 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+advise: bad input: Advice file failed to parse.
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 766 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 580 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 19 rules; size: 302.
+
+Running 6 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Remove Bold) ((Tag Bold) ((Seq A) B)))))
+                 -> ((Tag Bold) (SNF ((Remove Bold) ((Seq A) B))))
+                 -> ((Tag Bold) (SNF ((Seq ((Remove Bold) A)) ((RemoveNext Bold) B))))
+                 -> ((Tag Bold) (SNF ((Seq A) ((RemoveNext Bold) B))))
+                 -> ((Tag Bold) (SNF ((Seq A) ((Remove Bold) B))))
+                 -> ((Tag Bold) (SNF ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq (SNF A)) (Next B)))
+                 -> ((Tag Bold) ((Seq (Done A)) (Next B)))
+                 -> ((Tag Bold) ((Seq (Done A)) (SNF B)))
+                 -> ((Tag Bold) ((Seq (Done A)) (Done B)))
+                 -> ((Tag Bold) (Done ((Seq A) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     13
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq A B) (Tag Bold B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Remove Bold) ((Seq ((Seq A) B)) ((Tag Bold) B)))))
+                 -> ((Tag Bold) (SNF ((Seq ((Remove Bold) ((Seq A) B))) ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) (SNF ((Seq ((Seq ((Remove Bold) A)) ((RemoveNext Bold) B))) ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) (SNF ((Seq ((Seq A) ((RemoveNext Bold) B))) ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq (SNF ((Seq A) ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq (SNF A)) (Next ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (Next ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (SNF ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq A) (SNF ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+Final Term:      ((Tag Bold) ((Seq ((Seq A) (SNF ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+Total Steps:     9
+
+INCORRECT!
+Expected:	((Tag Bold) ((Seq A) ((Seq B) B)))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Maj) (SNF ((Remove Maj) ((Tag Bold) ((Seq A) B)))))
+Final Term:      ((Tag Maj) (SNF ((Remove Maj) ((Tag Bold) ((Seq A) B)))))
+Total Steps:     1
+
+INCORRECT!
+Expected:	((Tag Bold) ((Tag Maj) ((Seq A) B)))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Tag Maj (Tag Bold (Tag Maj (Tag Emph (Tag Bold A))))))
+Applying advice...
+                 -> ((Tag Emph) (SNF ((Remove Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A))))))))
+Final Term:      ((Tag Emph) (SNF ((Remove Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A))))))))
+Total Steps:     1
+
+INCORRECT!
+Expected:	((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq A B) A)
+Applying advice...
+                 -> ((Seq (SNF ((Seq A) B))) (Next A))
+                 -> ((Seq ((Seq (SNF A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (SNF B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Done B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (SNF A))
+                 -> ((Seq (Done ((Seq A) B))) (Done A))
+                 -> (Done ((Seq A) ((Seq B) A)))
+                 -> ((Seq A) ((Seq B) A))
+Final Term:      ((Seq A) ((Seq B) A))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold A) (Tag Bold B))
+Applying advice...
+                 -> ((Seq (SNF ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (SNF ((Remove Bold) A)))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (SNF A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (Done A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (SNF ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (SNF ((Remove Bold) B))))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (SNF B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (Done B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Done ((Tag Bold) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     12
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 809 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 580 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 20 rules; size: 320.
+
+Running 6 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Remove Bold) ((Tag Bold) ((Seq A) B)))))
+                 -> ((Tag Bold) (SNF ((Remove Bold) ((Seq A) B))))
+                 -> ((Tag Bold) (SNF ((Seq ((Remove Bold) A)) ((RemoveNext Bold) B))))
+                 -> ((Tag Bold) (SNF ((Seq A) ((RemoveNext Bold) B))))
+                 -> ((Tag Bold) (SNF ((Seq A) ((Remove Bold) B))))
+                 -> ((Tag Bold) (SNF ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq (SNF A)) (Next B)))
+                 -> ((Tag Bold) ((Seq (Done A)) (Next B)))
+                 -> ((Tag Bold) ((Seq (Done A)) (SNF B)))
+                 -> ((Tag Bold) ((Seq (Done A)) (Done B)))
+                 -> ((Tag Bold) (Done ((Seq A) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     13
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq A B) (Tag Bold B)))
+Applying advice...
+                 -> ((Tag Bold) (SNF ((Remove Bold) ((Seq ((Seq A) B)) ((Tag Bold) B)))))
+                 -> ((Tag Bold) (SNF ((Seq ((Remove Bold) ((Seq A) B))) ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) (SNF ((Seq ((Seq ((Remove Bold) A)) ((RemoveNext Bold) B))) ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) (SNF ((Seq ((Seq A) ((RemoveNext Bold) B))) ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq (SNF ((Seq A) ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq (SNF A)) (Next ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (Next ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq (Done A)) (SNF ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+                 -> ((Tag Bold) ((Seq ((Seq A) (SNF ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+Final Term:      ((Tag Bold) ((Seq ((Seq A) (SNF ((RemoveNext Bold) B)))) (Next ((RemoveNext Bold) ((Tag Bold) B)))))
+Total Steps:     9
+
+INCORRECT!
+Expected:	((Tag Bold) ((Seq A) ((Seq B) B)))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq A B)))
+Applying advice...
+                 -> ((Tag Maj) (SNF ((Remove Maj) ((Tag Bold) ((Seq A) B)))))
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Remove Maj) ((Seq A) B)))))
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Seq ((Remove Maj) A)) ((RemoveNext Maj) B)))))
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Seq A) ((RemoveNext Maj) B)))))
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Seq A) ((Remove Maj) B)))))
+                 -> ((Tag Maj) (SNF ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Remove Bold) ((Seq A) B)))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Seq ((Remove Bold) A)) ((RemoveNext Bold) B)))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Seq A) ((RemoveNext Bold) B)))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Seq A) ((Remove Bold) B)))))
+                 -> ((Tag Maj) ((Tag Bold) (SNF ((Seq A) B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (SNF A)) (Next B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (Next B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (SNF B))))
+                 -> ((Tag Maj) ((Tag Bold) ((Seq (Done A)) (Done B))))
+                 -> ((Tag Maj) ((Tag Bold) (Done ((Seq A) B))))
+                 -> ((Tag Maj) (Done ((Tag Bold) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Maj) (Done ((Seq A) B))))
+                 -> ((Tag Bold) (Done ((Tag Maj) ((Seq A) B))))
+                 -> (Done ((Tag Bold) ((Tag Maj) ((Seq A) B))))
+                 -> ((Tag Bold) ((Tag Maj) ((Seq A) B)))
+Final Term:      ((Tag Bold) ((Tag Maj) ((Seq A) B)))
+Total Steps:     21
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Tag Maj (Tag Bold (Tag Maj (Tag Emph (Tag Bold A))))))
+Applying advice...
+                 -> ((Tag Emph) (SNF ((Remove Emph) ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A))))))))
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Remove Emph) ((Tag Bold) ((Tag Maj) ((Tag Emph) ((Tag Bold) A))))))))
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Remove Emph) ((Tag Maj) ((Tag Emph) ((Tag Bold) A))))))))
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Remove Emph) ((Tag Emph) ((Tag Bold) A))))))))
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Remove Emph) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) ((Remove Emph) A)))))))
+                 -> ((Tag Emph) (SNF ((Tag Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) A))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Remove Maj) ((Tag Bold) ((Tag Maj) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Tag Bold) ((Remove Maj) ((Tag Maj) ((Tag Bold) A)))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Tag Bold) ((Remove Maj) ((Tag Bold) A))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Tag Bold) ((Tag Bold) ((Remove Maj) A))))))
+                 -> ((Tag Emph) ((Tag Maj) (SNF ((Tag Bold) ((Tag Bold) A)))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (SNF ((Remove Bold) ((Tag Bold) A))))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (SNF ((Remove Bold) A)))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (SNF A))))
+                 -> ((Tag Emph) ((Tag Maj) ((Tag Bold) (Done A))))
+                 -> ((Tag Emph) ((Tag Maj) (Done ((Tag Bold) A))))
+                 -> ((Tag Emph) ((Tag Bold) ((Tag Maj) (Done A))))
+                 -> ((Tag Emph) ((Tag Bold) (Done ((Tag Maj) A))))
+                 -> ((Tag Emph) (Done ((Tag Bold) ((Tag Maj) A))))
+                 -> ((Tag Bold) ((Tag Emph) (Done ((Tag Maj) A))))
+                 -> ((Tag Bold) (Done ((Tag Emph) ((Tag Maj) A))))
+                 -> (Done ((Tag Bold) ((Tag Emph) ((Tag Maj) A))))
+                 -> ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+Final Term:      ((Tag Bold) ((Tag Emph) ((Tag Maj) A)))
+Total Steps:     24
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq A B) A)
+Applying advice...
+                 -> ((Seq (SNF ((Seq A) B))) (Next A))
+                 -> ((Seq ((Seq (SNF A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Next B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (SNF B))) (Next A))
+                 -> ((Seq ((Seq (Done A)) (Done B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (Next A))
+                 -> ((Seq (Done ((Seq A) B))) (SNF A))
+                 -> ((Seq (Done ((Seq A) B))) (Done A))
+                 -> (Done ((Seq A) ((Seq B) A)))
+                 -> ((Seq A) ((Seq B) A))
+Final Term:      ((Seq A) ((Seq B) A))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold A) (Tag Bold B))
+Applying advice...
+                 -> ((Seq (SNF ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (SNF ((Remove Bold) A)))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (SNF A))) (Next ((Tag Bold) B)))
+                 -> ((Seq ((Tag Bold) (Done A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Next ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (SNF ((Tag Bold) B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (SNF ((Remove Bold) B))))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (SNF B)))
+                 -> ((Seq (Done ((Tag Bold) A))) ((Tag Bold) (Done B)))
+                 -> ((Seq (Done ((Tag Bold) A))) (Done ((Tag Bold) B)))
+                 -> (Done ((Tag Bold) ((Seq A) B)))
+                 -> ((Tag Bold) ((Seq A) B))
+Final Term:      ((Tag Bold) ((Seq A) B))
+Total Steps:     12
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 968 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 580 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+advise: bad input: Advice file failed to parse.
+% % % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 969 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 580 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+advise: bad input: Advice file failed to parse.
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 969 characters
+% % % Begin sending characters. Terminate with :::...
+writing 40 characters
+% % % unknown command Remove
+new to UMIX? try
+  help
+for help.
+% % unknown command Remove
+new to UMIX? try
+  help
+for help.
+% unknown command Tag
+new to UMIX? try
+  help
+for help.
+% % unknown command Remove
+new to UMIX? try
+  help
+for help.
+% unknown command Seq
+new to UMIX? try
+  help
+for help.
+% unknown command Seq
+new to UMIX? try
+  help
+for help.
+% % unknown command Remove
+new to UMIX? try
+  help
+for help.
+% unknown command Remove
+new to UMIX? try
+  help
+for help.
+% % unknown command Tag
+new to UMIX? try
+  help
+for help.
+% % unknown command Tag
+new to UMIX? try
+  help
+for help.
+% unknown command Tag
+new to UMIX? try
+  help
+for help.
+% unknown command Tag
+new to UMIX? try
+  help
+for help.
+% % unknown command Tag
+new to UMIX? try
+  help
+for help.
+% % unknown command Seq
+new to UMIX? try
+  help
+for help.
+% % unknown command Seq
+new to UMIX? try
+  help
+for help.
+% % unknown command Seq
+new to UMIX? try
+  help
+for help.
+% % unknown command Seq
+new to UMIX? try
+  help
+for help.
+% % unknown command SNF
+new to UMIX? try
+  help
+for help.
+% % unknown command SNF
+new to UMIX? try
+  help
+for help.
+% unknown command SNF
+new to UMIX? try
+  help
+for help.
+% % % unknown command SNF
+new to UMIX? try
+  help
+for help.
+% % unknown command SNF
+new to UMIX? try
+  help
+for help.
+% % unknown command Done
+new to UMIX? try
+  help
+for help.
+% % unknown command .:::
+new to UMIX? try
+  help
+for help.
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 580 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+advise: bad input: Advice file failed to parse.
+% % 

@@ -1,0 +1,1473 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: logged in as guest
+INTRO.LOG=200@999999|35e6f52e9bc951917c73af391e35e1d
+
+
+You have new mail. Type 'mail' to view.
+% First unread message:
+---------------------
+
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: Administrator <root@localhost>
+To: guest@cbv.net
+Subject: guest account misuse
+
+To whom it may concern:
+
+Guest access is provided as a courtesy to the community. We have
+recently observed an increase in abuse using the guest account. For
+example, the following sequence of commands obviously represents an
+attempt to gain unauthorized access to the account "howie":
+
+  cd code
+  /bin/umodem hack.bas STOP
+  /bin/qbasic hack.bas
+  ls /home
+  ./hack.exe howie
+  
+Moreover, the file that you uploaded with umodem appears to be 
+corrupted and did not compile.
+
+Please have respect for your fellow users,
+Admin
+
+% Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+Transferred 3584...
+writing 3665 characters
+INTRO.UMD=10@999999|7005f80d6cd9b7b837802f1e58b11b8
+% unknown command :
+new to UMIX? try
+  help
+for help.
+% V SKIP
+X SKIP
+XV SKIP
+XX SKIP
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDV SET i = I
+CDX IF CHECKPASS(username, words(i)) THEN GOTO CDXXX ELSE SKIP
+CDXV SET i = (i + I)
+CDXX IF (i > pwdcount) THEN GOTO CDXLV ELSE SKIP
+CDXXV GOTO CDX
+CDXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDXXXV PRINT (("password: " + words(i)) + CHR(X))
+CDXL END
+CDXLV PRINT (("no simple matches for user " + username) + CHR(X))
+CDL SKIP
+CDLV SKIP
+CDLX SKIP
+CDLXV SKIP
+CDLXX SKIP
+CDLXXV SKIP
+CDLXXX SKIP
+CDLXXXV SKIP
+INTRO.QBC=10@999999|e6ee9c98b80b4dd04814a29a37bcba8
+Compiled.
+% umodem : file 1.bas already exists.
+% unknown command V
+new to UMIX? try
+  help
+for help.
+% unknown command X
+new to UMIX? try
+  help
+for help.
+% unknown command XV
+new to UMIX? try
+  help
+for help.
+% unknown command XX
+new to UMIX? try
+  help
+for help.
+% unknown command XXV
+new to UMIX? try
+  help
+for help.
+% unknown command XXX
+new to UMIX? try
+  help
+for help.
+% unknown command XXXV
+new to UMIX? try
+  help
+for help.
+% unknown command XL
+new to UMIX? try
+  help
+for help.
+% unknown command XLV
+new to UMIX? try
+  help
+for help.
+% unknown command L
+new to UMIX? try
+  help
+for help.
+% unknown command LV
+new to UMIX? try
+  help
+for help.
+% unknown command LX
+new to UMIX? try
+  help
+for help.
+% unknown command LXV
+new to UMIX? try
+  help
+for help.
+% unknown command LXX
+new to UMIX? try
+  help
+for help.
+% unknown command LXXV
+new to UMIX? try
+  help
+for help.
+% unknown command LXXX
+new to UMIX? try
+  help
+for help.
+% unknown command LXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command XC
+new to UMIX? try
+  help
+for help.
+% unknown command XCV
+new to UMIX? try
+  help
+for help.
+% unknown command C
+new to UMIX? try
+  help
+for help.
+% unknown command CV
+new to UMIX? try
+  help
+for help.
+% unknown command CX
+new to UMIX? try
+  help
+for help.
+% unknown command CXV
+new to UMIX? try
+  help
+for help.
+% unknown command CXX
+new to UMIX? try
+  help
+for help.
+% unknown command CXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CXL
+new to UMIX? try
+  help
+for help.
+% unknown command CXLV
+new to UMIX? try
+  help
+for help.
+% unknown command CL
+new to UMIX? try
+  help
+for help.
+% unknown command CLV
+new to UMIX? try
+  help
+for help.
+% unknown command CLX
+new to UMIX? try
+  help
+for help.
+% unknown command CLXV
+new to UMIX? try
+  help
+for help.
+% unknown command CLXX
+new to UMIX? try
+  help
+for help.
+% unknown command CLXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CLXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CLXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CXC
+new to UMIX? try
+  help
+for help.
+% unknown command CXCV
+new to UMIX? try
+  help
+for help.
+% unknown command CC
+new to UMIX? try
+  help
+for help.
+% unknown command CCV
+new to UMIX? try
+  help
+for help.
+% unknown command CCX
+new to UMIX? try
+  help
+for help.
+% unknown command CCXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCXL
+new to UMIX? try
+  help
+for help.
+% unknown command CCXLV
+new to UMIX? try
+  help
+for help.
+% unknown command CCL
+new to UMIX? try
+  help
+for help.
+% unknown command CCLV
+new to UMIX? try
+  help
+for help.
+% unknown command CCLX
+new to UMIX? try
+  help
+for help.
+% unknown command CCLXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCLXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCLXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCLXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCLXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCXC
+new to UMIX? try
+  help
+for help.
+% unknown command CCXCV
+new to UMIX? try
+  help
+for help.
+% unknown command CCC
+new to UMIX? try
+  help
+for help.
+% unknown command CCCV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCX
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXL
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXLV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCL
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLX
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CCCLXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXC
+new to UMIX? try
+  help
+for help.
+% unknown command CCCXCV
+new to UMIX? try
+  help
+for help.
+% unknown command CD
+new to UMIX? try
+  help
+for help.
+% unknown command CDV
+new to UMIX? try
+  help
+for help.
+% unknown command CDX
+new to UMIX? try
+  help
+for help.
+% unknown command CDXV
+new to UMIX? try
+  help
+for help.
+% unknown command CDXX
+new to UMIX? try
+  help
+for help.
+% unknown command CDXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CDXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CDXXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CDXL
+new to UMIX? try
+  help
+for help.
+% unknown command CDXLV
+new to UMIX? try
+  help
+for help.
+% unknown command CDL
+new to UMIX? try
+  help
+for help.
+% unknown command CDLV
+new to UMIX? try
+  help
+for help.
+% unknown command CDLX
+new to UMIX? try
+  help
+for help.
+% unknown command CDLXV
+new to UMIX? try
+  help
+for help.
+% unknown command CDLXX
+new to UMIX? try
+  help
+for help.
+% unknown command CDLXXV
+new to UMIX? try
+  help
+for help.
+% unknown command CDLXXX
+new to UMIX? try
+  help
+for help.
+% unknown command CDLXXXV
+new to UMIX? try
+  help
+for help.
+% V SKIP
+X SKIP
+XV SKIP
+XX SKIP
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDV SET i = I
+CDX IF CHECKPASS(username, words(i)) THEN GOTO CDXXX ELSE SKIP
+CDXV SET i = (i + I)
+CDXX IF (i > pwdcount) THEN GOTO CDXLV ELSE SKIP
+CDXXV GOTO CDX
+CDXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDXXXV PRINT (("password: " + words(i)) + CHR(X))
+CDXL END
+CDXLV PRINT (("no simple matches for user " + username) + CHR(X))
+CDL SKIP
+CDLV SKIP
+CDLX SKIP
+CDLXV SKIP
+CDLXX SKIP
+CDLXXV SKIP
+CDLXXX SKIP
+CDLXXXV SKIP
+Compiled.
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+Transferred 3584...
+writing 3696 characters
+% unknown command :
+new to UMIX? try
+  help
+for help.
+% V SKIP
+X SKIP
+XV SKIP
+XX SKIP
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDV SET i = I
+CDVI PRINT ((words(i) + "-") + i)
+CDX IF CHECKPASS(username, words(i)) THEN GOTO CDXXX ELSE SKIP
+CDXV SET i = (i + I)
+CDXX IF (i > pwdcount) THEN GOTO CDXLV ELSE SKIP
+CDXXV GOTO CDX
+CDXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDXXXV PRINT (("password: " + words(i)) + CHR(X))
+CDXL END
+CDXLV PRINT (("no simple matches for user " + username) + CHR(X))
+CDL SKIP
+CDLV SKIP
+CDLX SKIP
+CDLXV SKIP
+CDLXX SKIP
+CDLXXV SKIP
+CDLXXX SKIP
+CDLXXXV SKIP
+Compiled.
+% attempting hack with LIII passwords 
+airplane-Ifound match!! for user howie
+password: xyzzy
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3438 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3468 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3467 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2847 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2847 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2846 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2618 characters
+% % XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+Compiled.
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2644 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2646 characters
+% % qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+writing 2646 characters
+% % I DIM c(X) AS STRING
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+Compiled.
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3466 characters
+% % I DIM c(X) AS STRING
+XI SET c(I) = "1"
+XII SET c(II) = "2"
+XIII SET c(III) = "3"
+XIV SET c(IV) = "4"
+XV SET c(V) = "5"
+XVI SET c(VI) = "6"
+XVII SET c(VII) = "7"
+XVIII SET c(VIII) = "8"
+XIX SET c(IX) = "9"
+XX SET c(X) = "10"
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3466 characters
+% % I DIM c(X) AS STRING
+XI SET c(I) = "1"
+XII SET c(II) = "2"
+XIII SET c(III) = "3"
+XIV SET c(IV) = "4"
+XV SET c(V) = "5"
+XVI SET c(VI) = "6"
+XVII SET c(VII) = "7"
+XVIII SET c(VIII) = "8"
+XIX SET c(IX) = "9"
+XX SET c(X) = "10"
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDV SET i = I
+CDX DIM j AS INTEGER
+CDXV SET j = I
+CDXX DIM k AS INTEGER
+CDXXV SET k = I
+CDXXX SET pass = ((words(i) + c(j)) + c(k))
+CDXXXV IF CHECKPASS(username, pass) THEN GOTO CDLXXX ELSE SKIP
+CDXL SET k = (k + I)
+qbasic: SYNTAX ERROR: EXPECTED  LINENVM STATEMENT
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3466 characters
+% % I DIM c(X) AS STRING
+XI SET c(I) = "1"
+XII SET c(II) = "2"
+XIII SET c(III) = "3"
+XIV SET c(IV) = "4"
+XV SET c(V) = "5"
+XVI SET c(VI) = "6"
+XVII SET c(VII) = "7"
+XVIII SET c(VIII) = "8"
+XIX SET c(IX) = "9"
+XX SET c(X) = "10"
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDV SET i = I
+CDX DIM j AS INTEGER
+CDXV SET j = I
+CDXX DIM k AS INTEGER
+CDXXV SET k = I
+CDXXX SET pass = ((words(i) + c(j)) + c(k))
+CDXXXV IF CHECKPASS(username, pass) THEN GOTO CDLXXX ELSE SKIP
+CDXL SET k = (k + I)
+CDL IF (k > X) THEN GOTO CDLX ELSE SKIP
+CDLV GOTO CDXXX
+CDLX SET j = (j + I)
+CDLXV IF (j > X) THEN GOTO CDLXX ELSE SKIP
+CDLXVI GOTO CDXX
+CDLXX SET i = (i + I)
+CDLXXV IF (i > pwdcount) THEN GOTO CDLXXXII ELSE SKIP
+CDLXXVI GOTO CDX
+CDLXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDLXXXI PRINT (("password: " + pass) + CHR(X))
+CDLXXXII END
+CDLXXXIII SKIP
+Compiled.
+% attempting hack with LIII passwords 
+
+qbasic: VNDEFINED VARIABLE pass ON LINE CDXXX
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3490 characters
+% % I DIM c(X) AS STRING
+XI SET c(I) = "1"
+XII SET c(II) = "2"
+XIII SET c(III) = "3"
+XIV SET c(IV) = "4"
+XV SET c(V) = "5"
+XVI SET c(VI) = "6"
+XVII SET c(VII) = "7"
+XVIII SET c(VIII) = "8"
+XIX SET c(IX) = "9"
+XX SET c(X) = "10"
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDI DIM pass AS STRING
+CDV SET i = I
+CDX DIM j AS INTEGER
+CDXV SET j = I
+CDXX DIM k AS INTEGER
+CDXXV SET k = I
+CDXXX SET pass = ((words(i) + c(j)) + c(k))
+CDXXXV IF CHECKPASS(username, pass) THEN GOTO CDLXXX ELSE SKIP
+CDXL SET k = (k + I)
+CDL IF (k > X) THEN GOTO CDLX ELSE SKIP
+CDLV GOTO CDXXX
+CDLX SET j = (j + I)
+CDLXV IF (j > X) THEN GOTO CDLXX ELSE SKIP
+CDLXVI GOTO CDXX
+CDLXX SET i = (i + I)
+CDLXXV IF (i > pwdcount) THEN GOTO CDLXXXII ELSE SKIP
+CDLXXVI GOTO CDX
+CDLXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDLXXXI PRINT (("password: " + pass) + CHR(X))
+CDLXXXII END
+CDLXXXIII SKIP
+Compiled.
+% attempting hack with LIII passwords 

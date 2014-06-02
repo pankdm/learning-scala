@@ -1,0 +1,781 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as hmonk
+
+
+% README
+advise*
+advise.man
+arith.adv
+arith.tests
+% Running input tests.
+advise: no such file: xml
+% Running 'xml' suite.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 3 rules; size: 30.
+
+
+Running internal tests...
+*************************
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Bold (Seq A B)))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Tag Bold) ((Seq A) B))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq A B)))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Tag Bold) ((Seq A) B))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq A B) A)
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq A) B)) A))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold A) (Tag Bold B))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) A)) ((Tag Bold) B)))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Bold A) (Tag Bold B)) A)
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Bold) A)) ((Tag Bold) B))) A))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Emph (Tag Emph A)) (Tag Maj (Tag Maj B)))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Emph) ((Tag Emph) A))) ((Tag Maj) ((Tag Maj) B))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold (Seq (Seq (Seq A A) B) (Seq A B))) (Seq (Seq (Seq (Tag Emph (Tag Emph A)) A) B) (Seq A (Tag Maj (Tag Maj B)))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) ((Seq ((Seq ((Seq A) A)) B)) ((Seq A) B)))) ((Seq ((Seq ((Seq ((Tag Emph) ((Tag Emph) A))) A)) B)) ((Seq A) ((Tag Maj) ((Tag Maj) B))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold (Tag Bold (Tag Emph (Tag Emph (Seq B A))))) (Tag Maj (Seq (Seq (Tag Bold (Tag Maj B)) (Seq (Seq A B) (Tag Emph B))) (Seq (Seq (Tag Emph A) (Tag Maj B)) (Tag Bold (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) ((Tag Bold) ((Tag Emph) ((Tag Emph) ((Seq B) A)))))) ((Tag Maj) ((Seq ((Seq ((Tag Bold) ((Tag Maj) B))) ((Seq ((Seq A) B)) ((Tag Emph) B)))) ((Seq ((Seq ((Tag Emph) A)) ((Tag Maj) B))) ((Tag Bold) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Seq (Seq (Tag Bold (Tag Emph B)) (Tag Emph (Tag Bold B))) (Tag Bold (Tag Maj (Seq B A))))) (Tag Maj (Seq (Tag Bold (Seq (Tag Maj A) (Tag Emph B))) (Tag Maj (Seq (Seq A B) (Tag Maj A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Seq ((Seq ((Tag Bold) ((Tag Emph) B))) ((Tag Emph) ((Tag Bold) B)))) ((Tag Bold) ((Tag Maj) ((Seq B) A)))))) ((Tag Maj) ((Seq ((Tag Bold) ((Seq ((Tag Maj) A)) ((Tag Emph) B)))) ((Tag Maj) ((Seq ((Seq A) B)) ((Tag Maj) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Tag Bold (Tag Maj (Seq A B))) (Seq (Tag Bold (Tag Emph B)) (Seq (Tag Maj A) (Seq A B)))) (Seq (Seq (Tag Bold (Seq B A)) (Seq (Tag Bold B) (Tag Bold A))) (Seq (Seq (Tag Maj B) (Tag Bold A)) (Seq (Seq B B) (Seq B B))))) (Tag Bold (Seq (Seq (Seq (Seq A B) (Tag Emph B)) (Tag Maj (Tag Bold B))) (Tag Maj (Tag Bold (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Tag Bold) ((Tag Maj) ((Seq A) B)))) ((Seq ((Tag Bold) ((Tag Emph) B))) ((Seq ((Tag Maj) A)) ((Seq A) B))))) ((Seq ((Seq ((Tag Bold) ((Seq B) A))) ((Seq ((Tag Bold) B)) ((Tag Bold) A)))) ((Seq ((Seq ((Tag Maj) B)) ((Tag Bold) A))) ((Seq ((Seq B) B)) ((Seq B) B)))))) ((Tag Bold) ((Seq ((Seq ((Seq ((Seq A) B)) ((Tag Emph) B))) ((Tag Maj) ((Tag Bold) B)))) ((Tag Maj) ((Tag Bold) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Seq (Seq (Tag Maj (Seq B B)) (Tag Emph (Seq B A))) (Tag Emph (Tag Emph (Tag Bold B)))) (Tag Maj (Tag Emph (Seq (Seq A A) (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Seq ((Seq ((Tag Maj) ((Seq B) B))) ((Tag Emph) ((Seq B) A)))) ((Tag Emph) ((Tag Emph) ((Tag Bold) B))))) ((Tag Maj) ((Tag Emph) ((Seq ((Seq A) A)) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Seq (Tag Emph (Tag Bold (Seq (Seq A B) (Tag Emph A)))) (Seq (Tag Emph (Tag Emph (Tag Emph A))) (Tag Bold (Seq (Tag Maj B) (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Seq ((Tag Emph) ((Tag Bold) ((Seq ((Seq A) B)) ((Tag Emph) A))))) ((Seq ((Tag Emph) ((Tag Emph) ((Tag Emph) A)))) ((Tag Bold) ((Seq ((Tag Maj) B)) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Seq (Tag Emph (Seq (Seq (Seq A B) (Tag Maj B)) (Seq (Seq A A) (Tag Emph B)))) (Tag Emph (Seq (Seq (Tag Bold A) (Seq B A)) (Tag Emph (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Seq ((Tag Emph) ((Seq ((Seq ((Seq A) B)) ((Tag Maj) B))) ((Seq ((Seq A) A)) ((Tag Emph) B))))) ((Tag Emph) ((Seq ((Seq ((Tag Bold) A)) ((Seq B) A))) ((Tag Emph) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Emph (Tag Emph (Seq (Seq (Seq A A) (Tag Bold A)) (Seq (Seq A A) (Tag Emph B))))) (Seq (Tag Bold (Tag Emph (Seq (Tag Maj A) (Tag Bold A)))) (Tag Emph (Seq (Seq (Tag Emph B) (Tag Maj A)) (Seq (Seq B A) (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Emph) ((Tag Emph) ((Seq ((Seq ((Seq A) A)) ((Tag Bold) A))) ((Seq ((Seq A) A)) ((Tag Emph) B)))))) ((Seq ((Tag Bold) ((Tag Emph) ((Seq ((Tag Maj) A)) ((Tag Bold) A))))) ((Tag Emph) ((Seq ((Seq ((Tag Emph) B)) ((Tag Maj) A))) ((Seq ((Seq B) A)) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Seq (Tag Emph (Tag Emph (Seq B A))) (Seq (Tag Emph (Seq A B)) (Seq (Tag Emph B) (Seq B B))))) (Seq (Tag Bold (Seq (Seq (Seq A B) (Seq B B)) (Seq (Tag Emph B) (Seq B A)))) (Seq (Seq (Tag Emph (Tag Bold B)) (Tag Maj (Seq A B))) (Seq (Seq (Tag Emph A) (Tag Emph B)) (Seq (Tag Maj A) (Tag Emph A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Seq ((Tag Emph) ((Tag Emph) ((Seq B) A)))) ((Seq ((Tag Emph) ((Seq A) B))) ((Seq ((Tag Emph) B)) ((Seq B) B)))))) ((Seq ((Tag Bold) ((Seq ((Seq ((Seq A) B)) ((Seq B) B))) ((Seq ((Tag Emph) B)) ((Seq B) A))))) ((Seq ((Seq ((Tag Emph) ((Tag Bold) B))) ((Tag Maj) ((Seq A) B)))) ((Seq ((Seq ((Tag Emph) A)) ((Tag Emph) B))) ((Seq ((Tag Maj) A)) ((Tag Emph) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Seq (Tag Maj (Seq (Seq B B) (Tag Bold B))) (Seq (Tag Bold (Seq B B)) (Seq (Seq A A) (Tag Emph A))))) (Tag Maj (Seq (Tag Bold (Seq (Seq B A) (Seq A A))) (Seq (Tag Emph (Tag Emph A)) (Tag Emph (Tag Bold B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Seq ((Tag Maj) ((Seq ((Seq B) B)) ((Tag Bold) B)))) ((Seq ((Tag Bold) ((Seq B) B))) ((Seq ((Seq A) A)) ((Tag Emph) A)))))) ((Tag Maj) ((Seq ((Tag Bold) ((Seq ((Seq B) A)) ((Seq A) A)))) ((Seq ((Tag Emph) ((Tag Emph) A))) ((Tag Emph) ((Tag Bold) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Bold (Seq (Tag Emph (Tag Maj B)) (Tag Bold (Tag Maj B)))) (Seq (Seq (Tag Bold (Seq A B)) (Seq (Seq A B) (Seq A B))) (Tag Emph (Seq (Tag Bold B) (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Bold) ((Seq ((Tag Emph) ((Tag Maj) B))) ((Tag Bold) ((Tag Maj) B))))) ((Seq ((Seq ((Tag Bold) ((Seq A) B))) ((Seq ((Seq A) B)) ((Seq A) B)))) ((Tag Emph) ((Seq ((Tag Bold) B)) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Bold (Seq (Tag Emph (Seq A A)) (Seq (Seq A A) (Seq B A)))) (Tag Bold (Seq (Tag Maj (Tag Maj B)) (Tag Maj (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Bold) ((Seq ((Tag Emph) ((Seq A) A))) ((Seq ((Seq A) A)) ((Seq B) A))))) ((Tag Bold) ((Seq ((Tag Maj) ((Tag Maj) B))) ((Tag Maj) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold (Tag Emph (Tag Emph (Seq (Tag Emph A) (Seq B B))))) (Seq (Seq (Tag Bold (Seq (Seq A B) (Seq A A))) (Seq (Tag Maj (Seq B A)) (Seq (Seq A B) (Tag Maj A)))) (Tag Bold (Tag Bold (Tag Emph (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) ((Tag Emph) ((Tag Emph) ((Seq ((Tag Emph) A)) ((Seq B) B)))))) ((Seq ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq A) A)))) ((Seq ((Tag Maj) ((Seq B) A))) ((Seq ((Seq A) B)) ((Tag Maj) A))))) ((Tag Bold) ((Tag Bold) ((Tag Emph) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Tag Emph (Tag Emph (Seq A A))) (Tag Bold (Seq (Seq B A) (Tag Emph B)))) (Tag Emph (Seq (Tag Bold (Seq A A)) (Tag Maj (Seq B B))))) (Tag Emph (Tag Maj (Seq (Tag Bold (Tag Emph B)) (Tag Emph (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Tag Emph) ((Tag Emph) ((Seq A) A)))) ((Tag Bold) ((Seq ((Seq B) A)) ((Tag Emph) B))))) ((Tag Emph) ((Seq ((Tag Bold) ((Seq A) A))) ((Tag Maj) ((Seq B) B)))))) ((Tag Emph) ((Tag Maj) ((Seq ((Tag Bold) ((Tag Emph) B))) ((Tag Emph) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Seq (Seq (Seq (Seq (Tag Maj B) (Tag Maj A)) (Seq (Seq A B) (Seq B B))) (Seq (Tag Bold (Tag Bold A)) (Tag Bold (Tag Bold B)))) (Tag Emph (Tag Bold (Seq (Seq A A) (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Seq ((Seq ((Seq ((Seq ((Tag Maj) B)) ((Tag Maj) A))) ((Seq ((Seq A) B)) ((Seq B) B)))) ((Seq ((Tag Bold) ((Tag Bold) A))) ((Tag Bold) ((Tag Bold) B))))) ((Tag Emph) ((Tag Bold) ((Seq ((Seq A) A)) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Bold (Tag Bold (Seq (Tag Maj A) (Seq B B)))) (Seq (Tag Emph (Seq (Seq A B) (Seq B A))) (Seq (Seq (Tag Maj B) (Seq A B)) (Tag Bold (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Bold) ((Tag Bold) ((Seq ((Tag Maj) A)) ((Seq B) B))))) ((Seq ((Tag Emph) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Seq ((Seq ((Tag Maj) B)) ((Seq A) B))) ((Tag Bold) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Maj (Seq (Tag Emph (Seq (Seq B A) (Seq B B))) (Tag Maj (Tag Maj (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Tag Maj) ((Seq ((Tag Emph) ((Seq ((Seq B) A)) ((Seq B) B)))) ((Tag Maj) ((Tag Maj) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Seq (Seq (Seq A B) (Tag Bold A)) (Seq (Tag Maj A) (Tag Emph A))) (Tag Maj (Tag Maj (Tag Bold A)))) (Tag Bold (Tag Maj (Tag Maj (Seq B B))))) (Seq (Tag Bold (Tag Bold (Tag Bold (Seq A A)))) (Tag Maj (Tag Emph (Tag Maj (Tag Bold B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Seq ((Seq ((Seq A) B)) ((Tag Bold) A))) ((Seq ((Tag Maj) A)) ((Tag Emph) A)))) ((Tag Maj) ((Tag Maj) ((Tag Bold) A))))) ((Tag Bold) ((Tag Maj) ((Tag Maj) ((Seq B) B)))))) ((Seq ((Tag Bold) ((Tag Bold) ((Tag Bold) ((Seq A) A))))) ((Tag Maj) ((Tag Emph) ((Tag Maj) ((Tag Bold) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Bold (Tag Emph (Tag Maj (Seq A B)))) (Tag Emph (Tag Maj (Seq (Tag Emph B) (Seq A B))))) (Tag Bold (Tag Emph (Seq (Seq (Seq B B) (Seq A B)) (Tag Emph (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Bold) ((Tag Emph) ((Tag Maj) ((Seq A) B))))) ((Tag Emph) ((Tag Maj) ((Seq ((Tag Emph) B)) ((Seq A) B)))))) ((Tag Bold) ((Tag Emph) ((Seq ((Seq ((Seq B) B)) ((Seq A) B))) ((Tag Emph) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Emph (Tag Maj (Seq (Tag Maj (Tag Maj B)) (Seq (Seq A A) (Tag Emph B))))) (Seq (Seq (Tag Emph (Seq (Tag Bold A) (Seq A A))) (Tag Bold (Seq (Seq B B) (Seq B B)))) (Tag Emph (Seq (Seq (Seq B B) (Seq A A)) (Seq (Tag Maj A) (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Emph) ((Tag Maj) ((Seq ((Tag Maj) ((Tag Maj) B))) ((Seq ((Seq A) A)) ((Tag Emph) B)))))) ((Seq ((Seq ((Tag Emph) ((Seq ((Tag Bold) A)) ((Seq A) A)))) ((Tag Bold) ((Seq ((Seq B) B)) ((Seq B) B))))) ((Tag Emph) ((Seq ((Seq ((Seq B) B)) ((Seq A) A))) ((Seq ((Tag Maj) A)) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq (Tag Maj (Tag Maj (Tag Bold A))) (Tag Emph (Tag Emph (Tag Maj B)))) (Tag Emph (Seq (Tag Maj (Seq A B)) (Tag Bold (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Seq ((Seq ((Tag Maj) ((Tag Maj) ((Tag Bold) A)))) ((Tag Emph) ((Tag Emph) ((Tag Maj) B))))) ((Tag Emph) ((Seq ((Tag Maj) ((Seq A) B))) ((Tag Bold) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Bold (Seq (Tag Maj (Seq A A)) (Seq (Seq B B) (Tag Maj B)))) (Seq (Seq (Seq (Seq B B) (Tag Emph A)) (Tag Bold (Tag Maj A))) (Tag Maj (Seq (Seq B A) (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Bold) ((Seq ((Tag Maj) ((Seq A) A))) ((Seq ((Seq B) B)) ((Tag Maj) B))))) ((Seq ((Seq ((Seq ((Seq B) B)) ((Tag Emph) A))) ((Tag Bold) ((Tag Maj) A)))) ((Tag Maj) ((Seq ((Seq B) A)) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Emph (Tag Maj (Tag Bold (Seq B B)))) (Tag Maj (Seq (Seq (Seq A B) (Tag Maj B)) (Seq (Seq A A) (Tag Emph B))))) (Tag Bold (Seq (Tag Maj (Tag Bold (Tag Maj A))) (Seq (Tag Emph (Seq B A)) (Seq (Seq A A) (Tag Bold B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Seq B) B))))) ((Tag Maj) ((Seq ((Seq ((Seq A) B)) ((Tag Maj) B))) ((Seq ((Seq A) A)) ((Tag Emph) B)))))) ((Tag Bold) ((Seq ((Tag Maj) ((Tag Bold) ((Tag Maj) A)))) ((Seq ((Tag Emph) ((Seq B) A))) ((Seq ((Seq A) A)) ((Tag Bold) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Emph (Seq (Seq (Tag Bold (Seq B A)) (Tag Maj (Tag Maj A))) (Tag Bold (Seq (Tag Emph A) (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Tag Emph) ((Seq ((Seq ((Tag Bold) ((Seq B) A))) ((Tag Maj) ((Tag Maj) A)))) ((Tag Bold) ((Seq ((Tag Emph) A)) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Seq (Seq (Tag Bold (Tag Emph B)) (Seq (Tag Emph B) (Tag Emph B))) (Seq (Tag Bold (Seq B B)) (Seq (Seq B B) (Tag Maj A))))) (Tag Maj (Seq (Seq (Tag Bold (Seq B B)) (Seq (Tag Maj A) (Seq A B))) (Tag Maj (Seq (Seq A B) (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Seq ((Seq ((Tag Bold) ((Tag Emph) B))) ((Seq ((Tag Emph) B)) ((Tag Emph) B)))) ((Seq ((Tag Bold) ((Seq B) B))) ((Seq ((Seq B) B)) ((Tag Maj) A)))))) ((Tag Maj) ((Seq ((Seq ((Tag Bold) ((Seq B) B))) ((Seq ((Tag Maj) A)) ((Seq A) B)))) ((Tag Maj) ((Seq ((Seq A) B)) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold (Tag Maj (Seq (Seq (Seq A A) (Seq B A)) (Tag Bold (Tag Maj B))))) (Tag Maj (Seq (Tag Maj (Tag Bold (Tag Bold A))) (Seq (Seq (Seq A B) (Seq A B)) (Seq (Tag Maj B) (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) ((Tag Maj) ((Seq ((Seq ((Seq A) A)) ((Seq B) A))) ((Tag Bold) ((Tag Maj) B)))))) ((Tag Maj) ((Seq ((Tag Maj) ((Tag Bold) ((Tag Bold) A)))) ((Seq ((Seq ((Seq A) B)) ((Seq A) B))) ((Seq ((Tag Maj) B)) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Seq (Seq (Tag Maj (Seq (Seq B A) (Seq A A))) (Seq (Seq (Tag Bold A) (Seq B A)) (Tag Emph (Seq A A)))) (Seq (Seq (Seq (Seq B B) (Tag Maj B)) (Tag Bold (Tag Emph B))) (Tag Maj (Seq (Tag Maj A) (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Seq ((Seq ((Tag Maj) ((Seq ((Seq B) A)) ((Seq A) A)))) ((Seq ((Seq ((Tag Bold) A)) ((Seq B) A))) ((Tag Emph) ((Seq A) A))))) ((Seq ((Seq ((Seq ((Seq B) B)) ((Tag Maj) B))) ((Tag Bold) ((Tag Emph) B)))) ((Tag Maj) ((Seq ((Tag Maj) A)) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Maj (Seq (Seq (Seq A A) (Seq B B)) (Seq (Seq A B) (Tag Bold A)))) (Tag Emph (Seq (Tag Bold (Tag Bold A)) (Tag Maj (Tag Emph A))))) (Seq (Tag Bold (Seq (Seq (Seq A B) (Seq B B)) (Tag Maj (Tag Maj A)))) (Seq (Tag Maj (Tag Emph (Seq B B))) (Tag Emph (Tag Bold (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Maj) ((Seq ((Seq ((Seq A) A)) ((Seq B) B))) ((Seq ((Seq A) B)) ((Tag Bold) A))))) ((Tag Emph) ((Seq ((Tag Bold) ((Tag Bold) A))) ((Tag Maj) ((Tag Emph) A)))))) ((Seq ((Tag Bold) ((Seq ((Seq ((Seq A) B)) ((Seq B) B))) ((Tag Maj) ((Tag Maj) A))))) ((Seq ((Tag Maj) ((Tag Emph) ((Seq B) B)))) ((Tag Emph) ((Tag Bold) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Tag Emph (Tag Maj (Tag Emph A))) (Seq (Seq (Seq B A) (Seq A A)) (Seq (Tag Bold B) (Seq A B)))) (Tag Emph (Seq (Tag Maj (Seq A A)) (Seq (Seq A A) (Tag Emph B))))) (Seq (Seq (Tag Emph (Tag Bold (Tag Bold B))) (Seq (Tag Bold (Tag Maj A)) (Seq (Seq A A) (Seq B A)))) (Seq (Tag Bold (Tag Bold (Seq A B))) (Tag Emph (Tag Emph (Tag Emph A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Tag Emph) ((Tag Maj) ((Tag Emph) A)))) ((Seq ((Seq ((Seq B) A)) ((Seq A) A))) ((Seq ((Tag Bold) B)) ((Seq A) B))))) ((Tag Emph) ((Seq ((Tag Maj) ((Seq A) A))) ((Seq ((Seq A) A)) ((Tag Emph) B)))))) ((Seq ((Seq ((Tag Emph) ((Tag Bold) ((Tag Bold) B)))) ((Seq ((Tag Bold) ((Tag Maj) A))) ((Seq ((Seq A) A)) ((Seq B) A))))) ((Seq ((Tag Bold) ((Tag Bold) ((Seq A) B)))) ((Tag Emph) ((Tag Emph) ((Tag Emph) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Maj (Seq (Tag Emph (Tag Emph (Seq B A))) (Tag Emph (Tag Bold (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Tag Maj) ((Seq ((Tag Emph) ((Tag Emph) ((Seq B) A)))) ((Tag Emph) ((Tag Bold) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Emph (Tag Bold (Seq (Tag Emph (Tag Emph B)) (Seq (Tag Emph A) (Seq A A))))) (Seq (Seq (Tag Maj (Tag Emph (Tag Bold B))) (Tag Maj (Seq (Tag Maj B) (Seq B B)))) (Seq (Tag Emph (Seq (Seq A B) (Tag Emph B))) (Tag Maj (Tag Bold (Tag Maj B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Emph) ((Tag Bold) ((Seq ((Tag Emph) ((Tag Emph) B))) ((Seq ((Tag Emph) A)) ((Seq A) A)))))) ((Seq ((Seq ((Tag Maj) ((Tag Emph) ((Tag Bold) B)))) ((Tag Maj) ((Seq ((Tag Maj) B)) ((Seq B) B))))) ((Seq ((Tag Emph) ((Seq ((Seq A) B)) ((Tag Emph) B)))) ((Tag Maj) ((Tag Bold) ((Tag Maj) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq (Tag Bold (Tag Emph (Seq B A))) (Seq (Seq (Seq A B) (Tag Maj A)) (Tag Maj (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Tag Bold) ((Seq ((Tag Bold) ((Tag Emph) ((Seq B) A)))) ((Seq ((Seq ((Seq A) B)) ((Tag Maj) A))) ((Tag Maj) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Seq (Tag Bold (Tag Bold (Seq B B))) (Seq (Tag Emph (Seq A B)) (Seq (Tag Bold B) (Tag Emph A)))) (Seq (Tag Maj (Seq (Tag Maj A) (Seq A B))) (Seq (Seq (Tag Maj A) (Seq B A)) (Seq (Tag Bold B) (Seq B B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Seq ((Tag Bold) ((Tag Bold) ((Seq B) B)))) ((Seq ((Tag Emph) ((Seq A) B))) ((Seq ((Tag Bold) B)) ((Tag Emph) A))))) ((Seq ((Tag Maj) ((Seq ((Tag Maj) A)) ((Seq A) B)))) ((Seq ((Seq ((Tag Maj) A)) ((Seq B) A))) ((Seq ((Tag Bold) B)) ((Seq B) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Bold (Seq (Tag Maj (Tag Maj A)) (Tag Bold (Seq A B)))) (Tag Bold (Seq (Tag Bold (Seq B B)) (Tag Maj (Seq A A))))) (Tag Emph (Tag Bold (Seq (Seq (Seq B B) (Tag Emph B)) (Tag Bold (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Bold) ((Seq ((Tag Maj) ((Tag Maj) A))) ((Tag Bold) ((Seq A) B))))) ((Tag Bold) ((Seq ((Tag Bold) ((Seq B) B))) ((Tag Maj) ((Seq A) A)))))) ((Tag Emph) ((Tag Bold) ((Seq ((Seq ((Seq B) B)) ((Tag Emph) B))) ((Tag Bold) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold (Seq (Tag Bold (Seq (Tag Maj A) (Seq B A))) (Seq (Tag Maj (Seq A A)) (Tag Emph (Tag Bold B))))) (Tag Maj (Tag Maj (Tag Emph (Tag Maj (Tag Bold B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) ((Seq ((Tag Bold) ((Seq ((Tag Maj) A)) ((Seq B) A)))) ((Seq ((Tag Maj) ((Seq A) A))) ((Tag Emph) ((Tag Bold) B)))))) ((Tag Maj) ((Tag Maj) ((Tag Emph) ((Tag Maj) ((Tag Bold) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Emph (Tag Bold (Tag Emph (Seq B A)))) (Tag Emph (Seq (Seq (Seq B B) (Tag Bold B)) (Tag Maj (Tag Maj A))))) (Seq (Tag Emph (Tag Maj (Seq (Seq A B) (Seq A B)))) (Seq (Seq (Tag Bold (Seq B B)) (Seq (Tag Bold B) (Tag Maj A))) (Seq (Tag Maj (Tag Maj B)) (Seq (Seq B A) (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Emph) ((Tag Bold) ((Tag Emph) ((Seq B) A))))) ((Tag Emph) ((Seq ((Seq ((Seq B) B)) ((Tag Bold) B))) ((Tag Maj) ((Tag Maj) A)))))) ((Seq ((Tag Emph) ((Tag Maj) ((Seq ((Seq A) B)) ((Seq A) B))))) ((Seq ((Seq ((Tag Bold) ((Seq B) B))) ((Seq ((Tag Bold) B)) ((Tag Maj) A)))) ((Seq ((Tag Maj) ((Tag Maj) B))) ((Seq ((Seq B) A)) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Tag Emph (Tag Maj (Tag Bold (Tag Bold A))))) (Seq (Tag Maj (Seq (Seq (Tag Maj B) (Tag Bold A)) (Tag Maj (Tag Bold B)))) (Tag Bold (Tag Emph (Tag Bold (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Tag Emph) ((Tag Maj) ((Tag Bold) ((Tag Bold) A)))))) ((Seq ((Tag Maj) ((Seq ((Seq ((Tag Maj) B)) ((Tag Bold) A))) ((Tag Maj) ((Tag Bold) B))))) ((Tag Bold) ((Tag Emph) ((Tag Bold) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq (Seq (Tag Maj (Seq B A)) (Tag Emph (Tag Maj A))) (Tag Bold (Tag Maj (Seq A A)))) (Tag Emph (Seq (Seq (Tag Maj A) (Tag Emph B)) (Seq (Seq B A) (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Seq ((Seq ((Seq ((Tag Maj) ((Seq B) A))) ((Tag Emph) ((Tag Maj) A)))) ((Tag Bold) ((Tag Maj) ((Seq A) A))))) ((Tag Emph) ((Seq ((Seq ((Tag Maj) A)) ((Tag Emph) B))) ((Seq ((Seq B) A)) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold (Tag Bold (Seq (Seq (Tag Maj B) (Tag Maj A)) (Seq (Tag Maj A) (Tag Emph B))))) (Tag Emph (Tag Bold (Seq (Tag Bold (Tag Emph A)) (Seq (Tag Bold A) (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) ((Tag Bold) ((Seq ((Seq ((Tag Maj) B)) ((Tag Maj) A))) ((Seq ((Tag Maj) A)) ((Tag Emph) B)))))) ((Tag Emph) ((Tag Bold) ((Seq ((Tag Bold) ((Tag Emph) A))) ((Seq ((Tag Bold) A)) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Emph (Seq (Tag Maj (Tag Bold A)) (Tag Emph (Seq B A)))) (Seq (Tag Bold (Seq (Seq A B) (Seq B A))) (Tag Bold (Tag Maj (Seq B B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Emph) ((Seq ((Tag Maj) ((Tag Bold) A))) ((Tag Emph) ((Seq B) A))))) ((Seq ((Tag Bold) ((Seq ((Seq A) B)) ((Seq B) A)))) ((Tag Bold) ((Tag Maj) ((Seq B) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Tag Maj (Seq (Tag Maj B) (Tag Bold B))) (Seq (Seq (Seq B B) (Seq B B)) (Tag Emph (Seq A A)))) (Tag Maj (Tag Maj (Seq (Seq A B) (Seq B B))))) (Tag Bold (Seq (Seq (Tag Emph (Tag Maj B)) (Tag Emph (Tag Bold B))) (Tag Maj (Tag Maj (Tag Bold B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Tag Maj) ((Seq ((Tag Maj) B)) ((Tag Bold) B)))) ((Seq ((Seq ((Seq B) B)) ((Seq B) B))) ((Tag Emph) ((Seq A) A))))) ((Tag Maj) ((Tag Maj) ((Seq ((Seq A) B)) ((Seq B) B)))))) ((Tag Bold) ((Seq ((Seq ((Tag Emph) ((Tag Maj) B))) ((Tag Emph) ((Tag Bold) B)))) ((Tag Maj) ((Tag Maj) ((Tag Bold) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq (Seq (Seq (Seq A B) (Tag Bold A)) (Seq (Tag Maj A) (Tag Maj B))) (Tag Emph (Tag Maj (Seq A B)))) (Seq (Tag Maj (Tag Emph (Seq A B))) (Seq (Tag Bold (Tag Maj B)) (Tag Bold (Seq B A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Seq ((Seq ((Seq ((Seq ((Seq A) B)) ((Tag Bold) A))) ((Seq ((Tag Maj) A)) ((Tag Maj) B)))) ((Tag Emph) ((Tag Maj) ((Seq A) B))))) ((Seq ((Tag Maj) ((Tag Emph) ((Seq A) B)))) ((Seq ((Tag Bold) ((Tag Maj) B))) ((Tag Bold) ((Seq B) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Maj (Tag Maj (Tag Maj (Seq A A)))) (Tag Emph (Tag Maj (Seq (Tag Emph B) (Tag Maj B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Maj) ((Tag Maj) ((Tag Maj) ((Seq A) A))))) ((Tag Emph) ((Tag Maj) ((Seq ((Tag Emph) B)) ((Tag Maj) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Tag Bold (Tag Emph (Tag Bold (Seq (Tag Bold B) (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Tag Bold) ((Tag Emph) ((Tag Bold) ((Seq ((Tag Bold) B)) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Seq (Seq (Seq (Seq (Seq A B) (Seq B A)) (Seq (Seq A B) (Tag Maj B))) (Seq (Tag Emph (Seq A B)) (Tag Maj (Seq A A)))) (Seq (Seq (Seq (Seq B A) (Tag Bold A)) (Seq (Tag Emph B) (Seq A A))) (Seq (Tag Emph (Tag Maj B)) (Tag Bold (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Seq ((Seq ((Seq ((Seq ((Seq A) B)) ((Seq B) A))) ((Seq ((Seq A) B)) ((Tag Maj) B)))) ((Seq ((Tag Emph) ((Seq A) B))) ((Tag Maj) ((Seq A) A))))) ((Seq ((Seq ((Seq ((Seq B) A)) ((Tag Bold) A))) ((Seq ((Tag Emph) B)) ((Seq A) A)))) ((Seq ((Tag Emph) ((Tag Maj) B))) ((Tag Bold) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Tag Maj (Seq (Tag Bold B) (Tag Bold B))) (Seq (Tag Emph (Tag Maj A)) (Seq (Tag Maj A) (Seq A B)))) (Tag Emph (Tag Bold (Tag Bold (Tag Emph A))))) (Seq (Tag Emph (Seq (Tag Bold (Tag Bold A)) (Seq (Tag Bold A) (Tag Bold A)))) (Seq (Seq (Seq (Tag Bold A) (Seq B A)) (Seq (Tag Maj B) (Tag Emph A))) (Tag Bold (Seq (Seq B B) (Tag Emph B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Tag Maj) ((Seq ((Tag Bold) B)) ((Tag Bold) B)))) ((Seq ((Tag Emph) ((Tag Maj) A))) ((Seq ((Tag Maj) A)) ((Seq A) B))))) ((Tag Emph) ((Tag Bold) ((Tag Bold) ((Tag Emph) A)))))) ((Seq ((Tag Emph) ((Seq ((Tag Bold) ((Tag Bold) A))) ((Seq ((Tag Bold) A)) ((Tag Bold) A))))) ((Seq ((Seq ((Seq ((Tag Bold) A)) ((Seq B) A))) ((Seq ((Tag Maj) B)) ((Tag Emph) A)))) ((Tag Bold) ((Seq ((Seq B) B)) ((Tag Emph) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Emph (Tag Maj (Seq (Seq (Tag Maj A) (Tag Bold A)) (Seq (Seq B B) (Tag Emph B))))) (Tag Emph (Seq (Seq (Tag Emph (Seq A B)) (Seq (Tag Maj A) (Seq A B))) (Tag Maj (Tag Maj (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Emph) ((Tag Maj) ((Seq ((Seq ((Tag Maj) A)) ((Tag Bold) A))) ((Seq ((Seq B) B)) ((Tag Emph) B)))))) ((Tag Emph) ((Seq ((Seq ((Tag Emph) ((Seq A) B))) ((Seq ((Tag Maj) A)) ((Seq A) B)))) ((Tag Maj) ((Tag Maj) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Emph (Seq (Tag Emph (Tag Maj (Seq (Seq A A) (Tag Bold B)))) (Seq (Seq (Seq (Tag Emph B) (Seq B B)) (Seq (Tag Bold A) (Tag Emph A))) (Seq (Seq (Tag Bold B) (Seq B A)) (Seq (Tag Maj A) (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Tag Emph) ((Seq ((Tag Emph) ((Tag Maj) ((Seq ((Seq A) A)) ((Tag Bold) B))))) ((Seq ((Seq ((Seq ((Tag Emph) B)) ((Seq B) B))) ((Seq ((Tag Bold) A)) ((Tag Emph) A)))) ((Seq ((Seq ((Tag Bold) B)) ((Seq B) A))) ((Seq ((Tag Maj) A)) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Seq (Tag Emph (Tag Maj (Seq B A))) (Tag Bold (Seq (Seq A B) (Seq A B)))) (Tag Emph (Seq (Seq (Seq B A) (Seq A A)) (Tag Bold (Tag Emph A))))) (Seq (Seq (Seq (Seq (Tag Maj A) (Tag Bold B)) (Tag Bold (Seq B A))) (Tag Maj (Tag Bold (Tag Emph B)))) (Seq (Seq (Tag Bold (Tag Emph B)) (Seq (Tag Maj B) (Seq A A))) (Seq (Seq (Tag Emph B) (Seq B A)) (Tag Bold (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Seq ((Tag Emph) ((Tag Maj) ((Seq B) A)))) ((Tag Bold) ((Seq ((Seq A) B)) ((Seq A) B))))) ((Tag Emph) ((Seq ((Seq ((Seq B) A)) ((Seq A) A))) ((Tag Bold) ((Tag Emph) A)))))) ((Seq ((Seq ((Seq ((Seq ((Tag Maj) A)) ((Tag Bold) B))) ((Tag Bold) ((Seq B) A)))) ((Tag Maj) ((Tag Bold) ((Tag Emph) B))))) ((Seq ((Seq ((Tag Bold) ((Tag Emph) B))) ((Seq ((Tag Maj) B)) ((Seq A) A)))) ((Seq ((Seq ((Tag Emph) B)) ((Seq B) A))) ((Tag Bold) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Tag Bold (Tag Emph (Tag Maj (Tag Bold B))))) (Tag Bold (Seq (Tag Bold (Tag Emph (Tag Emph A))) (Seq (Seq (Tag Emph B) (Seq A B)) (Tag Emph (Tag Bold A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Tag Bold) ((Tag Emph) ((Tag Maj) ((Tag Bold) B)))))) ((Tag Bold) ((Seq ((Tag Bold) ((Tag Emph) ((Tag Emph) A)))) ((Seq ((Seq ((Tag Emph) B)) ((Seq A) B))) ((Tag Emph) ((Tag Bold) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Maj (Tag Bold (Seq (Seq (Tag Bold A) (Tag Maj B)) (Tag Bold (Tag Bold B))))) (Tag Emph (Tag Bold (Tag Maj (Tag Bold (Seq A A))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Maj) ((Tag Bold) ((Seq ((Seq ((Tag Bold) A)) ((Tag Maj) B))) ((Tag Bold) ((Tag Bold) B)))))) ((Tag Emph) ((Tag Bold) ((Tag Maj) ((Tag Bold) ((Seq A) A)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq (Tag Maj (Seq (Tag Emph (Seq B B)) (Seq (Tag Emph A) (Tag Maj B)))) (Seq (Seq (Seq (Tag Emph A) (Tag Emph A)) (Tag Emph (Tag Bold A))) (Tag Emph (Seq (Seq B A) (Tag Emph B))))) (Seq (Tag Bold (Tag Emph (Seq (Seq B A) (Tag Maj A)))) (Seq (Tag Maj (Seq (Seq B A) (Seq B B))) (Tag Bold (Seq (Tag Bold B) (Seq A B))))))
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq ((Tag Maj) ((Seq ((Tag Emph) ((Seq B) B))) ((Seq ((Tag Emph) A)) ((Tag Maj) B))))) ((Seq ((Seq ((Seq ((Tag Emph) A)) ((Tag Emph) A))) ((Tag Emph) ((Tag Bold) A)))) ((Tag Emph) ((Seq ((Seq B) A)) ((Tag Emph) B)))))) ((Seq ((Tag Bold) ((Tag Emph) ((Seq ((Seq B) A)) ((Tag Maj) A))))) ((Seq ((Tag Maj) ((Seq ((Seq B) A)) ((Seq B) B)))) ((Tag Bold) ((Seq ((Tag Bold) B)) ((Seq A) B)))))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+Your advice failed at least one internal test.
+
+    "Advice is like snow---the softer it falls, the longer it dwells upon,
+     and the deeper it sinks into the mind."
+                              --Coleridge
+
+% 

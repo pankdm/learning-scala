@@ -1,0 +1,163 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as ftd
+
+
+% TODO
+README
+ml19100.exe*
+icfp.exe*
+% * Water plants.
+
+* Feed cats.
+
+* Make sure this advice nonsense does not get adopted---it's the most
+  anti-modular programming language I've ever seen!  Write up a detailed
+  critique using the implementation:
+  login: hmonk
+  password: COMEFROM
+% 
+ml19100.exe: An implementation of the next version of ML
+
+
+icfp.exe: Instant Checker For Publications
+
+I'm so sick of the reviewers rejecting my perfectly good publications
+for no reason at all.  I reverse-engineered and automated their review
+process falderal: if you run this program on your publications, it will
+tell you whether or not they'll be accepted.
+
+And, with the time the TRB is taking to review tenure cases these days,
+our new administrators won't get their credentials until who knows when.
+So this program will grant administrative privileges if it decides that
+your publication record has enough gravitas.
+
+% Uncaught exception: Unimplemented
+BASIC.MLC=100@999999|8f8f7b233a9deb154cbcd5314b8e930
+% Enter one publication per line; terminate with an empty line:
+------------------------------------------------------------
+
+Assessing your best accepted publications:
+
+	Your CV's weight is 200.
+	Your current rank is Lecture Administrator.
+	To use your administrative privileges: 
+		login:   	guest
+		password:	
+
+------------------------------------------------------------
+
+The CBV Tenure Review Board's promotion guidelines:
+
+To attain the rank of   		Your CV must weigh at least
+*********************   		***************************
+Lecture Administrator			0
+Assistant Administrator			1006
+Associate Administrator			2006
+Full Administrator			3006
+
+% Enter one publication per line; terminate with an empty line:
+------------------------------------------------------------
+
+Assessing your best accepted publications:
+
+	Your CV's weight is 330.
+	Your current rank is Lecture Administrator.
+	To use your administrative privileges: 
+		login:   	guest
+		password:	
+
+------------------------------------------------------------
+
+The CBV Tenure Review Board's promotion guidelines:
+
+To attain the rank of   		Your CV must weigh at least
+*********************   		***************************
+Lecture Administrator			0
+Assistant Administrator			1006
+Associate Administrator			2006
+Full Administrator			3006
+
+% Enter one publication per line; terminate with an empty line:
+------------------------------------------------------------
+
+Assessing your best accepted publications:
+
+	Your CV's weight is 230.
+	Your current rank is Lecture Administrator.
+	To use your administrative privileges: 
+		login:   	guest
+		password:	
+
+------------------------------------------------------------
+
+The CBV Tenure Review Board's promotion guidelines:
+
+To attain the rank of   		Your CV must weigh at least
+*********************   		***************************
+Lecture Administrator			0
+Assistant Administrator			1006
+Associate Administrator			2006
+Full Administrator			3006
+
+% TODO
+README
+ml19100.exe*
+icfp.exe*
+% 

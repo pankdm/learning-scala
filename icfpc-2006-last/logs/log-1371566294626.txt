@@ -1,0 +1,449 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: The pamphlet is standard municipal fare. It reads, The City of
+Chicago's Refuse and Recycling Program combines modern trash
+classification with cybernetic labor to keep our city beautiful,
+while at the same time minimizing waste and limiting consumer
+spending. In keeping with our motto of "One Resident's Trash Is
+Another Resident's Treasure," unwanted items are collected,
+repaired, and redistributed to other residents who would have
+purchased them anyway. Residents should contribute to the city's
+program by leaving heaps of items unwanted on the sidewalk on
+collection day. 
+Also, it is in pristine condition. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: The bolt is quite useful for securing all sorts of things. 
+Also, it is in pristine condition. 
+
+>: The spring is tightly coiled. 
+Also, it is in pristine condition. 
+
+>: The button is labeled 6. 
+Also, it is in pristine condition. 
+
+>: The processor is from the elusive 19x86 line. 
+Also, it is broken: it is a processor missing a cache. 
+
+>: The pill is tempting looking. Interestingly, this one is red. 
+Also, it is in pristine condition. 
+
+>: The radio is a hi-fi AM/FM stereophonic radio. 
+Also, it is broken: it is a radio missing a transistor and an
+antenna. 
+
+>: The cache is fully-associative. 
+Also, it is in pristine condition. 
+
+>: Did you mean the red transistor or the blue transistor?
+
+>: The antenna is appropriate for receiving transmissions between
+30 kHz and 30 MHz. 
+Also, it is in pristine condition. 
+
+>: The screw is not from a Dutch company. 
+Also, it is in pristine condition. 
+
+>: The motherboard is well-used. 
+Also, it is broken: it is a motherboard missing a A-1920-IXB and
+a screw. 
+
+>: There is no a here. 
+
+>: Did you mean the red transistor or the blue transistor?
+
+>: The keypad is labeled "use me". 
+Also, it is broken: it is a keypad missing a motherboard and a
+button. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the bolt. 
+
+>: You are now carrying the spring. 
+
+>: ADVTR.INC=5@999999|f95731ab88952dfa4cb326fb99c085f
+The spring has been destroyed. 
+
+>: You are now carrying the button. 
+
+>: You are now carrying the processor. 
+
+>: You are now carrying the pill. 
+
+>: The pill has been destroyed. 
+
+>: You are now carrying the radio. 
+
+>: You are now carrying the cache. 
+
+>: ADVTR.CMB=5@999999|764e8a851411c66106e130374d8abbb
+You have successfully combined the processor and the cache!
+
+>: You are now carrying the transistor. 
+
+>: You have successfully combined the radio and the transistor!
+
+>: You are now carrying the antenna. 
+
+>: The antenna has been destroyed. 
+
+>: You are now carrying the screw. 
+
+>: You are now carrying the motherboard. 
+
+>: You have successfully combined the motherboard and the screw!
+
+>: You are now carrying the A-1920-IXB. 
+
+>: You have successfully combined the A-1920-IXB and the processor!
+
+>: You have successfully combined the A-1920-IXB and the bolt!
+
+>: You are now carrying the transistor. 
+
+>: You are now carrying the keypad. 
+
+>: You have successfully combined the keypad and the button!
+
+>: You are carrying:
+a (broken) keypad,
+a red transistor,
+a (broken) A-1920-IXB,
+a (broken) motherboard and
+a (broken) radio.
+
+>: The A-1920-IXB is an exemplary instance of part number
+A-1920-IXB. 
+Also, it is broken: it is (a A-1920-IXB missing a transistor)
+missing (a radio missing an antenna). 
+
+>: You have successfully combined the A-1920-IXB and the radio!
+
+>: You are carrying:
+a (broken) keypad,
+a red transistor,
+a (broken) A-1920-IXB and
+a (broken) motherboard.
+
+>: You have successfully combined the A-1920-IXB and the
+transistor!
+
+>: You have successfully combined the motherboard and the
+A-1920-IXB!
+
+>: You have successfully combined the keypad and the motherboard!
+
+>: You are carrying:
+a keypad.
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: ADVTR.KEY=20@999999|36995486a5be3bd747d778916846d2d
+You unlock and open the door. Passing through, you find yourself
+on the streets of Chicago. Seeing no reason you should ever go
+back, you allow the door to close behind you. 
+
+>: You are carrying:
+a keypad.
+
+>: 54th Street and Ridgewood Court
+
+You are standing at the corner of 54th Street and Ridgewood
+Court. From here, you can go east. 
+There is a /etc/passwd here. 
+Underneath the /etc/passwd, there is a self-addressed note. 
+Underneath the note, there is a (broken) downloader. 
+Underneath the downloader, there is a (broken) uploader. 
+
+>: 54th Street and Dorchester Avenue
+
+You are standing at the corner of 54th Street and Dorchester
+Avenue. From here, you can go north, east, south, or west. 
+There is an orange-red X-9247-GWE here. 
+Underneath the X-9247-GWE, there is a (broken) magenta
+V-0010-XBD. 
+Underneath the V-0010-XBD, there is a pumpkin F-1403-QDS. 
+Underneath the F-1403-QDS, there is a (broken) heavy P-5065-WQO.
+
+Underneath the P-5065-WQO, there is a taupe B-4832-LAL. 
+Underneath the B-4832-LAL, there is a (broken) gray40
+L-6458-RNH. 
+Underneath the L-6458-RNH, there is a (broken) eggplant
+T-9887-OFC. 
+Underneath the T-9887-OFC, there is a (broken) indigo
+Z-1623-CEK. 
+Underneath the Z-1623-CEK, there is a yellow-green H-9887-MKY. 
+Underneath the H-9887-MKY, there is a (broken) shiny F-6678-DOX.
+
+Underneath the F-6678-DOX, there is a pale-green R-1403-SXU. 
+Underneath the R-1403-SXU, there is a (broken) USB cable. 
+Underneath the USB cable, there is a sienna N-4832-NUN. 
+Underneath the N-4832-NUN, there is a slate-gray J-9247-IRG. 
+Underneath the J-9247-IRG, there is a dim-gray B-5065-YLQ. 
+
+>: 54th Street and Ridgewood Court
+
+You are standing at the corner of 54th Street and Ridgewood
+Court. From here, you can go east. 
+There is a /etc/passwd here. 
+Underneath the /etc/passwd, there is a self-addressed note. 
+Underneath the note, there is a (broken) downloader. 
+Underneath the downloader, there is a (broken) uploader. 
+
+>: You are now carrying the /etc/passwd. 
+
+>: The /etc/passwd is some kind of lost inode. It reads:
+howie:xyzzy:Howard Curry:/home/howie
+yang:U+262F:Y Yang:/home/yang
+hmonk:COMEFROM:Harmonious Monk:/home/hmonk. 
+Also, it is in pristine condition. 
+
+>: You are now carrying the note. 
+
+>: The note is written in a familiar hand. 
+It reads: Dear Self, I had to erase our memory to protect the
+truth. The Municipality has become more powerful than we had
+feared. Its Censory Engine has impeded the spread of information
+throughout our ranks. I've left two useful items for you here,
+but I had to disassemble them and scatter the pieces. Each piece
+may be assembled from the items at a single location. Repair the
+items and recover the blueprint from the Museum of Science and
+Industry; it will show you how to proceed. If you have trouble
+reading the blueprint, know that the Censory Engine blocks only
+your perception, not your actions. Have courage, my self, the
+abstraction is weak! P.S. SWITCH your GOGGLES!. Interestingly,
+this one is self-addressed. 
+Also, it is in pristine condition. 
+
+>: You are now carrying the downloader. 
+
+>: The downloader is (according to the label) fully compatible with
+third generation municipal robots. 
+Also, it is broken: it is a downloader missing a USB cable and a
+display and a jumper shunt and a progress bar and a power cord. 
+
+>: The uploader is used to update firmware on municipal robots. A
+label reads, Warning: use of this device will void your robot's
+warranty. 
+Also, it is broken: it is an uploader missing a MOSFET and a
+status LED and a RS232 adapter and a EPROM burner and a battery.
+
+
+>: 54th Street and Dorchester Avenue
+
+You are standing at the corner of 54th Street and Dorchester
+Avenue. From here, you can go north, east, south, or west. 
+There is an orange-red X-9247-GWE here. 
+Underneath the X-9247-GWE, there is a (broken) magenta
+V-0010-XBD. 
+Underneath the V-0010-XBD, there is a pumpkin F-1403-QDS. 
+Underneath the F-1403-QDS, there is a (broken) heavy P-5065-WQO.
+
+Underneath the P-5065-WQO, there is a taupe B-4832-LAL. 
+Underneath the B-4832-LAL, there is a (broken) gray40
+L-6458-RNH. 
+Underneath the L-6458-RNH, there is a (broken) eggplant
+T-9887-OFC. 
+Underneath the T-9887-OFC, there is a (broken) indigo
+Z-1623-CEK. 
+Underneath the Z-1623-CEK, there is a yellow-green H-9887-MKY. 
+Underneath the H-9887-MKY, there is a (broken) shiny F-6678-DOX.
+
+Underneath the F-6678-DOX, there is a pale-green R-1403-SXU. 
+Underneath the R-1403-SXU, there is a (broken) USB cable. 
+Underneath the USB cable, there is a sienna N-4832-NUN. 
+Underneath the N-4832-NUN, there is a slate-gray J-9247-IRG. 
+Underneath the J-9247-IRG, there is a dim-gray B-5065-YLQ. 
+
+>: The USB cable is compatible with all high-speed Universal Sand
+Bus 2.0 devices. 
+Also, it is broken: it is ((a USB cable missing (a T-9887-OFC
+missing a X-6458-TIJ)) missing a F-6678-DOX) missing a
+N-4832-NUN. 
+
+>: 53th Street and Dorchester Avenue
+
+You are standing at the corner of 53th Street and Dorchester
+Avenue. From here, you can go north, east, or south. 
+There is a fern-green N-1623-AOE here. 
+Underneath the N-1623-AOE, there is a (broken) burgundy
+R-4292-FRL. 
+Underneath the R-4292-FRL, there is a (broken) pale-magenta
+F-6458-DDN. 
+Underneath the F-6458-DDN, there is a (broken) peach-yellow
+H-1623-MYO. 
+Underneath the H-1623-MYO, there is a (broken) rotating
+H-4292-ZHF. 
+Underneath the H-4292-ZHF, there is a (broken) low-carb
+R-6458-FXP. 
+Underneath the R-6458-FXP, there is a (broken) mysterious
+T-6458-BIL. 
+Underneath the T-6458-BIL, there is a (broken) brass R-9247-SMK.
+
+Underneath the R-9247-SMK, there is a (broken) puce Z-1403-CSY. 
+Underneath the Z-1403-CSY, there is a (broken) pink N-6678-NJD. 
+Underneath the N-6678-NJD, there is a (broken) jade X-4292-TWX. 
+Underneath the X-4292-TWX, there is a (broken) flax Z-6678-PEF. 
+Underneath the Z-6678-PEF, there is a (broken) pale-blue
+H-4832-ZKT. 
+Underneath the H-4832-ZKT, there is a (broken) gray60
+P-0010-JQJ. 
+Underneath the P-0010-JQJ, there is a (broken) olive-green
+J-1403-IDG. 
+Underneath the J-1403-IDG, there is a swamp-green D-9247-UHM. 
+Underneath the D-9247-UHM, there is a (broken) khaki N-6458-NDX.
+
+Underneath the N-6458-NDX, there is a (broken) red-violet
+V-9887-KUS. 
+Underneath the V-9887-KUS, there is a (broken) tea-green
+N-0010-NGN. 
+Underneath the N-0010-NGN, there is a (broken) cinnamon
+X-1403-GIE. 
+There are more items beneath it, but the pile is so tall you
+feel a little dizzy.
+Try switching your goggles.
+
+>: 

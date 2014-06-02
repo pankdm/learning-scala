@@ -1,0 +1,85 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% For information on a specific command, type
+  help cmd
+UMIX Commands:
+  ls
+  rm
+  cat
+  more
+  cdup
+  mkdir
+  cd
+  run
+  pwd
+  dump
+  logout
+  telnet
+
+Also, try running programs with no arguments for usage instructions.
+
+% dump: not a binary file or not accessible
+% usage: dump file
+prints a hexadecimal dump of a binary file.
+% dump: not a binary file or not accessible
+% [Building vocabulary]
+[Initializing command processor]

@@ -1,0 +1,53 @@
+{ test addition on numerals }
+Compute (Add (S (S Z)) (S (S Z))) -> (S (S (S (S Z))));
+
+{ test addition on nested  }
+Compute 
+	(Add 
+		(Add (S (S Z)) Z) 
+		(S (S Z))) -> (S (S (S (S Z))));
+
+{ test addition on nested 2 } 
+Compute 
+	(Add 
+		(Add (S (S Z)) Z) 
+		(Add (S Z) Z)) -> (S (S (S Z)));
+
+{ test addition on nested 3 } 
+Compute 
+	(Add 
+		(S (S Z))
+		(Add (S Z) Z)) -> (S (S (S Z)));
+
+
+{ test multiplication on numerals }
+
+Compute (Mult (S (S Z)) Z) -> Z;
+Compute (Mult (S (S Z)) (S (S Z))) -> (S (S (S (S Z))));
+
+{test nested multiplication }
+
+Compute (Mult
+	(Mult (S (S Z)) (S Z))
+	(Mult (S (S Z)) (S Z))
+	) -> (S (S (S (S Z))));
+
+{test nested multiplication }
+
+Compute (Mult
+	(Mult (S (S Z)) (S Z))
+	(S (S Z))
+	) -> (S (S (S (S Z))));
+
+
+{test Add and Mult}
+
+Compute (Add 
+	(Mult (S Z) (S Z))
+	(Add (S Z) (S Z))
+	) -> (S (S (S Z)));
+
+Compute (Mult (Add (S Z) (S (S Z))) (S (S (S (Z)))))
+	-> (S (S (S (S (S (S (S (S (S Z)))))))));
+
+. { end of tests }

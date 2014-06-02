@@ -1,0 +1,5 @@
+self-check succeeded!
+enter decryption key:
+decrypting...
+ok
+LOADING: 9876543

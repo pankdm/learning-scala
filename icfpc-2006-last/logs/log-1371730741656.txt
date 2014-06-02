@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: switch: Switch your Insta-Read(tm) Goggles to another mode. The
+goggles are marked with the following settings: 'English',
+'XML', 'sexp', 'ML', 'ANSI', 'Reading'. Synonyms include sw.
+
+>: <success>
+  <command>
+    <switch>
+      XML
+    </switch>
+  </command>
+</success>
+<success>
+  <command>
+    <look>
+      <room>
+        <name>
+          Room With a Door
+        </name>
+        <description>
+          You are in a room with a mechanical door. You will probably need to use a keypad to unlock it. A hallway leads north. 
+        </description>
+        <items>
+          <item>
+            <name>
+              pamphlet
+            </name>
+            <description>
+              standard municipal fare. It reads, The City of Chicago's Refuse and Recycling Program combines modern trash classification with cybernetic labor to keep our city beautiful, while at the same time minimizing waste and limiting consumer spending. In keeping with our motto of "One Resident's Trash Is Another Resident's Treasure," unwanted items are collected, repaired, and redistributed to other residents who would have purchased them anyway. Residents should contribute to the city's program by leaving heaps of items unwanted on the sidewalk on collection day
+            </description>
+            <adjectives>
+            </adjectives>
+            <condition>
+              <pristine>
+              </pristine>
+            </condition>
+            <piled_on>
+              <item>
+                <name>
+                  manifesto
+                </name>
+                <description>
+                  <redacted/>
+                </description>
+                <adjectives>
+                </adjectives>
+                <condition>
+                  <pristine>
+                  </pristine>
+                </condition>
+                <piled_on>
+                </piled_on>
+              </item>
+            </piled_on>
+          </item>
+        </items>
+      </room>
+    </look>
+  </command>
+</success>
+<help>
+  switch: Switch your Insta-Read(tm) Goggles to another mode. The goggles are marked with the following settings: 'English', 'XML', 'sexp', 'ML', 'ANSI', 'Reading'. Synonyms include sw.
+</help>
+Things look slightly different, but you can't put a diode on
+exactly how. 
+
+>: The manifesto is [______REDACTED______]. 
+Also, it is in pristine condition. 
+
+>: (success (command (switch "sexp")))
+(success (command (examine (item (name "manifesto")(description redacted)(adjectives )(condition (pristine ))(piled_on )))))
+[0m[37m[40m[2J
+
+
+Things look slightly different, but you can't put a diode on
+exactly how. 
+
+[s[0;0H[1m[37m[44m[K[ score : [33m0[37m ]  Room With a Door                           [0m[37m[40m[u[1m[34m>: [0m[37m[40m(success (command (switch "sexp")))
+(success (command (switch "ML")))

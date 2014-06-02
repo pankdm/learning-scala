@@ -1,0 +1,225 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as bbarker
+
+
+
+You have new mail. Type 'mail' to view.
+% First unread message:
+---------------------
+
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: Cain Gardener <gardener@cbv.net>
+To: bbarker@cbv.net
+Subject: Get Rich Quick? ;-)
+
+
+Betty:
+
+Have you noticed how popular these "black-knot" toys are? Every store
+I've been to while shopping for Holidays is sold out of them, and kids
+are basically crying in the streets. Parents are in a panic.
+Unfortunately the manufacturing process uses a technology called "Open
+Terms," which is patented, so nobody can make competing replacements.
+
+Well, I think I just figured out a way to build these toys using a
+different process. Let me run this by you. First, here's a
+mathematical formulation of what black-knots do:
+
+  A black-knot has n inputs (numbered 0 to n-1) and n outputs.
+  (These are the little holes that kids drop marbles into.) The
+  black-knot is a function from each of its n inputs to a pair of
+  integers (j, k) where 0 <= j < n and 0 <= k. The number j is the
+  output hole that the marble comes out of. The number k is a number
+  of "plink" sounds that are produced as the marble rolls unseen
+  through the toy.
+
+My manufacturing technique uses only two parts, or "combinators,"
+called | and ><. I conjecture that we can reproduce each of the 11
+models of the black-knot toy using only these combinators. With my
+technique, a toy is just a grid filled with these two combinators.
+(The | combinator has width 1 and >< has width 2.) Marbles are dropped
+into the top of the grid, with input 0 being the first column, and
+input n-1 being the final column. A marble that enters the top of a |
+combinator continues into the row below in the same column. A marble
+that enters the left side of a >< combinator emerges in the right
+column and generates a "plink" sound. A marble that enters the right
+side of the >< combinator emerges on the left but does not generate a
+sound.
+
+For example:
+
+           012 
+           ||| 
+           ><| 
+           |>< 
+           ||| 
+ 
+A marble that goes in column 0 comes out in column 2 with two "plinks". 
+A marble that goes in column 1 comes out in column 0 with no "plinks". 
+A marble that goes in column 2 comes out in column 1 with no "plinks". 
+
+
+I expect children will be very picky about their knockoff toys being
+observationally equivalent to the 11 official black-knot models. I've
+written a simple program which you can use to access the mathematical
+descriptions of these toys. Run the bk_specs file in your home
+directory. The small ones are easy to reproduce but I'm having trouble
+implementing the larger ones--can you help?
+
+ -- Cain
+% run_bb*
+verify*
+bk_specs*
+% Please enter your machine one row at a time, using the |>< characters.
+Terminate with an empty line.
+
+[BK] Parse Error : stray character . found at (ln: 0, col: 0) in blackknots program.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+* x -> (y,z)
+* Means that if you drop a marble into pipe x, it comes out pipe y,
+* and you hear z plinks
+0 -> (3,4)
+1 -> (2,3)
+2 -> (0,1)
+3 -> (1,1)
+% unknown command 010
+new to UMIX? try
+  help
+for help.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+* x -> (y,z)
+* Means that if you drop a marble into pipe x, it comes out pipe y,
+* and you hear z plinks
+0 -> (8,10)
+1 -> (1,5)
+2 -> (2,5)
+3 -> (0,5)
+4 -> (5,4)
+5 -> (4,6)
+6 -> (7,4)
+7 -> (3,3)
+8 -> (9,6)
+9 -> (6,4)
+% run_bb*
+verify*
+bk_specs*
+% Please enter your machine now using the |>< characters.
+Terminate with an empty line.
+
+[BK] Your machine has the same width as black-knot model 000.
+[BK] Checking against that model's spec...
+[BK] Your machine successfully replicated black-knot model 000!
+High score!
+Please enter your name: Please enter your password: ===============================
+         HIGH SCORES
+===============================
+SCORE      NAME     PASSWORD
+   50      howie xyzzy^H^H^H^H^H
+   40       yang U+262F
+   10      guest 
+    0      guest 
+    0      guest 
+    0       yang how do I delete this??
+    0      guest 
+    0      guest 
+    0      guest 
+    0      guest 
+    0      guest 
+    0       yang please take my password off!
+BLACK.000=10@999999|4566683b0cde7717794ff5fc1c298c8
+% 

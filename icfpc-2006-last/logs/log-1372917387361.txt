@@ -1,0 +1,2 @@
+trying to Allocate array of size 0..
+trying to Abandon size 0 allocation..

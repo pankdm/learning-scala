@@ -1,0 +1,213 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: logged in as guest
+INTRO.LOG=200@999999|35e6f52e9bc951917c73af391e35e1d
+
+
+You have new mail. Type 'mail' to view.
+% First unread message:
+---------------------
+
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: Administrator <root@localhost>
+To: guest@cbv.net
+Subject: guest account misuse
+
+To whom it may concern:
+
+Guest access is provided as a courtesy to the community. We have
+recently observed an increase in abuse using the guest account. For
+example, the following sequence of commands obviously represents an
+attempt to gain unauthorized access to the account "howie":
+
+  cd code
+  /bin/umodem hack.bas STOP
+  /bin/qbasic hack.bas
+  ls /home
+  ./hack.exe howie
+  
+Moreover, the file that you uploaded with umodem appears to be 
+corrupted and did not compile.
+
+Please have respect for your fellow users,
+Admin
+
+% rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+Transferred 1536...
+Transferred 2048...
+Transferred 2560...
+Transferred 3072...
+writing 3509 characters
+INTRO.UMD=10@999999|7005f80d6cd9b7b837802f1e58b11b8
+% % I DIM c(X) AS STRING
+XI SET c(I) = "1"
+XII SET c(II) = "2"
+XIII SET c(III) = "3"
+XIV SET c(IV) = "4"
+XV SET c(V) = "5"
+XVI SET c(VI) = "6"
+XVII SET c(VII) = "7"
+XVIII SET c(VIII) = "8"
+XIX SET c(IX) = "9"
+XX SET c(X) = "10"
+XXV SKIP
+XXX SKIP
+XXXV SKIP
+XL SKIP
+XLV SKIP
+L SKIP
+LV SKIP
+LX SKIP
+LXV IF (ARGS() > I) THEN GOTO LXXXV ELSE SKIP
+LXX PRINT "usage: ./hack.exe username"
+LXXV PRINT CHR(X)
+LXXX END
+LXXXV SKIP
+XC SKIP
+XCV DIM username AS STRING
+C SET username = ARG(II)
+CV SKIP
+CX DIM pwdcount AS INTEGER
+CXV SET pwdcount = LIII
+CXX DIM words(pwdcount) AS STRING
+CXXV SET words(I) = "airplane"
+CXXX SET words(II) = "alphabet"
+CXXXV SET words(III) = "aviator"
+CXL SET words(IV) = "bidirectional"
+CXLV SET words(V) = "changeme"
+CL SET words(VI) = "creosote"
+CLV SET words(VII) = "cyclone"
+CLX SET words(VIII) = "december"
+CLXV SET words(IX) = "dolphin"
+CLXX SET words(X) = "elephant"
+CLXXV SET words(XI) = "ersatz"
+CLXXX SET words(XII) = "falderal"
+CLXXXV SET words(XIII) = "functional"
+CXC SET words(XIV) = "future"
+CXCV SET words(XV) = "guitar"
+CC SET words(XVI) = "gymnast"
+CCV SET words(XVII) = "hello"
+CCX SET words(XVIII) = "imbroglio"
+CCXV SET words(XIX) = "january"
+CCXX SET words(XX) = "joshua"
+CCXXV SET words(XXI) = "kernel"
+CCXXX SET words(XXII) = "kingfish"
+CCXXXV SET words(XXIII) = "(\b.bb)(\v.vv)"
+CCXL SET words(XXIV) = "millennium"
+CCXLV SET words(XXV) = "monday"
+CCL SET words(XXVI) = "nemesis"
+CCLV SET words(XXVII) = "oatmeal"
+CCLX SET words(XXVIII) = "october"
+CCLXV SET words(XXIX) = "paladin"
+CCLXX SET words(XXX) = "pass"
+CCLXXV SET words(XXXI) = "password"
+CCLXXX SET words(XXXII) = "penguin"
+CCLXXXV SET words(XXXIII) = "polynomial"
+CCXC SET words(XXXIV) = "popcorn"
+CCXCV SET words(XXXV) = "qwerty"
+CCC SET words(XXXVI) = "sailor"
+CCCV SET words(XXXVII) = "swordfish"
+CCCX SET words(XXXVIII) = "symmetry"
+CCCXV SET words(XXXIX) = "system"
+CCCXX SET words(XL) = "tattoo"
+CCCXXV SET words(XLI) = "thursday"
+CCCXXX SET words(XLII) = "tinman"
+CCCXXXV SET words(XLIII) = "topography"
+CCCXL SET words(XLIV) = "unicorn"
+CCCXLV SET words(XLV) = "vader"
+CCCL SET words(XLVI) = "vampire"
+CCCLV SET words(XLVII) = "viper"
+CCCLX SET words(XLVIII) = "warez"
+CCCLXV SET words(XLIX) = "xanadu"
+CCCLXX SET words(L) = "xyzzy"
+CCCLXXV SET words(LI) = "zephyr"
+CCCLXXX SET words(LII) = "zeppelin"
+CCCLXXXV SET words(LIII) = "zxcvbnm"
+CCCXC SKIP
+CCCXCV PRINT ((("attempting hack with " + pwdcount) + " passwords ") + CHR(X))
+CD DIM i AS INTEGER
+CDI DIM pass AS STRING
+CDV SET i = I
+CDX DIM j AS INTEGER
+CDXV SET j = I
+CDXX DIM k AS INTEGER
+CDXXV SET k = I
+CDXXX SET pass = ((words(i) + c(j)) + c(k))
+CDXXXI PRINT pass
+CDXXXV IF CHECKPASS(username, pass) THEN GOTO CDLXXX ELSE SKIP
+CDXL SET k = (k + I)
+CDL IF (k > X) THEN GOTO CDLX ELSE SKIP
+CDLV GOTO CDXXX
+CDLX SET j = (j + I)
+CDLXV IF (j > X) THEN GOTO CDLXX ELSE SKIP
+CDLXVI GOTO CDXX
+CDLXX SET i = (i + I)
+CDLXXV IF (i > pwdcount) THEN GOTO CDLXXXII ELSE SKIP
+CDLXXVI GOTO CDX
+CDLXXX PRINT (("found match!! for user " + username) + CHR(X))
+CDLXXXI PRINT (("password: " + pass) + CHR(X))
+CDLXXXII END
+CDLXXXIII SKIP
+INTRO.QBC=10@999999|e6ee9c98b80b4dd04814a29a37bcba8
+Compiled.
+% attempting hack with LIII passwords 
+airplane11airplane12airplane13airplane14airplane15airplane16airplane17airplane18airplane19airplane110airplane21airplane22airplane23airplane24airplane25airplane26airplane27airplane28airplane29airplane210airplane31airplane32airplane33airplane34airplane35airplane36airplane37airplane38airplane39airplane310airplane41airplane42airplane43airplane44airplane45airplane46airplane47airplane48airplane49airplane410airplane51airplane52airplane53airplane54airplane55airplane56airplane57airplane58airplane59airplane510airplane61airplane62airplane63airplane64airplane65airplane66airplane67airplane68airplane69airplane610airplane71airplane72airplane73airplane74airplane75airplane76airplane77airplane78airplane79airplane710airplane81airplane82airplane83airplane84airplane85airplane86airplane87airplane88airplane89airplane810airplane91airplane92airplane93airplane94airplane95airplane96airplane97airplane98airplane99airplane910airplane101airplane102airplane103airplane104airplane105airplane106airplane107airplane108airplane109airplane1010alphabet11alphabet12alphabet13alphabet14alphabet15alphabet16alphabet17alphabet18alphabet19alphabet110alphabet21alphabet22alphabet23alphabet24alphabet25alphabet26alphabet27alphabet28alphabet29alphabet210alphabet31alphabet32alphabet33alphabet34alphabet35alphabet36alphabet37alphabet38alphabet39alphabet310alphabet41alphabet42alphabet43alphabet44alphabet45alphabet46alphabet47alphabet48alphabet49alphabet410alphabet51alphabet52alphabet53alphabet54alphabet55alphabet56alphabet57alphabet58alphabet59alphabet510alphabet61alphabet62alphabet63alphabet64alphabet65alphabet66alphabet67alphabet68alphabet69alphabet610alphabet71alphabet72alphabet73alphabet74alphabet75alphabet76alphabet77alphabet78alphabet79alphabet710alphabet81alphabet82alphabet83alphabet84alphabet85alphabet86alphabet87alphabet88alphabet89alphabet810alphabet91alphabet92alphabet93alphabet94alphabet95alphabet96alphabet97alphabet98alphabet99alphabet910alphabet101alphabet102alphabet103alphabet104alphabet105alphabet106alphabet107alphabet108alphabet109alphabet1010aviator11aviator12aviator13aviator14aviator15aviator16aviator17aviator18aviator19aviator110aviator21aviator22aviator23aviator24aviator25aviator26aviator27aviator28aviator29aviator210aviator31aviator32aviator33aviator34aviator35aviator36aviator37aviator38aviator39aviator310aviator41aviator42aviator43aviator44aviator45aviator46aviator47aviator48aviator49aviator410aviator51aviator52aviator53aviator54aviator55aviator56aviator57aviator58aviator59aviator510aviator61aviator62aviator63aviator64aviator65aviator66aviator67aviator68aviator69aviator610aviator71aviator72aviator73aviator74aviator75aviator76aviator77aviator78aviator79aviator710aviator81aviator82aviator83aviator84aviator85aviator86aviator87aviator88aviator89aviator810aviator91aviator92aviator93aviator94aviator95aviator96aviator97aviator98aviator99aviator910aviator101aviator102aviator103aviator104aviator105aviator106aviator107aviator108aviator109aviator1010bidirectional11bidirectional12bidirectional13bidirectional14bidirectional15bidirectional16bidirectional17bidirectional18bidirectional19bidirectional110bidirectional21bidirectional22bidirectional23bidirectional24bidirectional25bidirectional26bidirectional27bidirectional28bidirectional29bidirectional210bidirectional31bidirectional32bidirectional33bidirectional34bidirectional35bidirectional36bidirectional37bidirectional38bidirectional39bidirectional310bidirectional41bidirectional42bidirectional43bidirectional44bidirectional45bidirectional46bidirectional47bidirectional48bidirectional49bidirectional410bidirectional51bidirectional52bidirectional53bidirectional54bidirectional55bidirectional56bidirectional57bidirectional58bidirectional59bidirectional510bidirectional61bidirectional62bidirectional63bidirectional64bidirectional65bidirectional66bidirectional67bidirectional68bidirectional69bidirectional610bidirectional71bidirectional72bidirectional73bidirectional74bidirectional75bidirectional76bidirectional77bidirectional78bidirectional79bidirectional710bidirectional81bidirectional82bidirectional83bidirectional84bidirectional85bidirectional86bidirectional87bidirectional88bidirectional89bidirectional810bidirectional91bidirectional92bidirectional93bidirectional94bidirectional95bidirectional96bidirectional97bidirectional98bidirectional99bidirectional910bidirectional101bidirectional102bidirectional103bidirectional104bidirectional105bidirectional106bidirectional107bidirectional108bidirectional109bidirectional1010changeme11changeme12changeme13changeme14changeme15changeme16changeme17changeme18changeme19changeme110changeme21changeme22changeme23changeme24changeme25changeme26changeme27changeme28changeme29changeme210changeme31changeme32changeme33changeme34changeme35changeme36changeme37changeme38changeme39changeme310changeme41changeme42changeme43changeme44changeme45changeme46

@@ -1,0 +1,1178 @@
+COMEFROM
+
+% :> cat README
+From: hmonk@cbv.net
+Newsgroups: cult.cbv.discuss
+Date: 26 Aug 19108 17:21:07
+X-Organization: Cult of the Bound Variable
+Subject: O'Cult Version 1.0 Available
+
+Friends,
+
+On my recent journey across the rivers, I was struck with a simply
+remarkable idea for a new way to program our Computing Device.  As you
+all know well, it is currently difficult for a programmer to correct a
+mistake of one of his fellows---but no longer!  Why, when programming in
+O'Cult, one programmer needs to have written barely more than a blank
+screen before others can begin debugging his code.
+
+I start from a very simple programming language whose terms are
+specified as follows:
+
+e ::= c | e e | (e)
+
+where c ranges over constants and we adopt the convention that
+juxtaposition associates to the left.  For example,
+
+     Z
+     (S Z)
+     Add Z (S Z)
+
+are all well-formed terms, and the last parses as (Add Z) (S Z).
+
+Ordinarily, one would enrich this language with more powerful means of
+computation.  Instead, I take a different tack: a term can be _advised_
+by a set of external computation _rules_.
+
+A rule is a pair of _patterns_, where a pattern extends the language of
+terms with variables.  The term (Add Z (S Z)) is quite inert, but if the
+term is advised by the following rule,
+
+     Add Z y => y; 
+
+then the program computes (S Z), as expected.
+
+******************
+Rules and Matching
+******************
+
+More formally, a rule is a pair of patterns separated by '=>' and
+terminated with ';'.  A pattern can contain both constants, which are
+sequences of letters and numbers beginning with an *uppercase* letter,
+and variables, which are sequences of letters and numbers beginning with
+a *lowercase* letter.  A well-formed rule is one where the variables in
+the right-hand side are a subset of the variables in the left-hand side.
+
+To define how a rule acts on a term, we first define when a pattern
+_matches_ a term yielding a set of bindings:
+
+(1) A constant matches only that same constant, yielding the empty set
+    of bindings. For example,
+
+    Z matches Z yielding []
+    S does not match Z
+
+(2) A variable matches any term, yielding a binding to that term.  For
+    example,
+    
+    x matches (S Z) yielding [x = (S Z)]
+
+(3) A juxtaposition-pattern matches a juxtaposition-term if 
+       (a) the pattern's first position matches the term's first position
+       (b) the pattern's second position matches the term's second position
+       (c) the bindings from the two positions _unify_: for any variable
+	   bound in both positions, the term associated with that variable
+	   is the same on both positions.  That is, a variable is allowed to
+	   appear in a pattern more than once, but it must match the
+	   same term in all locations.
+    The bindings of the juxtaposition are the union of the bindings from
+    each position.
+
+    For example, 
+
+    x y matches S Z yielding [x = S, y = Z]
+    x x matches S S yielding [x = S]
+    x x does not match S Z
+
+If a rule matches a term, then _applying_ that rule to the term yields
+the right-hand component of the rule with the bindings from the match
+substituted for the variables.
+
+*******************
+Sentences of Advice
+*******************
+  
+This language would be quite boring if a programmer could only specify
+one rule.  So, a term may be modified by a _sentence_ of advice, which
+is a sequence of rules terminated with the '.' character.
+
+A program consists of a current term and a sentence of advice.  Because
+a program is advised by multiple rules, circumstances can arise when
+more than one rule in the sentence matches the term.  A good programming
+language is based on common sense above all else, and my sand-father was
+very fond of the following aphorism:
+
+    "Advice when most needed is least heeded."
+                                     - Unknown
+
+Therefore, there is clearly only one correct semantics for applying
+advice to a term:
+
+The rules in the sentence are considered left-to-right.
+
+(1) If the current rule matches the current term, the result is the
+    application of that rule to the term.
+
+(2) If the current rule does not match the term directly, it may match
+    subterms (provided that the term is a juxtaposition).  In this case, 
+    whether or not the current rule is applied is determined by:
+
+   (a) Counting the number of matches in each position of the juxtaposition.
+       Note that counting does not proceed into subterms that themselves
+       match the current rule.
+
+   (b) If the rule does not match in either position, it is not applied.  
+
+       If the rule matches only in one position, it is recursively
+       considered for application to that position.
+
+       If the rule matches both positions,
+         * if one position has strictly more matches, the rule is
+	   recursively considered for application to *other* position.
+	   (The rule is least heeded in the position where it is most
+	   needed.)
+
+	 * if the rule matches the same number of subterms in both
+	   positions, the rule is not applied.
+
+When a rule is not applied, consideration proceeds to the next rule.
+When a rule is applied, the process repeats on the new term.  This
+process terminates when no rules in the advice apply.
+
+**********
+Conclusion
+**********
+
+I am sure you can see how easy it is to program in O'Cult.  Now I need
+your assistance.  I have included a regression suite as part of the
+advise distribution (see the man pages for details), but I need to
+collect programs that pass the suite.
+
+I think we might be able to get some good publications out of this work,
+but only if we can prove that it is easy to write short programs.  Try
+passing the regression suite with as pithy advice as possible.  (The size
+of a sentence is the sum of the sizes of the rules in it, where all
+variables are constants are considered to have unit size.)
+
+I implore you to hold this idea in confidence; its clean modularization
+of crosscutting concerns may prove key in our strife with the Cult of
+the LValue.
+
+Please let me know if you have any questions or suggestions,
+-Harmonious
+
+
+% :> ./advise
+Usage: advise <action> <advice_file> [<tests_file>]
+Available actions:
+    run      Runs the tests in the file given as the third argument.
+
+    step     Runs the tests in the file given as the third argument
+             and prints each step of the advice.
+
+    arith    Arithmetic suite:
+             Run automatically generated arithmetic tests.
+             The tests-file argument is optional for this suite;
+             if a tests file is given, the tests in it are run
+             along with the built-in tests.
+
+    xml      XML suite:
+             Run XML tests obtained from the Cult Wide Web.
+             The tests-file argument is optional for this suite;
+             if a tests file is given, the tests in it are run
+             along with the built-in tests.
+
+% :> cat advise.man
+advise(1)                                                    advise(1)
+
+NAME
+     advise <action> <advice_file> [<tests_file>]
+
+DESCRIPTION 
+     advise runs the O'Cult program given in <advice_file>.  The
+     fashion in which the program is run is determined by the <action>
+     argument.  A set of tests is taken from <tests_file>.  This is
+     optional for actions that generate tests automatically; if
+     included, the supplied tests are added to those generated
+     automatically.
+    
+ACTIONS
+
+* run
+
+  Run the program against tests given in <tests_file>.
+
+* step
+  
+  Run the program against tests given in <tests_file>, printing each
+  execution step.
+
+* arith
+
+  Run the program against automatically generated arithmetic tests.
+  To ensure robustness, the number of tests is proportional to the
+  size of the program.
+
+  Arithmetic expressions are represented as O'Cult terms as follows:
+  
+  numeral ::= Z | S numeral
+  exp ::= numeral | Add exp exp | Mult exp exp
+
+  For example, the arithmetic expression (1 + 2) * 3 is written
+
+     Mult (Add (S Z) (S (S Z))) (S (S (S (Z)))).
+
+  The program should define addition and multiplication for arithmetic
+  expressions.  Its advice should transform the term
+
+     Compute exp
+
+  into the numeral representing the value of the arithmetic expression
+  exp.
+
+  Sample program and test files for arithmetic are included with the
+  advise distribution as arith.adv and arith.tests.
+
+* xml
+
+  Run the program against XML tests obtained from the Cult Wide Web.
+  To ensure robustness, the number of tests is proportional to the
+  size of the program.
+
+  The Cult-Wide-Web Consortium (CW2C) has settled on the eXcessively
+  Malleable Language (XML) as the format for CW2 pages.  The abstract
+  syntax of this language is represented as O'Cult terms as follows:
+
+  quality ::= Bold | Emph | Maj
+  doc ::= A | B | Seq doc doc | Tag quality doc
+
+  There are two base documents, A and B.  Documents can be sequenced
+  using Seq and tagged with a quality using Tag.  The possible qualities
+  are emphasized (Emph), bold (Bold), and majuscule (Maj).
+
+  The CW2C has specified that documents are to be displayed as follows:
+  (1) The document A is displayed as the character A; the document B  
+      is displayed as the character B.
+  (2) A sequence of documents, Seq d1 d2, is displayed by first
+      displaying the document d1 and then displaying the document d2.
+  (3) A tagged document, Tag q d, is displayed by displaying the
+      document d with the quality q.  q is added to any other qualities
+      with which d is rendered.  Note that you will need a UMv19101 or
+      later terminal to properly display characters in any subset of
+      {emphasized, bold, majuscule}.
+
+  For example, the document 
+      (Seq (Seq A B) (Seq B (Tag Bold (Seq B A)))) 
+  is displayed as the character sequence
+      A B B *B* *A*
+  (where, for compatibility with older UMs, I have notated bold by
+   enclosing each bold character in * *.)
+
+  As another example, the document
+      (Tag Bold (Tag Emph A))
+  is displayed as the character sequence
+      *_A_*
+  (where, analogously, I have used the notation _ _ for emphasis).
+
+  More than one document can display as the same character sequence; for
+  example:
+      Seq (Seq A A) A               and   Seq A (Seq A A)
+      Tag Emph (Tag Emph A)         and   Tag Emph A
+      Seq (Tag Emph A) (Tag Emph A) and   Tag Emph (Seq A A)
+ 
+  Given the granularity of our current sand, CW2 browsers are too slow
+  to display CW2 documents unless they are in _short normal form_ (SNF).
+  An XML document is in SNF iff 
+  (1) No piece of the document matches any of the following three patterns:
+     
+      Seq (Seq d1 d2) d3          
+      Tag q (Tag q d)             
+      Seq (Tag q d1) (Tag q d2)   
+
+  (2) For all nested Tag expressions (Tag q1 (Tag q2 d)) in the document,
+      q1 is less than q2, where Bold is less than Emph is less than Maj.
+
+  The program should implement this SNF transformation.  Its advice
+  should transform the term (SNF d) into a short normal form that
+  displays as the same character sequence as d.
+
+  
+% :> cat arith.adv
+{ comments are enclosed by curly-braces;
+  no nested comments are allowed  }
+
+{ addition 
+
+  these rules work when the arguments are numerals
+  but not for all arbitrary expressions
+
+}
+Add Z y => y;
+Add (S x) y => S (Add x y);
+
+{ define multiplication (Mult) here }
+
+
+{ when all other computation is done } 
+Compute x => x;
+
+. { end of rules }
+
+% :> ls
+README
+advise*
+advise.man
+arith.adv
+arith.tests
+% :> cat arith.tests
+{ tests for arithmetic }
+
+{ test addition on numerals }
+Compute (Add (S (S Z)) (S (S Z))) -> (S (S (S (S Z))));
+
+{ test multiplication on numerals }
+Compute (Mult (S (S Z)) (S (S Z))) -> (S (S (S (S Z))));
+
+{ test nested expressions }
+Compute (Add (S Z) (Mult (S (S Z)) (S (S (S Z))))) -> (S (S (S (S (S (S (S Z)))))));
+Compute (Add (Add (S (S Z)) (S Z)) (Add (S (S (S Z))) (S (S Z)))) -> (S (S (S (S (S (S (S (S Z))))))));
+
+. { end of tests }
+% :> 
+
+
+% :> ./advise step arith.adv arith.tests
+Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 3 rules; size: 30.
+
+Running 4 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> ((Mult (S (S Z))) (S (S Z)))
+Final Term:      ((Mult (S (S Z))) (S (S Z)))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S Z))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S Z) (Mult (S (S Z)) (S (S (S Z)))))
+Applying advice...
+                 -> (Compute (S ((Add Z) ((Mult (S (S Z))) (S (S (S Z)))))))
+                 -> (Compute (S ((Mult (S (S Z))) (S (S (S Z))))))
+                 -> (S ((Mult (S (S Z))) (S (S (S Z)))))
+Final Term:      (S ((Mult (S (S Z))) (S (S (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S Z)))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) (S Z)) (Add (S (S (S Z))) (S (S Z))))
+Applying advice...
+                 -> ((Add ((Add (S (S Z))) (S Z))) ((Add (S (S (S Z)))) (S (S Z))))
+Final Term:      ((Add ((Add (S (S Z))) (S Z))) ((Add (S (S (S Z)))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+
+
+% :> 
+
+
+% :> ./advise arith arith.adv
+Running 'arith' suite.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 3 rules; size: 30.
+
+
+Running internal tests...
+*************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S (S Z))))
+Applying advice...
+Final Term:      (S (S (S (S (S Z)))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) (S (S (S Z)))) (Add (S (S Z)) (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Add ((Add (S (S Z))) (S (S (S Z))))) ((Add (S (S Z))) (S (S (S Z)))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S Z))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S Z) (S (S Z))) (Mult (S (S Z)) (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S Z)) (S (S Z)))) ((Mult (S (S Z))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S Z)) (S (S (S Z)))) (Mult (S (S Z)) (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Mult (S (S (S (S (S Z)))))) ((Mult (S (S Z))) (S (S (S Z)))))
+Total Steps:     4
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add Z Z) (Add Z (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Add Z) Z)) ((Add Z) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) (S (S (S Z)))) (Add (S (S (S Z))) (S (S Z))))
+Applying advice...
+Final Term:      ((Add ((Add (S (S Z))) (S (S (S Z))))) ((Add (S (S (S Z)))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S Z))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S (S Z)) (S (S (S Z)))) (Mult (S (S (S Z))) (S (S Z))))
+Applying advice...
+Final Term:      ((Add ((Mult (S (S Z))) (S (S (S Z))))) ((Mult (S (S (S Z)))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S Z)) (S (S (S Z)))) (Add (S (S (S Z))) (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Add (S (S Z))) (S (S (S Z))))) ((Add (S (S (S Z)))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S (S Z)))) (Mult (S (S (S Z))) (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S Z))) (S (S (S Z))))) ((Mult (S (S (S Z)))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S Z) (S (S (S (S (S Z)))))) (Add (S Z) Z))
+Applying advice...
+Final Term:      ((Add ((Mult (S Z)) (S (S (S (S (S Z))))))) (S Z))
+Total Steps:     3
+
+INCORRECT!
+Expected: (S (S (S (S (S (S Z))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S (S Z)))) (Add (S (S (S (S (S Z))))) (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S Z))) (S (S (S Z))))) (S (S (S (S (S (S (S Z))))))))
+Total Steps:     7
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) (S Z)) (Mult (S (S (S (S (S Z))))) (S Z)))
+Applying advice...
+Final Term:      (S (S ((Mult (S (S (S (S (S Z)))))) (S Z))))
+Total Steps:     6
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S Z)))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add Z (S Z)) (Mult (S (S (S Z))) (S Z)))
+Applying advice...
+Final Term:      (S ((Mult (S (S (S Z)))) (S Z)))
+Total Steps:     4
+
+INCORRECT!
+Expected: (S (S (S (S Z))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S (S (S (S Z))))) Z) (Add (S (S (S (S (S Z))))) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Add ((Add (S (S (S (S (S Z)))))) Z)) ((Add (S (S (S (S (S Z)))))) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S (S Z)))) (S (S Z))) (Mult (S (S Z)) (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S (S Z))))) (S (S Z)))) ((Mult (S (S Z))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S (S Z)))) (S (S Z))) (Mult (S (S (S (S Z)))) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S (S Z))))) (S (S Z)))) ((Mult (S (S (S (S Z))))) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S Z) Z) (Mult (S (S (S (S Z)))) (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Add ((Mult (S Z)) Z)) ((Mult (S (S (S (S Z))))) (S (S (S Z)))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S (S (S (S Z))))) (S (S (S (S (S Z)))))) (Add (S Z) Z))
+Applying advice...
+Final Term:      ((Mult ((Add (S (S (S (S (S Z)))))) (S (S (S (S (S Z))))))) ((Add (S Z)) Z))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S Z))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S (S Z)))) (S (S (S (S (S Z)))))) (Mult (S (S (S (S Z)))) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S (S Z))))) (S (S (S (S (S Z))))))) ((Mult (S (S (S (S Z))))) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S (S Z))) Z) (Mult (S Z) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      (S (S (S ((Mult (S Z)) (S (S (S (S (S Z)))))))))
+Total Steps:     9
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) (S (S (S Z)))) (Mult (S (S (S (S (S Z))))) (S (S Z))))
+Applying advice...
+Final Term:      (S (S (S (S (S ((Mult (S (S (S (S (S Z)))))) (S (S Z))))))))
+Total Steps:     10
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) (S Z)) (Add (S Z) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Add ((Add (S (S Z))) (S Z))) ((Add (S Z)) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S Z)))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) Z) (Mult (S (S (S (S Z)))) (S (S (S Z)))))
+Applying advice...
+Final Term:      (S ((Mult (S (S (S (S Z))))) (S (S (S Z)))))
+Total Steps:     5
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S (S Z)))) (S (S (S (S (S Z)))))) (Add (S (S Z)) Z))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S (S Z))))) (S (S (S (S (S Z))))))) (S (S Z)))
+Total Steps:     4
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S (S Z)) (S (S (S (S Z))))) (Mult (S (S (S (S Z)))) (S (S Z))))
+Applying advice...
+Final Term:      ((Add ((Mult (S (S Z))) (S (S (S (S Z)))))) ((Mult (S (S (S (S Z))))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add Z (S (S (S Z)))) (Add (S (S (S (S (S Z))))) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Mult (S (S (S Z)))) (S (S (S (S (S (S (S (S (S (S Z)))))))))))
+Total Steps:     8
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S (S (S Z)))) (S (S (S (S Z))))) (Mult (S (S (S (S (S Z))))) (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Mult (S (S (S (S (S (S (S (S Z))))))))) ((Mult (S (S (S (S (S Z)))))) (S (S (S Z)))))
+Total Steps:     6
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S (S (S Z)))) (S (S Z))) (Add (S Z) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Mult ((Add (S (S (S (S Z))))) (S (S Z)))) ((Add (S Z)) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S (S (S (S (S Z))))) (S Z)) (Mult (S (S (S (S Z)))) Z))
+Applying advice...
+Final Term:      ((Add ((Mult (S (S (S (S (S Z)))))) (S Z))) ((Mult (S (S (S (S Z))))) Z))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S Z)))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S (S (S Z)))) (S Z)) (Mult (S (S (S Z))) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      (S (S (S (S (S ((Mult (S (S (S Z)))) (S (S (S (S (S Z)))))))))))
+Total Steps:     12
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S Z) (S (S (S (S Z))))) (Mult (S Z) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S Z)) (S (S (S (S Z)))))) ((Mult (S Z)) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult Z (S (S (S (S (S Z)))))) (Add (S Z) Z))
+Applying advice...
+Final Term:      ((Mult ((Mult Z) (S (S (S (S (S Z))))))) (S Z))
+Total Steps:     3
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add Z (S (S (S (S (S Z)))))) (Mult (S (S Z)) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      (S (S (S (S (S ((Mult (S (S Z))) (S (S (S (S (S Z)))))))))))
+Total Steps:     8
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S Z))) (S (S Z))) (Mult Z (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S Z)))) (S (S Z)))) ((Mult Z) (S (S (S Z)))))
+Total Steps:     1
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult Z (S (S (S Z)))) (Mult (S Z) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Add ((Mult Z) (S (S (S Z))))) ((Mult (S Z)) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S Z)))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S Z))) (S (S Z))) (Add (S (S Z)) Z))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S Z)))) (S (S Z)))) (S (S Z)))
+Total Steps:     4
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) (S (S (S Z)))) (Mult (S (S Z)) (S Z)))
+Applying advice...
+Final Term:      (S (S (S (S ((Mult (S (S Z))) (S Z))))))
+Total Steps:     8
+
+INCORRECT!
+Expected: (S (S (S (S (S (S Z))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S (S Z)))) (S (S Z))) (Add (S (S (S (S Z)))) (S Z)))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S (S Z))))) (S (S Z)))) (S (S (S (S (S Z))))))
+Total Steps:     6
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S (S Z)))) (S (S Z))) (Mult (S (S (S Z))) (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S (S Z))))) (S (S Z)))) ((Mult (S (S (S Z)))) (S (S (S Z)))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult Z Z) (Mult (S Z) Z))
+Applying advice...
+Final Term:      ((Add ((Mult Z) Z)) ((Mult (S Z)) Z))
+Total Steps:     1
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S (S Z))) (S (S Z))) (Mult (S (S Z)) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Mult (S (S (S (S (S Z)))))) ((Mult (S (S Z))) (S (S (S (S (S Z)))))))
+Total Steps:     5
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S Z) Z) (Add Z (S (S (S (S Z))))))
+Applying advice...
+Final Term:      ((Mult (S Z)) (S (S (S (S Z)))))
+Total Steps:     4
+
+INCORRECT!
+Expected: (S (S (S (S Z))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S Z) (S (S (S (S (S Z)))))) (Mult (S (S Z)) Z))
+Applying advice...
+Final Term:      ((Add ((Mult (S Z)) (S (S (S (S (S Z))))))) ((Mult (S (S Z))) Z))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S Z)))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) Z) (Mult (S (S (S (S (S Z))))) Z))
+Applying advice...
+Final Term:      (S ((Mult (S (S (S (S (S Z)))))) Z))
+Total Steps:     5
+
+INCORRECT!
+Expected: (S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) (S (S (S (S Z))))) (Add (S (S Z)) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      ((Add ((Add (S Z)) (S (S (S (S Z)))))) ((Add (S (S Z))) (S (S (S (S (S Z)))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult Z (S (S Z))) (Add (S Z) (S (S Z))))
+Applying advice...
+Final Term:      ((Add ((Mult Z) (S (S Z)))) (S (S (S Z))))
+Total Steps:     3
+
+INCORRECT!
+Expected: (S (S (S Z)))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S (S Z))) Z) (Add (S (S (S (S Z)))) (S (S (S (S Z))))))
+Applying advice...
+Final Term:      ((Mult ((Add (S (S (S Z)))) Z)) ((Add (S (S (S (S Z))))) (S (S (S (S Z))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) (S (S (S (S Z))))) (Add (S (S (S (S Z)))) (S (S Z))))
+Applying advice...
+Final Term:      ((Add ((Add (S Z)) (S (S (S (S Z)))))) ((Add (S (S (S (S Z))))) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S Z) (S (S (S Z)))) (Mult (S (S (S (S Z)))) (S (S (S (S (S Z)))))))
+Applying advice...
+Final Term:      (S (S (S (S ((Mult (S (S (S (S Z))))) (S (S (S (S (S Z))))))))))
+Total Steps:     8
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S (S (S Z))) (S (S (S (S Z))))) (Mult (S (S Z)) Z))
+Applying advice...
+Final Term:      ((Add ((Mult (S (S (S Z)))) (S (S (S (S Z)))))) ((Mult (S (S Z))) Z))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S Z)) (S Z)) (Mult (S (S Z)) Z))
+Applying advice...
+Final Term:      ((Mult (S (S (S Z)))) ((Mult (S (S Z))) Z))
+Total Steps:     4
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S Z))) (S (S (S (S (S Z)))))) (Mult (S (S (S (S Z)))) Z))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S Z)))) (S (S (S (S (S Z))))))) ((Mult (S (S (S (S Z))))) Z))
+Total Steps:     1
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult Z (S (S Z))) (Add Z Z))
+Applying advice...
+Final Term:      ((Add ((Mult Z) (S (S Z)))) Z)
+Total Steps:     2
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Add (S (S Z)) (S (S (S Z)))) (Add (S (S (S Z))) (S (S (S Z)))))
+Applying advice...
+Final Term:      ((Mult ((Add (S (S Z))) (S (S (S Z))))) ((Add (S (S (S Z)))) (S (S (S Z)))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S (S (S (S Z)))) (S (S Z))) (Mult Z (S (S Z))))
+Applying advice...
+Final Term:      ((Add ((Mult (S (S (S (S Z))))) (S (S Z)))) ((Mult Z) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Mult (S (S (S (S Z)))) (S Z)) (Mult (S (S (S (S (S Z))))) (S (S (S (S Z))))))
+Applying advice...
+Final Term:      ((Add ((Mult (S (S (S (S Z))))) (S Z))) ((Mult (S (S (S (S (S Z)))))) (S (S (S (S Z))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S (S Z)))) (Mult Z (S (S Z))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S Z))) (S (S (S Z))))) ((Mult Z) (S (S Z))))
+Total Steps:     1
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S (S (S (S Z))))) Z) (Mult (S (S (S (S (S Z))))) (S (S (S (S Z))))))
+Applying advice...
+Final Term:      (S (S (S (S (S ((Mult (S (S (S (S (S Z)))))) (S (S (S (S Z))))))))))
+Total Steps:     13
+
+INCORRECT!
+Expected: (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S (S Z)))))))))))))))))))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S (S Z))) Z) (Mult Z (S (S (S (S Z))))))
+Applying advice...
+Final Term:      ((Mult ((Mult (S (S (S Z)))) Z)) ((Mult Z) (S (S (S (S Z))))))
+Total Steps:     1
+
+INCORRECT!
+Expected: Z
+
+----------------------------------------------------------------------
+
+Your advice failed at least one internal test.
+
+    "Advice is like snow---the softer it falls, the longer it dwells upon,
+     and the deeper it sinks into the mind."
+                              --Coleridge
+
+
+First unread message:
+---------------------
+
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: hmonk@cbv.net
+To: hmonk@cbv.net
+Subject: O'Cult User Survey
+
+**********************************************************************
+TESTING AUTOMATED E-MAIL SURVEY
+
+This should be sent to users after they pass the 'arith' suite---
+I only want responses from qualified people.  
+
+FIXME: Before going live with this, I need to ask gardener and ohmega
+about doing installations in guest accounts---I can't give out their
+actual passwords!
+
+**********************************************************************
+
+Dear O'Cult User,
+
+I'm thinking about extending O'Cult with other programming paradigms:
+
+        two-dimensional-oriented programming
+                login: ohmega           password: bidirectional
+
+        bug-oriented programming
+                login: gardener         password: mathemantica
+           
+Since you're such a good O'Cult programmer, I'd welcome your advice
+(heh!) on how to do so.  Because these languages are not yet publicly
+available, you'll have to log in using the above accounts to run the
+research prototypes.
+
+-Harmonious
+% inited new reader
+read mail
+No unread messages.

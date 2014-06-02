@@ -1,0 +1,11 @@
+
+{ test multiplication on numerals }
+
+Compute(A) -> D;
+
+Compute(Add A A) -> D;
+
+Compute(Add A (A B)) -> D;
+
+
+. { end of tests }

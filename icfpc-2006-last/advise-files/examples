@@ -1,0 +1,10 @@
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z))) Add (S Z))
+Applying advice...
+                 -> (((Add (Add (S (S Z)))) Add) (S Z))
+Final Term:      (((Add (Add (S (S Z)))) Add) (S Z))
+Total Steps:     1
+
+INCORRECT!
+Expected:	(S (S (S Z)))

@@ -1,0 +1,101 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as yang
+
+
+% certify*
+step_balance*
+README
+PUZZLES
+% rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+writing 3 characters
+% % umodem : file stop1.txt already exists.
+% unknown command 61
+new to UMIX? try
+  help
+for help.
+% unknown command :::
+new to UMIX? try
+  help
+for help.
+%  === machine state === 
+mem M:
+00 01 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+79 61 6E 67 3A 55 2B 32  36 32 46 3A 2F 68 6F 6D
+65 2F 79 61 6E 67 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+67 61 72 64 65 6E 65 72  3A 6D 61 74 68 65 6D 61
+6E 74 69 63 61 3A 2F 68  6F 6D 65 2F 67 61 72 64
+65 6E 65 72 00 00 00 00  00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+6F 68 6D 65 67 61 3A 62  69 64 69 72 65 63 74 69
+6F 6E 61 6C 3A 2F 68 6F  6D 65 2F 6F 68 6D 65 67
+61 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00
+src regs sR: { 00 00 00 00 }
+dst regs dR: { 00 00 }
+IS: 1 IP: 0
+
+Press e to run until completion, enter to step forward, or ctrl-d to quit
+.............

@@ -1,0 +1,240 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as bbarker
+
+
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% Which model would you like to see the spec for?
+I know about the following models:
+  000
+  010
+  020
+  030
+  040
+  050
+  100
+  200
+  300
+  400
+  500
+That isn't a valid model!
+
+You have new mail. Type 'mail' to view.
+% 

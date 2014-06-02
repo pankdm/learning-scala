@@ -1,0 +1,47 @@
+Running internal tests...
+*************************
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Bold (Tag Bold (Seq A B)))
+Applying advice...
+Final Term:      (SNF ((Tag Bold) ((Tag Bold) ((Seq A) B))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Tag Maj (Tag Bold (Seq A B)))
+Applying advice...
+Final Term:      (SNF ((Tag Maj) ((Tag Bold) ((Seq A) B))))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Seq A B) A)
+Applying advice...
+Final Term:      (SNF ((Seq ((Seq A) B)) A))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    SNF (Seq (Tag Bold A) (Tag Bold B))
+Applying advice...
+Final Term:      (SNF ((Seq ((Tag Bold) A)) ((Tag Bold) B)))
+Total Steps:     0
+
+INCORRECT!
+Final term is not an XML document.

@@ -1,0 +1,430 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: The pamphlet is standard municipal fare. It reads, The City of
+Chicago's Refuse and Recycling Program combines modern trash
+classification with cybernetic labor to keep our city beautiful,
+while at the same time minimizing waste and limiting consumer
+spending. In keeping with our motto of "One Resident's Trash Is
+Another Resident's Treasure," unwanted items are collected,
+repaired, and redistributed to other residents who would have
+purchased them anyway. Residents should contribute to the city's
+program by leaving heaps of items unwanted on the sidewalk on
+collection day. 
+Also, it is in pristine condition. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: The bolt is quite useful for securing all sorts of things. 
+Also, it is in pristine condition. 
+
+>: The spring is tightly coiled. 
+Also, it is in pristine condition. 
+
+>: The button is labeled 6. 
+Also, it is in pristine condition. 
+
+>: The processor is from the elusive 19x86 line. 
+Also, it is broken: it is a processor missing a cache. 
+
+>: The pill is tempting looking. Interestingly, this one is red. 
+Also, it is in pristine condition. 
+
+>: The radio is a hi-fi AM/FM stereophonic radio. 
+Also, it is broken: it is a radio missing a transistor and an
+antenna. 
+
+>: The cache is fully-associative. 
+Also, it is in pristine condition. 
+
+>: Did you mean the red transistor or the blue transistor?
+
+>: The antenna is appropriate for receiving transmissions between
+30 kHz and 30 MHz. 
+Also, it is in pristine condition. 
+
+>: The screw is not from a Dutch company. 
+Also, it is in pristine condition. 
+
+>: The motherboard is well-used. 
+Also, it is broken: it is a motherboard missing a A-1920-IXB and
+a screw. 
+
+>: There is no a here. 
+
+>: Did you mean the red transistor or the blue transistor?
+
+>: The keypad is labeled "use me". 
+Also, it is broken: it is a keypad missing a motherboard and a
+button. 
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: There is no A-1920-IXB here. 
+
+>: There is no A-1920-IXB here. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: The A-1920-IXB is an exemplary instance of part number
+A-1920-IXB. 
+Also, it is broken: it is (a A-1920-IXB missing a transistor)
+missing (a radio missing an antenna) and a processor and a bolt.
+
+
+>: You are now carrying the bolt. 
+
+>: You are now carrying the spring. 
+
+>: You are now carrying the button. 
+
+>: You are now carrying the processor. 
+
+>: You are now carrying the pill. 
+
+>: You are now carrying the radio. 
+
+>: You can't take the cache because you can't carry any more items.
+
+
+>: ADVTR.INC=5@999999|f95731ab88952dfa4cb326fb99c085f
+The spring has been destroyed. 
+
+>: You are now carrying the cache. 
+
+>: The processor is from the elusive 19x86 line. 
+Also, it is broken: it is a processor missing a cache. 
+
+>: ADVTR.CMB=5@999999|764e8a851411c66106e130374d8abbb
+You have successfully combined the processor and the cache!
+
+>: The processor is from the elusive 19x86 line. 
+Also, it is in pristine condition. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a blue transistor here. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: Did you mean the red transistor or the blue transistor?
+
+>: You are now carrying the transistor. 
+
+>: You can't take the antenna because you can't carry any more
+items. 
+
+>: You are carrying:
+a blue transistor,
+a (broken) radio,
+a red pill,
+a processor,
+a button and
+a bolt.
+
+>: The radio is a hi-fi AM/FM stereophonic radio. 
+Also, it is broken: it is a radio missing a transistor and an
+antenna. 
+
+>: You have successfully combined the radio and the transistor!
+
+>: You are now carrying the antenna. 
+
+>: You have successfully combined the radio and the antenna!
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a screw here. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the screw. 
+
+>: You are carrying:
+a screw,
+a radio,
+a red pill,
+a processor,
+a button and
+a bolt.
+
+>: The pill has been destroyed. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a (broken) motherboard here. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the motherboard. 
+
+>: There is no mot here. 
+
+>: The motherboard is well-used. 
+Also, it is broken: it is a motherboard missing a A-1920-IXB and
+a screw. 
+
+>: You are carrying:
+a (broken) motherboard,
+a screw,
+a radio,
+a processor,
+a button and
+a bolt.
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a (broken) A-1920-IXB here. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: The keypad is labeled "use me". 
+Also, it is broken: it is a keypad missing a motherboard and a
+button. 
+
+>: The motherboard is well-used. 
+Also, it is broken: it is a motherboard missing a A-1920-IXB and
+a screw. 
+
+>: The A-1920-IXB is an exemplary instance of part number
+A-1920-IXB. 
+Also, it is broken: it is (a A-1920-IXB missing a transistor)
+missing (a radio missing an antenna) and a processor and a bolt.
+
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: You can't drop the button because you can't bring yourself to
+part with it. 
+
+>: You can go, take, drop, incinerate, combine, use, examine, show
+inventory, and quit. Try 'help <command>' for further details
+and synonyms.
+
+>: go: Move from one location to another. Usually you can move
+north, east, south, or west. These directions may be abbreviated
+n, e, s, and w. You can also use these single-letter directions
+without the 'go' keyword.
+
+>: There is no help on that subject.
+
+>: take: Pick up an item. Synonyms include get and grab.
+
+>: drop: Release an item from your inventory.
+
+>: incinerate: Destroy an item. You are equipped with a
+state-of-the-art DVNUL-9000 incinerator. Synonyms include inc.
+
+>: combine: Fix one item by adding a missing part. For example
+'combine radio with transistor'. Synonyms include comb and c.
+
+>: use: Exploit the functionality of an item.
+
+>: examine: Inspect an item or your environment. Synonyms include
+ex, x, look, and l.
+
+>: inventory: Display your current inventory. Synonyms include
+show, invent, inv, and i.
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You are carrying:
+a (broken) motherboard,
+a screw,
+a radio,
+a processor,
+a button and
+a bolt.
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: You aren't carrying a buttom.
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: Your efforts are to no avail: nothing interesting happens. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a (broken) A-1920-IXB here. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You can't drop the bolt because you can't bring yourself to part
+with it. 
+
+>: You can't drop the motherboard because you can't bring yourself
+to part with it. 
+
+>: You can't drop the screw because you can't bring yourself to
+part with it. 
+
+>: You can't drop the button because you can't bring yourself to
+part with it. 
+
+>: You can't drop the bolt because you can't bring yourself to part
+with it. 
+
+>: You can't drop the processor because you can't bring yourself to
+part with it. 
+
+>: 

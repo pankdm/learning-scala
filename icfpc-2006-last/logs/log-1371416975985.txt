@@ -1,0 +1,103 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as ftd
+
+
+% Enter one publication per line; terminate with an empty line:
+------------------------------------------------------------
+
+Assessing your best accepted publications:
+
+	Your CV's weight is 500.
+	Your current rank is Lecture Administrator.
+	To use your administrative privileges: 
+		login:   	guest
+		password:	
+
+------------------------------------------------------------
+
+The CBV Tenure Review Board's promotion guidelines:
+
+To attain the rank of   		Your CV must weigh at least
+*********************   		***************************
+Lecture Administrator			0
+Assistant Administrator			1006
+Associate Administrator			2006
+Full Administrator			3006
+
+% No unread messages.
+
+---------------------------------------------------------------------
+INBOX:
+
+Message  Read?  Sender                                Subject
+-------  -----  ------                                -------
+      0    Yes  Donald Nut <dnut@clv.net>             Yours loan is approved 7l0l
+
+---------------------------------------------------------------------
+
+Which message would you like to read?
+Type a number from '0' to '0'.
+Or type 'q' to quit.
+Goodbye!
+% TODO
+README
+ml19100.exe*
+icfp.exe*
+% 

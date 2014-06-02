@@ -1,0 +1,24 @@
+send []
+  nothing happens.
+
+send [(val, outface)]
+  val is sent along the specified outface.
+
+send [(val1, outface1), (val2, outface2)]
+  val1 is sent to outface1, and val2 is sent to outface2.
+  The two outfaces may not be equal.
+
+split (val1, val2)
+  val1 is sent south, and val2 is sent east.
+
+case Inl val of outface1, outface2
+  val is sent to outface1.
+
+case Inr val of outface1, outface2
+  val is sent to outface2.
+
+use mod
+  a new instance of the module mod is evaluated. The inputs to 
+  the module must match the inputs to this box, and are instantiated
+  with the values along those wires. The output along the east
+  face is the output of the module instance.

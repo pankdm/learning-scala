@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the bolt. 
+
+>: The bolt is quite useful for securing all sorts of things. 
+Also, it is in pristine condition. 
+
+>: You are now carrying the spring. 
+
+>: The spring is tightly coiled. 
+Also, it is in pristine condition. 
+
+>: You are now carrying the button. 
+
+>: The button is labeled 6. 
+Also, it is in pristine condition. 
+
+>: You are now carrying the processor. 
+
+>: The processor is from the elusive 19x86 line. 
+Also, it is broken: it is a processor missing a cache. 
+
+>: You are now carrying the pill. 
+
+>: The pill is tempting looking. Interestingly, this one is red. 
+Also, it is in pristine condition. 
+
+>: You are now carrying the radio. 
+
+>: The radio is a hi-fi AM/FM stereophonic radio. 
+Also, it is broken: it is a radio missing a transistor and an
+antenna. 
+
+>: You can't take the cache because you can't carry any more items.
+
+
+>: The cache is fully-associative. 
+Also, it is in pristine condition. 
+
+>: ADVTR.INC=5@999999|f95731ab88952dfa4cb326fb99c085f
+The pill has been destroyed. 
+
+>: You are now carrying the cache. 
+
+>: ADVTR.CMB=5@999999|764e8a851411c66106e130374d8abbb
+You have successfully combined the processor and the cache!
+
+>: 

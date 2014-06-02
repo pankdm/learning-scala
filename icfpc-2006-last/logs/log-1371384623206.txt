@@ -1,0 +1,2418 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as hmonk
+
+
+% rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+writing 75 characters
+% % rm: no such removable file.
+% Begin sending characters. Terminate with :::...
+writing 136 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+advise: bad input: Advice file failed to parse.
+% % Begin sending characters. Terminate with :::...
+writing 75 characters
+% % % Begin sending characters. Terminate with :::...
+writing 137 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 5 rules; size: 10.
+
+Running 1 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute A
+Applying advice...
+                 -> (Compute B)
+                 -> (Compute C)
+                 -> (Compute D)
+Final Term:      (Compute D)
+Total Steps:     3
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+writing 99 characters
+% % % Begin sending characters. Terminate with :::...
+writing 138 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 5 rules; size: 10.
+
+Running 2 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute A
+Applying advice...
+                 -> (Compute B)
+                 -> (Compute C)
+                 -> (Compute D)
+Final Term:      (Compute D)
+Total Steps:     3
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add A A)
+Applying advice...
+Final Term:      (Compute ((Add A) A))
+Total Steps:     0
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+writing 127 characters
+% % % Begin sending characters. Terminate with :::...
+writing 138 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 5 rules; size: 10.
+
+Running 3 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute A
+Applying advice...
+                 -> (Compute B)
+                 -> (Compute C)
+                 -> (Compute D)
+Final Term:      (Compute D)
+Total Steps:     3
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add A A)
+Applying advice...
+Final Term:      (Compute ((Add A) A))
+Total Steps:     0
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add A (A A))
+Applying advice...
+                 -> (Compute ((Add B) (A A)))
+                 -> (Compute ((Add C) (A A)))
+                 -> (Compute ((Add D) (A A)))
+Final Term:      (Compute ((Add D) (A A)))
+Total Steps:     3
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+writing 127 characters
+% % % Begin sending characters. Terminate with :::...
+writing 138 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 5 rules; size: 10.
+
+Running 3 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute A
+Applying advice...
+                 -> (Compute B)
+                 -> (Compute C)
+                 -> (Compute D)
+Final Term:      (Compute D)
+Total Steps:     3
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add A A)
+Applying advice...
+Final Term:      (Compute ((Add A) A))
+Total Steps:     0
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add A (A B))
+Applying advice...
+                 -> (Compute ((Add A) (A C)))
+                 -> (Compute ((Add A) (A D)))
+Final Term:      (Compute ((Add A) (A D)))
+Total Steps:     2
+
+INCORRECT!
+Expected:	D
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+Transferred 1024...
+writing 1050 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 0 input tests...
+************************
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 536 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 6 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 675 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 0 input tests...
+************************
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 674 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 7 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S Z))) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 769 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S Z))) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S Z))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S Z)))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S Z)))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S Z)))
+                 -> (Compute ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S Z))))
+                 -> (Compute (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S Z)))))
+                 -> (Compute (S ((Mult ((Mult (S Z)) (S Z))) (S Z))))
+                 -> (Compute (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S Z))))
+                 -> (Compute (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S Z))))
+                 -> (Compute (S ((Mult (S ((Mult Z) (S Z)))) (S Z))))
+                 -> (Compute (S ((Mult (S Z)) (S Z))))
+                 -> (Compute (S ((Add (S Z)) ((Mult Z) (S Z)))))
+                 -> (Compute (S (S ((Add Z) ((Mult Z) (S Z))))))
+                 -> (Compute (S (S ((Mult Z) (S Z)))))
+                 -> (Compute (S (S Z)))
+                 -> (S (S Z))
+Final Term:      (S (S Z))
+Total Steps:     15
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 779 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 0 input tests...
+************************
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 781 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S Z))) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 781 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S Z))) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 781 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S (S Z))) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S (S Z))) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S (S (S (S (S (S (S (S Z))))))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 741 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S Z) (S Z)) (Mult (S Z) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S Z)) ((Mult (S Z)) ((Mult (S Z)) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S Z)) (S Z)))) ((Mult Z) ((Mult (S Z)) ((Mult (S Z)) (S Z))))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S Z)) (S Z)))) Z))
+                 -> (Compute ((Add ((Add ((Mult (S Z)) (S Z))) ((Mult Z) ((Mult (S Z)) (S Z))))) Z))
+                 -> (Compute ((Add ((Add ((Mult (S Z)) (S Z))) Z)) Z))
+                 -> (Compute ((Add ((Add ((Add (S Z)) ((Mult Z) (S Z)))) Z)) Z))
+                 -> (Compute ((Add ((Add (S ((Add Z) ((Mult Z) (S Z))))) Z)) Z))
+                 -> (Compute ((Add ((Add (S ((Mult Z) (S Z)))) Z)) Z))
+                 -> (Compute ((Add (S ((Add ((Mult Z) (S Z))) Z))) Z))
+                 -> (Compute (S ((Add ((Add ((Mult Z) (S Z))) Z)) Z)))
+                 -> (Compute (S ((Add ((Add Z) Z)) Z)))
+                 -> (Compute (S ((Add Z) Z)))
+                 -> (Compute (S Z))
+                 -> (S Z)
+Final Term:      (S Z)
+Total Steps:     14
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 749 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 749 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 549 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 8 rules; size: 108.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult1 (S Z)) Z)))
+                 -> (Compute ((Mult1 (S Z)) Z))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult1 Z) Z)))
+                 -> (Compute ((Mult1 Z) Z))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult1 (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult1 (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult1 (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult1 (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult1 Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult1 Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult1 Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult1 Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     12
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult1 (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     4
+
+INCORRECT!
+Expected:	(S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult1 (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult1 (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult1 (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult1 ((Mult1 (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult1 ((Mult1 (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult1 ((Mult1 (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult1 ((Mult1 (S Z)) (S Z))) (S (S Z))))))
+                 -> (S (S ((Mult1 ((Mult1 (S Z)) (S Z))) (S (S Z)))))
+Final Term:      (S (S ((Mult1 ((Mult1 (S Z)) (S Z))) (S (S Z)))))
+Total Steps:     8
+
+INCORRECT!
+Expected:	(S (S (S (S Z))))
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 749 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 533 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 749 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 546 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 7 rules; size: 106.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) ((Mult (S Z)) Z))))
+                 -> (Compute ((Mult (S Z)) ((Mult (S Z)) Z)))
+                 -> (Compute ((Add ((Mult (S Z)) Z)) ((Mult (S Z)) ((Mult Z) ((Mult (S Z)) Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) Z)) ((Mult (S Z)) Z)))
+                 -> ((Add ((Mult (S Z)) Z)) ((Mult (S Z)) Z))
+Final Term:      ((Add ((Mult (S Z)) Z)) ((Mult (S Z)) Z))
+Total Steps:     5
+
+INCORRECT!
+Expected:	Z
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) ((Mult (S Z)) (S (S Z))))))))
+                 -> (Compute (S (S ((Mult (S Z)) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Add ((Mult (S Z)) (S (S Z)))) ((Mult (S Z)) ((Mult Z) ((Mult (S Z)) (S (S Z)))))))))
+                 -> (Compute (S (S ((Add ((Mult (S Z)) (S (S Z)))) ((Mult (S Z)) Z)))))
+                 -> (S (S ((Add ((Mult (S Z)) (S (S Z)))) ((Mult (S Z)) Z))))
+Final Term:      (S (S ((Add ((Mult (S Z)) (S (S Z)))) ((Mult (S Z)) Z))))
+Total Steps:     7
+
+INCORRECT!
+Expected:	(S (S (S (S Z))))
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))))
+                 -> ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+Final Term:      ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+Total Steps:     3
+
+INCORRECT!
+Expected:	(S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) ((Mult (S Z)) (S Z)))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))))))
+                 -> (Compute (S (S ((Mult (S Z)) ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))))))
+                 -> (Compute (S (S ((Add ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))) ((Mult (S Z)) ((Mult Z) ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))))))))
+                 -> (Compute (S (S ((Add ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))) ((Mult (S Z)) Z)))))
+                 -> (S (S ((Add ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))) ((Mult (S Z)) Z))))
+Final Term:      (S (S ((Add ((Mult ((Mult (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z)))) ((Mult (S Z)) Z))))
+Total Steps:     10
+
+INCORRECT!
+Expected:	(S (S (S (S Z))))
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 749 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 561 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 8 rules; size: 116.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult One) ((Mult (S Z)) Z))))
+                 -> (Compute ((Mult One) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult One) ((Add Z) ((Mult One) ((Mult Z) Z)))))
+                 -> (Compute ((Mult One) ((Mult One) ((Mult Z) Z))))
+                 -> (Compute ((Mult One) ((Mult One) Z)))
+                 -> (Compute ((Mult One) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult One) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S ((Add (S Z)) ((Mult One) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Add Z) ((Mult One) ((Mult (S Z)) (S (S Z))))))))
+                 -> (Compute (S (S ((Mult One) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult One) ((Add (S (S Z))) ((Mult One) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S ((Mult One) (S ((Add (S Z)) ((Mult One) ((Mult Z) (S (S Z))))))))))
+                 -> (Compute (S (S ((Mult One) (S (S ((Add Z) ((Mult One) ((Mult Z) (S (S Z)))))))))))
+                 -> (Compute (S (S ((Mult One) (S (S ((Mult One) ((Mult Z) (S (S Z))))))))))
+                 -> (Compute (S (S ((Mult One) (S (S ((Mult One) Z)))))))
+                 -> (Compute (S (S (S (S ((Mult One) Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     12
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult One) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+                 -> ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Final Term:      ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+Total Steps:     4
+
+INCORRECT!
+Expected:	(S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult One) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult One) ((Mult (S Z)) (S Z)))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult One) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult One) ((Mult ((Mult One) ((Mult (S Z)) (S Z)))) (S (S Z))))))
+                 -> (Compute (S ((Add (S Z)) ((Mult One) ((Mult ((Mult One) ((Mult (S Z)) (S Z)))) (S (S Z)))))))
+                 -> (Compute (S (S ((Add Z) ((Mult One) ((Mult ((Mult One) ((Mult (S Z)) (S Z)))) (S (S Z))))))))
+                 -> (Compute (S (S ((Mult One) ((Mult ((Mult One) ((Mult (S Z)) (S Z)))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult One) ((Mult ((Mult One) ((Add (S Z)) ((Mult One) ((Mult Z) (S Z)))))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult One) ((Mult ((Mult One) (S ((Add Z) ((Mult One) ((Mult Z) (S Z))))))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult One) ((Mult ((Mult One) (S ((Mult One) ((Mult Z) (S Z)))))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult One) ((Mult ((Mult One) (S ((Mult One) Z)))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult One) (S ((Mult One) Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult One) Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult One) ((Mult ((Mult One) Z)) (S (S Z))))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult One) ((Mult ((Mult One) Z)) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult One) ((Mult ((Mult One) Z)) (S (S Z))))))))))
+                 -> (Compute (S (S (S (S ((Mult One) ((Mult ((Mult One) Z)) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult ((Mult One) Z)) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     21
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 749 characters
+% % % Begin sending characters. Terminate with :::...
+Transferred 512...
+writing 587 characters
+% % Running input tests; printing steps.
+Welcome to O'Cult v1.0.  
+
+Parsing advice...
+Validating advice...
+Successfully parsed 8 rules; size: 128.
+
+Running 8 input tests...
+************************
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     4
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S ((Add (S Z)) Z))) (S (S Z))))
+                 -> (Compute (S ((Add ((Add (S Z)) Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S ((Add Z) Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) (S (S Z)))))
+                 -> (Compute (S (S ((Add Z) (S (S Z))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     7
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (Add (S (S Z)) Z) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Add Z) ((Add (S Z)) Z))))
+                 -> (Compute ((Add (S (S Z))) ((Add (S Z)) Z)))
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     8
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Add (S (S Z)) (Add (S Z) Z))
+Applying advice...
+                 -> (Compute (S ((Add (S Z)) ((Add (S Z)) Z))))
+                 -> (Compute (S (S ((Add Z) ((Add (S Z)) Z)))))
+                 -> (Compute (S (S ((Add (S Z)) Z))))
+                 -> (Compute (S (S (S ((Add Z) Z)))))
+                 -> (Compute (S (S (S Z))))
+                 -> (S (S (S Z)))
+Final Term:      (S (S (S Z)))
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) Z)
+Applying advice...
+                 -> (Compute ((Add Z) ((Mult (S Z)) Z)))
+                 -> (Compute ((Mult (S Z)) Z))
+                 -> (Compute ((Add Z) ((Mult Z) Z)))
+                 -> (Compute ((Mult Z) Z))
+                 -> (Compute Z)
+                 -> Z
+Final Term:      Z
+Total Steps:     6
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (S (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Add (S (S Z))) ((Mult (S Z)) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult (S Z)) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     10
+
+Correct!
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (Mult (S (S Z)) (S Z)))
+Applying advice...
+                 -> (Compute ((Mult (S (S Z))) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult (S Z)) ((Mult (S Z)) ((Mult (S (S Z))) (S Z))))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Mult Z) ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))))))
+                 -> (Compute ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) Z)))
+                 -> ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) Z))
+Final Term:      ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) ((Add ((Mult (S Z)) ((Mult (S (S Z))) (S Z)))) Z))
+Total Steps:     5
+
+INCORRECT!
+Expected:	(S Z)
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+Initial Term:    Compute (Mult (Mult (S (S Z)) (S Z)) (S (S Z)))
+Applying advice...
+                 -> (Compute ((Mult ((Add (S Z)) ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Add Z) ((Mult (S Z)) (S Z))))) (S (S Z))))
+                 -> (Compute ((Mult (S ((Mult (S Z)) (S Z)))) (S (S Z))))
+                 -> (Compute ((Add (S (S Z))) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))
+                 -> (Compute (S ((Add (S Z)) ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Add Z) ((Mult ((Mult (S Z)) (S Z))) (S (S Z)))))))
+                 -> (Compute (S (S ((Mult ((Mult (S Z)) (S Z))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult ((Add (S Z)) ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Add Z) ((Mult Z) (S Z))))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S ((Mult Z) (S Z)))) (S (S Z))))))
+                 -> (Compute (S (S ((Mult (S Z)) (S (S Z))))))
+                 -> (Compute (S (S ((Add (S (S Z))) ((Mult Z) (S (S Z)))))))
+                 -> (Compute (S (S (S ((Add (S Z)) ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S ((Add Z) ((Mult Z) (S (S Z)))))))))
+                 -> (Compute (S (S (S (S ((Mult Z) (S (S Z))))))))
+                 -> (Compute (S (S (S (S Z)))))
+                 -> (S (S (S (S Z))))
+Final Term:      (S (S (S (S Z))))
+Total Steps:     17
+
+Correct!
+
+----------------------------------------------------------------------
+
+
+
+% 

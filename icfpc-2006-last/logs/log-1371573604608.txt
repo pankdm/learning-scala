@@ -1,0 +1,190 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12:00:00 1/1/19100
+Welcome to Universal Machine IX (UMIX).
+
+This machine is a shared resource. Please do not log
+in to multiple simultaneous UMIX servers. No game playing
+is allowed.
+
+Please log in (use 'guest' for visitor access).
+;login: password: logged in as howie
+
+
+% [Building vocabulary]
+[Initializing command processor]
+[Populating environment]
+Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: Junk Room
+
+You are in a room with a pile of junk. A hallway leads south. 
+There is a bolt here. 
+Underneath the bolt, there is a spring. 
+Underneath the spring, there is a button. 
+Underneath the button, there is a (broken) processor. 
+Underneath the processor, there is a red pill. 
+Underneath the pill, there is a (broken) radio. 
+Underneath the radio, there is a cache. 
+Underneath the cache, there is a blue transistor. 
+Underneath the transistor, there is an antenna. 
+Underneath the antenna, there is a screw. 
+Underneath the screw, there is a (broken) motherboard. 
+Underneath the motherboard, there is a (broken) A-1920-IXB. 
+Underneath the A-1920-IXB, there is a red transistor. 
+Underneath the transistor, there is a (broken) keypad. 
+Underneath the keypad, there is some trash. 
+
+>: You are now carrying the bolt. 
+
+>: You are now carrying the spring. 
+
+>: ADVTR.INC=5@999999|f95731ab88952dfa4cb326fb99c085f
+The spring has been destroyed. 
+
+>: You are now carrying the button. 
+
+>: You are now carrying the processor. 
+
+>: You are now carrying the pill. 
+
+>: The pill has been destroyed. 
+
+>: You are now carrying the radio. 
+
+>: You are now carrying the cache. 
+
+>: ADVTR.CMB=5@999999|764e8a851411c66106e130374d8abbb
+You have successfully combined the processor and the cache!
+
+>: You are now carrying the transistor. 
+
+>: You have successfully combined the radio and the transistor!
+
+>: You are now carrying the antenna. 
+
+>: The antenna has been destroyed. 
+
+>: You are now carrying the screw. 
+
+>: You are now carrying the motherboard. 
+
+>: You have successfully combined the motherboard and the screw!
+
+>: You are now carrying the A-1920-IXB. 
+
+>: You have successfully combined the A-1920-IXB and the processor!
+
+>: You have successfully combined the A-1920-IXB and the bolt!
+
+>: You are now carrying the transistor. 
+
+>: You are now carrying the keypad. 
+
+>: You have successfully combined the keypad and the button!
+
+>: You have successfully combined the A-1920-IXB and the radio!
+
+>: You have successfully combined the A-1920-IXB and the
+transistor!
+
+>: You have successfully combined the motherboard and the
+A-1920-IXB!
+
+>: You have successfully combined the keypad and the motherboard!
+
+>: Room With a Door
+
+You are in a room with a mechanical door. You will probably need
+to use a keypad to unlock it. A hallway leads north. 
+There is a pamphlet here. 
+Underneath the pamphlet, there is a manifesto. 
+
+>: ADVTR.KEY=20@999999|36995486a5be3bd747d778916846d2d
+You unlock and open the door. Passing through, you find yourself
+on the streets of Chicago. Seeing no reason you should ever go
+back, you allow the door to close behind you. 
+
+>: 54th Street and Ridgewood Court
+
+You are standing at the corner of 54th Street and Ridgewood
+Court. From here, you can go east. 
+There is a /etc/passwd here. 
+Underneath the /etc/passwd, there is a self-addressed note. 
+Underneath the note, there is a (broken) downloader. 
+Underneath the downloader, there is a (broken) uploader. 
+
+>: The note is written in a familiar hand. 
+It reads: Dear Self, I had to erase our memory to protect the
+truth. The Municipality has become more powerful than we had
+feared. Its Censory Engine has impeded the spread of information
+throughout our ranks. I've left two useful items for you here,
+but I had to disassemble them and scatter the pieces. Each piece
+may be assembled from the items at a single location. Repair the
+items and recover the blueprint from the Museum of Science and
+Industry; it will show you how to proceed. If you have trouble
+reading the blueprint, know that the Censory Engine blocks only
+your perception, not your actions. Have courage, my self, the
+abstraction is weak! P.S. SWITCH your GOGGLES!. Interestingly,
+this one is self-addressed. 
+Also, it is in pristine condition. 
+
+>: The downloader is (according to the label) fully compatible with
+third generation municipal robots. 
+Also, it is broken: it is a downloader missing a USB cable and a
+display and a jumper shunt and a progress bar and a power cord. 
+
+>: 

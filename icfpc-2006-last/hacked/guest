@@ -1,0 +1,49 @@
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: Administrator <root@localhost>
+To: guest@cbv.net
+Subject: guest account misuse
+
+To whom it may concern:
+
+Guest access is provided as a courtesy to the community. We have
+recently observed an increase in abuse using the guest account. For
+example, the following sequence of commands obviously represents an
+attempt to gain unauthorized access to the account "howie":
+
+  cd code
+  /bin/umodem hack.bas STOP
+  /bin/qbasic hack.bas
+  ls /home
+  ./hack.exe howie
+  
+Moreover, the file that you uploaded with umodem appears to be 
+corrupted and did not compile.
+
+Please have respect for your fellow users,
+Admin
+
+
+Press Enter to continue...
+
+------------
+
+Date: Fri, 1 Jan 19100 00:00:00 -0400
+From: Donald Nut <dnut@clv.net>
+X-Organization: First Projection On-Line: So Easy to Use, No Wonder It's #1!
+To: guest@cbv.net
+Subject: Yours loan is approved 7l0l
+
+Dear Homeowner
+
+You have been approved for a 
+
+INTRO.MUA=5@999999|b9666432feff66e528a17fb69ae8e9a
+
+house loan.  This offer is being presented to you right now!. 
+Your credit history is in no way a factor.  To take advantage 
+of this Limited Time Opportunity, please take a minute and 
+confirm your curiosity or intention to accept this loan.
+
+Best Regards
+Don Nut
+Loan Manage
